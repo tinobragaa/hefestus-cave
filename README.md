@@ -1,110 +1,220 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hefestus Cave
+(Developer: Valentino Braga)
 
-Welcome USER_NAME,
+Project description.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Mockup image]()
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[Live Website]()
 
-## Gitpod Reminders
+# UX (User Experience)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Stories
 
-`python3 -m http.server`
+### Developer
+1. As a developer I can use local IDE to develop the project.
+2. As a developer I can deploy the project to Heroku early in the development process.
+3. As a developer I can create wireframes for the project so that I have a clear idea of what I want to achieve.
+4. As a developer I can create a database schema for the project so that I have a clear idea of what models I need to create.
 
-A blue button should appear to click: _Make Public_,
+### User/Shopper
+1. As a user, I want to be able to create an account so that I can have my address saved for future purchases.
 
-Another blue button should appear to click: _Open Browser_.
+# Design
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Design description.
 
-A blue button should appear to click: _Make Public_,
+### Wireframes
 
-Another blue button should appear to click: _Open Browser_.
+The initial concept of the design can be seen here and they were made through Figma. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<details>
+<summary>Wireframe</summary>
+<br>
 
-To log into the Heroku toolbelt CLI:
+![Wireframe]()
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+</details>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+### Typography
 
-## Release History
+Typography description.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![Font Name]()
 
-**September 20 2023:** Update Python version to 3.9.17.
+![Font Name]()
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Colour Palette
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Colour description.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* [ColorSpace](https://mycolor.space/)
+* [Coolors](https://coolors.co/)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Colour Palette]()
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Imagery
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Imagery description.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* [Pexels](https://www.pexels.com/)
+* [Unsplash](https://unsplash.com/)
+* [Hefestus Cave](https://www.instagram.com/hefestuscave/)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Icons were used for social links and buttons. The icons used on the site were taken from:
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* [Font Awesome](https://fontawesome.com/)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+# Database Schemas
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+# Agile Development
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+# Features 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Homepage
+- 
+-
+-
+<details>
+<summary>Homepage</summary>
+<br>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Homepage]()
 
-------
+</details>
 
-## FAQ about the uptime script
+# Future Features
 
-**Why have you added this script?**
+1.
+2.
+3.
+4.
+5.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+# Technologies Used
 
-**How will this affect me?**
+### Language
+The following language were used to develop the website:
+- Python
+- HTML
+- CSS
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Tools and Resources
+The following tools and resources were used to develop the website:
+- Git
+- Github
+- Gitpod
+- Google
+- Heroku
+- Favicon
+- Lucidchart
+- Codecademy
+- W3 Schools
+- Stack Overflow
+- Github Projects
+- CI Python Linter
+- Techsini Mockup Generator
+- GitHub Wiki TOC generator
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+# Testing
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+# Bugs
 
-**So….?**
+Bug:
+Fix: 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Bug:
+Fix: 
 
-**Can I opt out?**
+Bug:
+Fix: 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+# Deployment
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+[Click Here To See The Live Website](https://password-creatorr.herokuapp.com/)
 
-**Anything more?**
+# Deployment
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Deploy with Heroku
 
----
+1. Go on to [Heroku](https://www.heroku.com/) website and [log in](https://id.heroku.com/login) if you already have an account or [sign up](https://signup.heroku.com/) if you don't. 
+2. Click on the "New" button on the top right of the home page and select "Create new App" from the drop-down menu.
+3. In the "App name" field enter the name of your app. This name has to be unique. 
+    - Heroku displays a green tick if your app name is available.
+4. In the "Choose a region" field choose either the United States or Europe based on your location.
+5. Click the "Create app" button.
+6. Next page, top centre of the screen, select the "Settings" tab. 
+7. In the "Config Vars" section, click on the "Reveal config Vars" button.
+8. In this section you need to enter your environment variables. Usually stored in the env.py file locally. In my case, I have 10 variables: 
+    - SECRET_KEY - Django secret key.
+    - AWS_ACCESS_KEY_ID - Amazon AWS access key.
+    - AWS_SECRET_ACCESS_KEY - Amazon AWS secret access key.
+    - AWS_STORAGE_BUCKET_NAME - Amazon AWS bucket name.
+    - DATABASE_USER - Amazon RDS database user.
+    - EMAIL_HOST_PASS - Email password.
+    - EMAIL_HOST_USER - Email address.
+    - DATABASE_HOST - Amazon RDS database host.
+    - DATABASE_NAME - Amazon RDS database name.
+    - DATABASE_PASS - Amazon RDS database password.
+9. Copy and paste these variables into the KEY field and their values into the VALUE field.
+10. Go back to the top of the screen and select the "Deploy" tab.
+11. In the "Deployment method" section select "GitHub".
+    1. In "Connect to GitHub" click on the "Search" button. Find the project repository in the list and click on the "Connect" button.
+    2. Scroll to the bottom of that page. Click on the "Deploy Branch" button to deploy.
+    3. You should also see an option to enable automatic deployment. If you enable this, every time you push to GitHub, Heroku will automatically deploy the app.
+12. You will see build log scrolling at the bottom of the screen after that. When successfully finished building the app, you should see the link to your app.
 
-Happy coding!
+NB: You will need to add your Heroku app link to the ALLOWED_HOSTS in the settings.py file. You also need to make sure that DEBUG is set to False, requirements.txt and Procfile are up to date and pushed to GitHub.
+
+### Fork
+1. Go to the desired repository
+2. Click "Fork" in the upper right corner
+3. Select the owner, and set the repository name. A description can be added if desired
+4. Choose whether to copy the default branch, or all branches
+5. Click "Create Form"
+
+### Clone
+
+1. Go to the desired repository
+2. Click the "Code" button at the top of the files section of the page
+3. Select your desired method for cloning (HTTPS/SSH/GitHub CLI)
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory
+6. Type "git clone", and then paste the URL you copied earlier. It will look like this, with your GitHub username instead of "YOUR-USERNAME": "$ git clone https://github.com/YOUR-USERNAME/DESIRED-REPOSITORY"
+7. Press Enter. Your local clone will be created.
+
+### Heroku
+
+1. Create a user account with Heroku.
+2. Click New in the top-right corner of your Heroku Dashboard.
+3. Click on the dropdown menu and select create new.
+4. The app name is unique to all apps within Heroku so select one that is not currently in use.
+5. Select a region, EU or USA.
+6. Click Create App.
+7. In the app settings click Reveal Config vars, set the value of KEY to PORT, and the value to 8000 and click add.
+8. Click Add Buildpack.
+9. Choose Python first and click add.
+10. Choose Node.js second.
+11. The order is important, Python needs to be first, then Node.js second.
+12. Click on the Deploy tab, select connect to Github and search for your repository.
+13. Click on Enable automatic deploy or Deploy branch depending on your use case.
+
+# Credits
+
+A list of references used for the site:
+
+### References and Tutorials
+
+*
+*
+*
+
+# Acknowledgements
+
+I would like to take this opportunity to acknowledge and thank the following people:
+
+-
+-
+-
+-
