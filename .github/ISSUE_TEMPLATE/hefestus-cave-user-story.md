@@ -1,6 +1,6 @@
 ---
-name: "<title>"
-about: User Stories
+name: Hefestus Cave User Story
+about: Default User Story Template
 title: ''
 labels: ''
 assignees: ''
