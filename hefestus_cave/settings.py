@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://hefestus-cave-bb2dd02aee20.herokuapp.com/',
+    'hefestus-cave-bb2dd02aee20.herokuapp.com',
     'localhost',
     '8000-tinobragaa-hefestuscave-gaa8mr502xz.ws-eu108.gitpod.io',
 ]

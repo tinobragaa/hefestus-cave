@@ -1,11 +1,12 @@
 # Hefestus Cave
 (Developer: Valentino Braga)
 
-Project description.
+
+Welcome to Hefestus Cave, where imagination knows no bounds and the wonders of fantasy come to life. Our online cave is a store for those who cherish the mystique of mythical realms of RPG, offering a curated selection of art, books, and t-shirts inspired by the enchanting worlds of fantasy.
 
 ![Mockup image]()
 
-[Live Website]()
+[Live Website](https://hefestus-cave-bb2dd02aee20.herokuapp.com/)
 
 # UX (User Experience)
 
@@ -132,7 +133,7 @@ Fix:
 
 # Deployment
 
-[Click Here To See The Live Website](https://password-creatorr.herokuapp.com/)
+[Click Here To See The Live Website](https://hefestus-cave-bb2dd02aee20.herokuapp.com/)
 
 # Deployment
 
@@ -168,20 +169,20 @@ Fix:
 NB: You will need to add your Heroku app link to the ALLOWED_HOSTS in the settings.py file. You also need to make sure that DEBUG is set to False, requirements.txt and Procfile are up to date and pushed to GitHub.
 
 ### Fork
-1. Go to the desired repository
-2. Click "Fork" in the upper right corner
-3. Select the owner, and set the repository name. A description can be added if desired
-4. Choose whether to copy the default branch, or all branches
-5. Click "Create Form"
+1. Go to the [Hefestus Cave repository](https://hefestus-cave-bb2dd02aee20.herokuapp.com/).
+2. Click "Fork" in the upper right corner.
+3. Select the owner, and set the repository name. A description can be added if desired.
+4. Choose whether to copy the default branch, or all branches.
+5. Click "Create Form".
 
 ### Clone
 
-1. Go to the desired repository
-2. Click the "Code" button at the top of the files section of the page
-3. Select your desired method for cloning (HTTPS/SSH/GitHub CLI)
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory
-6. Type "git clone", and then paste the URL you copied earlier. It will look like this, with your GitHub username instead of "YOUR-USERNAME": "$ git clone https://github.com/YOUR-USERNAME/DESIRED-REPOSITORY"
+1. Go to the [Hefestus Cave repository](https://hefestus-cave-bb2dd02aee20.herokuapp.com/).
+2. Click the "Code" button at the top of the files section of the page.
+3. Select your desired method for cloning (HTTPS/SSH/GitHub CLI).
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type "git clone", and then paste the URL you copied earlier. It will look like this, with your GitHub username instead of "YOUR-USERNAME": "$ git clone https://github.com/YOUR-USERNAME/DESIRED-REPOSITORY".
 7. Press Enter. Your local clone will be created.
 
 ### Heroku
