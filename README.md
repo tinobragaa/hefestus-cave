@@ -1,31 +1,75 @@
 # Hefestus Cave
 (Developer: Valentino Braga)
 
-
 Welcome to Hefestus Cave, where imagination knows no bounds and the wonders of fantasy come to life. Our online cave is a store for those who cherish the mystique of mythical realms of RPG, offering a curated selection of art, books, and t-shirts inspired by the enchanting worlds of fantasy.
 
 ![Mockup image]()
 
 [Live Website](https://hefestus-cave-bb2dd02aee20.herokuapp.com/)
 
-# UX (User Experience)
+## UX
+
+### Typography
+### Colour Scheme
 
 ## User Stories
 
-### Developer
-1. As a developer I can use local IDE to develop the project.
-2. As a developer I can deploy the project to Heroku early in the development process.
-3. As a developer I can create wireframes for the project so that I have a clear idea of what I want to achieve.
-4. As a developer I can create a database schema for the project so that I have a clear idea of what models I need to create.
+For the project's advancement, I generated user stories that detailed the essential tasks for achieving a well-constructed website. Following an agile development approach, I then categorized these user stories into 6 distinct epics.
 
-### User/Shopper
-1. As a user, I want to be able to create an account so that I can have my address saved for future purchases.
+To see the User Stories list, please click [here](https://github.com/tinobragaa/hefestus-cave/issues).
+To see the Epics List, click [here](https://github.com/tinobragaa/hefestus-cave/milestones).
+To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projects/5).
 
-# Design
+### Development Setup:
+- As a developer, I want to deploy the website to Heroku early so that I can make sure all initial settings are correct.
+- As a developer, I need to set up the base Django application so that we can build features.
+- As a developer, I want to create a README file so that I can provide comprehensive information about the project, ensuring clarity and facilitating usage.
+- As a developer, I want to create reusable resources so that further pages can be developed.
+- As a developer, I want to plan my database interactions so that I can effectively organize and structure my project.
+- As a developer, I want to create a database schema for the project so that I can have a clear idea of what models I need to create.
+- As a developer, I need to style the allauth pages so that they fit with the theme styling.
+- As a developer, I need to create a 404 page so that users are redirected when entering a broken URL.
+- As a site admin, I want to ensure that the website is designed and developed with accessibility features so that users with disabilities can navigate and interact with the site effectively.
 
-Design description.
+### User Authentication and Account Management:
+- As a user, I want to be able to create an account on the site so that I can conveniently save my billing and shipping details, as well as access a history of my purchases in one central location.
+- As a user, I want to be able to edit the details saved to my account so that I can keep my information up-to-date and accurate.
+- As a user, I want to sign in with one of my social accounts so that I can sign in or sign up quickly and easily.
+- As a user, I want to be able to reset my password if I forget it so that I can access my account.
 
-### Wireframes
+### Product Management and Shopping Cart:
+- As a user, I want to be able to view a comprehensive list of all products available on the site so that I can browse and explore the full range of offerings.
+- As a user, I want to be able to see the prices of products clearly so that I can make informed decisions about whether or not to purchase.
+- As a user, I want to be able to view a product on its own individual page so that I can access comprehensive information about the product.
+- As a user, I want to be able to search for a product by name or description so that I can find what I want quickly.
+- As a user, I want to be able to add a product to my shopping cart so that I can easily purchase it later.
+- As a user, I want to be able to sort products by various criteria (price, newest) so that I can easily find items that match my preferences and needs, enhancing my shopping experience.
+- As a user, I want to be able to add products to a wishlist so that I can keep a collection of items I am interested in buying in the future.
+- As a user, I want to be able to edit the quantity of a product in my shopping cart so that I can purchase the quantity I desire.
+- As a user, I want to be able to delete items from my shopping cart so that I can remove unwanted products before proceeding to checkout.
+- As a user, I want to be able to view my shopping cart so that I can review the contents and total cost of my intended purchase.
+
+### Checkout and Payment:
+- As a user, I want to be able to securely pay for my purchase using Stripe during checkout, so that I can complete the transaction smoothly and begin enjoying my products.
+- As a user, I want to be able to receive an order confirmation email after I purchase from the shop so that I can have a record of what I've purchased in my email inbox.
+- As a site user, I want to be able to apply discount codes in my basket so that I can receive a discount on my purchase.
+
+### Content Management and User Interaction:
+- As a developer, I want to create user stories for project planning using agile methodology so that I can efficiently plan and organize project requirements.
+- As a developer, I want to create a wireframe so that I can visualize the project's layout and design and have a clear reference for implementation.
+- As a user, I want to be able to navigate between related pages easily so that I can find relevant content and information quickly and efficiently.
+- As a user, I want to be able to clearly understand the purpose of the website so that I can form an impression and decide whether or not to engage further.
+- As a user, I want to be able to contact the website administrators through a "Contact Us" page using a form so that I can communicate any inquiries, feedback, or issues.
+
+### SEO and Marketing:
+- As a site admin, I want to be able to optimize SEO so that my website ranks higher in search engine results, increasing visibility and attracting more organic traffic.
+- As a site admin, I want to leverage social media marketing strategies, specifically through meta platforms, to maximize brand visibility, engage with potential customers, and drive conversions.
+- As a user, I want to be able to share content from the website on various social media platforms, including Facebook, Instagram, X, and Pinterest, so that I can engage with my social network and amplify the reach of interesting content.
+- As a user, I want to be able to change the language of the website so that I can access content in a language that is more familiar or comfortable for me.
+- As a site admin, I want to be able to ensure the web app's responsiveness across all screen sizes so that users can smoothly switch devices and access the application without any constraints, ensuring a seamless user experience.
+- As a site user, I want to be able to subscribe to the site's mailing list so that I can receive exclusive offers and updates directly in my inbox, enhancing my engagement with the website.
+
+## Wireframes
 
 The initial concept of the design can be seen here and they were made through Figma. 
 
@@ -37,41 +81,11 @@ The initial concept of the design can be seen here and they were made through Fi
 
 </details>
 
+## Database Schemas
 
-### Typography
+## Agile Development
 
-Typography description.
-
-![Font Name]()
-
-![Font Name]()
-
-### Colour Palette
-
-Colour description.
-
-* [ColorSpace](https://mycolor.space/)
-* [Coolors](https://coolors.co/)
-
-![Colour Palette]()
-
-### Imagery
-
-Imagery description.
-
-* [Pexels](https://www.pexels.com/)
-* [Unsplash](https://unsplash.com/)
-* [Hefestus Cave](https://www.instagram.com/hefestuscave/)
-
-Icons were used for social links and buttons. The icons used on the site were taken from:
-
-* [Font Awesome](https://fontawesome.com/)
-
-# Database Schemas
-
-# Agile Development
-
-# Features 
+## Features 
 
 ### Homepage
 - 
@@ -85,7 +99,7 @@ Icons were used for social links and buttons. The icons used on the site were ta
 
 </details>
 
-# Future Features
+## Future Features
 
 1.
 2.
@@ -93,7 +107,7 @@ Icons were used for social links and buttons. The icons used on the site were ta
 4.
 5.
 
-# Technologies Used
+## Technologies Used
 
 ### Language
 The following language were used to develop the website:
@@ -118,12 +132,9 @@ The following tools and resources were used to develop the website:
 - Techsini Mockup Generator
 - GitHub Wiki TOC generator
 
-# Testing
+## Testing
 
-# Bugs
-
-Bug:
-Fix: 
+## Bugs
 
 Bug:
 Fix: 
@@ -131,11 +142,12 @@ Fix:
 Bug:
 Fix: 
 
-# Deployment
+Bug:
+Fix: 
+
+## Deployment
 
 [Click Here To See The Live Website](https://hefestus-cave-bb2dd02aee20.herokuapp.com/)
-
-# Deployment
 
 ### Deploy with Heroku
 
@@ -182,7 +194,7 @@ NB: You will need to add your Heroku app link to the ALLOWED_HOSTS in the settin
 3. Select your desired method for cloning (HTTPS/SSH/GitHub CLI).
 4. Open Git Bash.
 5. Change the current working directory to the location where you want the cloned directory.
-6. Type "git clone", and then paste the URL you copied earlier. It will look like this, with your GitHub username instead of "YOUR-USERNAME": "$ git clone https://github.com/YOUR-USERNAME/DESIRED-REPOSITORY".
+6. Type "git clone", and then paste the URL you copied earlier. It will look like this, with your GitHub username instead of "YOUR-USERNAME": "$ git clone https ://github.com/YOUR-USERNAME/DESIRED-REPOSITORY".
 7. Press Enter. Your local clone will be created.
 
 ### Heroku
@@ -201,7 +213,7 @@ NB: You will need to add your Heroku app link to the ALLOWED_HOSTS in the settin
 12. Click on the Deploy tab, select connect to Github and search for your repository.
 13. Click on Enable automatic deploy or Deploy branch depending on your use case.
 
-# Credits
+## Credits
 
 A list of references used for the site:
 
@@ -211,7 +223,7 @@ A list of references used for the site:
 *
 *
 
-# Acknowledgements
+## Acknowledgements
 
 I would like to take this opportunity to acknowledge and thank the following people:
 
