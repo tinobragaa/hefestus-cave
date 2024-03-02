@@ -78,73 +78,152 @@ To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projec
 
 To streamline the site's design process, I've generated wireframes for each page, ensuring alignment with industry best practices by producing versions tailored for both mobile and desktop interfaces. [Balsamiq](https://balsamiq.com/wireframes/?gad_source=1&gclid=CjwKCAiAloavBhBOEiwAbtAJO391J15sKFC7QKvUeqWQ4LfYPMV7B8CcAIxDhhL2wFml7luEHdXmChoCU6sQAvD_BwE) was utilized as the primary tool for crafting these wireframes.
 
+### Homepage Wireframes
 <details>
-<summary>Homepage</summary>
+<summary>Homepage Desktop</summary>
 <br>
 
-![Wireframe](/documentation/wireframes/homepage-wireframe.png)
+![Homepage Desktop](/documentation/wireframes/homepage-desktop.png)
 
 </details>
 <details>
-<summary>All Products View</summary>
+<summary>Homepage Mobile</summary>
 <br>
 
-![All Products View](/documentation/wireframes/all-products-wireframe.png)
+![Homepage Mobile](/documentation/wireframes/homepage-mobile.png)
+
+</details>
+
+### All Products Wireframes
+<details>
+<summary>All Products Desktop</summary>
+<br>
+
+![All Products Desktop](/documentation/wireframes/all-products-desktop.png)
 
 </details>
 <details>
-<summary>Product's Detail View</summary>
+<summary>All Products Mobile</summary>
 <br>
 
-![Product's Detail View](/documentation/wireframes/product-detail-wireframe.png)
+![All Products Mobile](/documentation/wireframes/all-products-mobile.png)
+
+</details>
+
+### Product's Detail Wireframes
+<details>
+<summary>Product's Detail Desktop</summary>
+<br>
+
+![Product's Detail Desktop](/documentation/wireframes/product-details-desktop.png)
 
 </details>
 <details>
-<summary>Sign In Page</summary>
+<summary>Product's Detail Mobile</summary>
 <br>
 
-![Sign In Page](/documentation/wireframes/sign-in-wireframe.png)
+![Product's Detail Desktop](/documentation/wireframes/product-details-mobile.png)
+
+</details>
+
+### Sign Up Wireframes
+<details>
+<summary>Sign Up Desktop</summary>
+<br>
+
+![Sign Up Desktop](/documentation/wireframes/sign-up-desktop.png)
 
 </details>
 <details>
-<summary>Sign Out Page</summary>
+<summary>Sign Up Mobile</summary>
 <br>
 
-![Sign Out Page](/documentation/wireframes/sign-out-wireframe.png)
+![Sign Up Mobile](/documentation/wireframes/sign-up-mobile.png)
+
+</details>
+
+
+### Sign In Wireframes
+<details>
+<summary>Sign In Desktop</summary>
+<br>
+
+![Sign In Desktop](/documentation/wireframes/sign-in-desktop.png)
 
 </details>
 <details>
-<summary>Sign Up Page</summary>
+<summary>Sign In Mobile</summary>
 <br>
 
-![Sign Up Page](/documentation/wireframes/sign-up-wireframe.png)
+![Sign In Mobile](/documentation/wireframes/sign-in-mobile.png)
+
+</details>
+
+### Sign Out Wireframes
+<details>
+<summary>Sign Out Desktop</summary>
+<br>
+
+![Sign Out Desktop](/documentation/wireframes/sign-out-desktop.png)
 
 </details>
 <details>
-<summary>Cart Page</summary>
+<summary>Sign Out Mobile</summary>
 <br>
 
-![Cart Page](/documentation/wireframes/cart-wireframe.png)
+![Sign Out Mobile](/documentation/wireframes/sign-out-mobile.png)
+
+</details>
+
+### Cart Wireframes
+<details>
+<summary>Cart Desktop</summary>
+<br>
+
+![Cart Desktop](/documentation/wireframes/cart-desktop.png)
 
 </details>
 <details>
-<summary>Checkout Page</summary>
+<summary>Cart Mobile</summary>
 <br>
 
-![Checkout Page](/documentation/wireframes/checkout-wireframe.png)
+![Cart Mobile](/documentation/wireframes/cart-mobile.png)
+
+</details>
+
+### Checkout Wireframes
+<details>
+<summary>Checkout Desktop</summary>
+<br>
+
+![Checkout Desktop](/documentation/wireframes/checkout-desktop.png)
 
 </details>
 <details>
-<summary>Order Confirmation Page</summary>
+<summary>Checkout Mobile</summary>
 <br>
 
-![Order Confirmation Page](/documentation/wireframes/order-confirmation-page-wireframe.png)
+![Checkout Mobile](/documentation/wireframes/checkout-mobile.png)
+
+</details>
+
+### Order Confirmation Page Wireframes
+<details>
+<summary>Order Confirmation Desktop</summary>
+<br>
+
+![Order Confirmation Desktop](/documentation/wireframes/order-confirmation-desktop.png)
+
+</details>
+<details>
+<summary>Order Confirmation Mobile</summary>
+<br>
+
+![Order Confirmation Mobile](/documentation/wireframes/order-confirmation-mobile.png)
 
 </details>
 
 ## Database Schemas
-
-## Agile Development
 
 ## Features 
 
@@ -168,13 +247,43 @@ To streamline the site's design process, I've generated wireframes for each page
 4.
 5.
 
+## Agile Development
+
+### GitHub Projects
+GitHub Projects was utilized as an Agile tool for managing this project. This platform facilitated the planning and tracking of user stories, issues, and epics, which were then monitored on a weekly basis using a basic Kanban board setup.
+
+- 39 User Stories: full list [here](https://github.com/tinobragaa/hefestus-cave/issues).
+- 6 Epics: Development Setup, User Authentication and Account Management, Product Management and Shopping Cart, Checkout and Payment, Content Management and User Interaction and SEO and Marketing.
+
+![Kanban Board](/documentation/kanban-board.png)
+
+### GitHub Issues
+GitHub Issues functioned as an additional Agile tool for me. I employed my custom User Story Template within it to organize user stories effectively. Additionally, it facilitated tracking milestones (Epics) for the project.
+
+To see the User Stories list, click [here](https://github.com/tinobragaa/hefestus-cave/issues).
+<br>
+
+To see the Epics List, click [here](https://github.com/tinobragaa/hefestus-cave/milestones).
+<br>
+
+To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projects/5).
+
+### MoSCoW Prioritization
+I broke down my Epics into individual stories before prioritizing and implementing them. This method allowed me to utilize the MoSCoW prioritization and apply labels to the user stories in the Issues tab.
+
+- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
+- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
+- **Could Have**: has small impact if left out (*20% of stories*)
+- **Won't Have**: not a priority for this iteration
+
 ## Technologies Used
 
 ### Language
 The following language were used to develop the website:
-- Python
 - HTML
 - CSS
+- Python
+- JavaScript
 
 ### Tools and Resources
 The following tools and resources were used to develop the website:
@@ -184,16 +293,17 @@ The following tools and resources were used to develop the website:
 - Google
 - Heroku
 - Favicon
+- Balsamiq
 - Lucidchart
 - Codecademy
 - W3 Schools
 - Stack Overflow
 - Github Projects
-- CI Python Linter
-- Techsini Mockup Generator
-- GitHub Wiki TOC generator
+- Stripe Integration
+- Code Institute Slack  
 
 ## Testing
+All Testing documentation can be found on the [TESTING.md](TESTING.md) file.
 
 ## Bugs
 
@@ -209,6 +319,39 @@ Fix:
 ## Deployment
 
 [Click Here To See The Live Website](https://hefestus-cave-bb2dd02aee20.herokuapp.com/)
+
+### ElephantSQL Database
+
+This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database.
+
+To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
+- Click **Create New Instance** to start a new database.
+- Provide a name (this is commonly the name of the project: retro-reboot).
+- Select the **Tiny Turtle (Free)** plan.
+- You can leave the **Tags** blank.
+- Select the **Region** and **Data Center** closest to you.
+- Once created, click on the new database name, where you can view the database URL and Password.
+
+### Stripe API
+
+This project uses [Stripe](https://stripe.com) to handle the ecommerce payments.
+
+Once you've created a Stripe account and logged-in, follow these series of steps to get your project connected.
+
+- From your Stripe dashboard, click to expand the "Get your test API keys".
+- You'll have two keys here:
+	- `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
+	- `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
+
+As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
+
+- From your Stripe dashboard, click **Developers**, and select **Webhooks**.
+- From there, click **Add Endpoint**.
+	- `https://retro-reboot.herokuapp.com/checkout/wh/`
+- Click **receive all events**.
+- Click **Add Endpoint** to complete the process.
+- You'll have a new key here:
+	- `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
 
 ### Deploy with Heroku
 
@@ -242,37 +385,24 @@ Fix:
 NB: You will need to add your Heroku app link to the ALLOWED_HOSTS in the settings.py file. You also need to make sure that DEBUG is set to False, requirements.txt and Procfile are up to date and pushed to GitHub.
 
 ### Fork
-1. Go to the [Hefestus Cave repository](https://hefestus-cave-bb2dd02aee20.herokuapp.com/).
-2. Click "Fork" in the upper right corner.
-3. Select the owner, and set the repository name. A description can be added if desired.
-4. Choose whether to copy the default branch, or all branches.
-5. Click "Create Form".
+By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
+You can fork this repository by using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/tinobragaa/hefestus-cave)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
 ### Clone
+You can clone the repository by following these steps:
 
-1. Go to the [Hefestus Cave repository](https://hefestus-cave-bb2dd02aee20.herokuapp.com/).
-2. Click the "Code" button at the top of the files section of the page.
-3. Select your desired method for cloning (HTTPS/SSH/GitHub CLI).
-4. Open Git Bash.
-5. Change the current working directory to the location where you want the cloned directory.
-6. Type "git clone", and then paste the URL you copied earlier. It will look like this, with your GitHub username instead of "YOUR-USERNAME": "$ git clone https ://github.com/YOUR-USERNAME/DESIRED-REPOSITORY".
-7. Press Enter. Your local clone will be created.
-
-### Heroku
-
-1. Create a user account with Heroku.
-2. Click New in the top-right corner of your Heroku Dashboard.
-3. Click on the dropdown menu and select create new.
-4. The app name is unique to all apps within Heroku so select one that is not currently in use.
-5. Select a region, EU or USA.
-6. Click Create App.
-7. In the app settings click Reveal Config vars, set the value of KEY to PORT, and the value to 8000 and click add.
-8. Click Add Buildpack.
-9. Choose Python first and click add.
-10. Choose Node.js second.
-11. The order is important, Python needs to be first, then Node.js second.
-12. Click on the Deploy tab, select connect to Github and search for your repository.
-13. Click on Enable automatic deploy or Deploy branch depending on your use case.
+1. Go to the [GitHub Repository](https://github.com/tinobragaa/hefestus-cave) 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash or Terminal
+5. Change the current working directory to the one where you want the cloned directory
+6. In your IDE Terminal, type the following command to clone my repository:
+	- `git clone https://github.com/tinobragaa/hefestus-cave`
+7. Press Enter to create your local clone.
 
 ## Credits
 
