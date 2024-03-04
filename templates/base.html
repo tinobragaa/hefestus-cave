@@ -1,0 +1,45 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+
+  <head>
+    {% block meta %}
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Explore unique DND illustrations and tailored designs. Shop books, dice, shirts, and more to elevate your gaming experience. Find perfect gear at our online store!">
+    <meta name="keywords" content="DND illustrations, Dungeons & Dragons, custom art, books, dice sets, shirts, gaming gear, fantasy accessories">
+    <meta name="author" content="Hefestus Cave">
+    {% endblock %}
+
+    {% block extra_meta %}
+    {% endblock %}
+
+    {% block corecss %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% endblock %}
+
+    {% block extra_css %}
+    {% endblock %}
+
+    {% block extra_js %}
+    {% endblock %}
+
+    <link rel="shortcut icon" href="{% static 'img/favicon/favicon.png' %}" type="image/x-icon">
+
+    <title>Hefestus Cave {% block extra_title %}{% endblock %}</title>
+  </head>
+
+
+
+
+  <body>
+
+
+
+  </body>
+</html>
