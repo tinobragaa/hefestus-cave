@@ -15,7 +15,7 @@ Welcome to Hefestus Cave, where imagination knows no bounds and the wonders of f
 
 For the project's advancement, I generated user stories that detailed the essential tasks for achieving a well-constructed website. Following an agile development approach, I then categorized these user stories into six distinct epics on the Kanban board to manage the project's progression effectively.
 
-To see the User Stories list, click [here](https://github.com/tinobragaa/hefestus-cave/issues).
+To see the User Stories list, click [here](https://github.com/tinobragaa/hefestus-cave/issues?q=is%3Aissue+sort%3Acreated-asc).
 <br>
 
 To see the Epics List, click [here](https://github.com/tinobragaa/hefestus-cave/milestones).
@@ -252,7 +252,7 @@ To streamline the site's design process, I've generated wireframes for each page
 ### GitHub Projects
 GitHub Projects was utilized as an Agile tool for managing this project. This platform facilitated the planning and tracking of user stories, issues, and epics, which were then monitored on a weekly basis using a basic Kanban board setup.
 
-- 39 User Stories: full list [here](https://github.com/tinobragaa/hefestus-cave/issues).
+- 39 User Stories: full list [here](https://github.com/tinobragaa/hefestus-cave/issues?q=is%3Aissue+sort%3Acreated-asc).
 - 6 Epics: Development Setup, User Authentication and Account Management, Product Management and Shopping Cart, Checkout and Payment, Content Management and User Interaction and SEO and Marketing.
 
 ![Kanban Board](/documentation/kanban-board.png)
@@ -260,7 +260,7 @@ GitHub Projects was utilized as an Agile tool for managing this project. This pl
 ### GitHub Issues
 GitHub Issues functioned as an additional Agile tool for me. I employed my custom User Story Template within it to organize user stories effectively. Additionally, it facilitated tracking milestones (Epics) for the project.
 
-To see the User Stories list, click [here](https://github.com/tinobragaa/hefestus-cave/issues).
+To see the User Stories list, click [here](https://github.com/tinobragaa/hefestus-cave/issues?q=is%3Aissue+sort%3Acreated-asc).
 <br>
 
 To see the Epics List, click [here](https://github.com/tinobragaa/hefestus-cave/milestones).
@@ -278,29 +278,45 @@ I broke down my Epics into individual stories before prioritizing and implementi
 
 ## Technologies Used
 
-### Language
-The following language were used to develop the website:
+### Languages
+The following languages were used to develop the website:
 - HTML
 - CSS
 - Python
 - JavaScript
 
-### Tools and Resources
-The following tools and resources were used to develop the website:
-- Git
-- Github
-- Gitpod
-- Google
-- Heroku
-- Favicon
-- Balsamiq
-- Lucidchart
-- Codecademy
-- W3 Schools
-- Stack Overflow
-- Github Projects
-- Stripe Integration
-- Code Institute Slack  
+### Programs and Tools
+The following programs and tools were used to develop the website:
+- [Amazon AWS](https://aws.amazon.com/) - Used to store the static and media files for the site.
+- [Mailchimp](https://mailchimp.com/) - Used to create the newsletter signup form.
+- [Stripe](https://stripe.com/gb) has been used for the payment processing and webhooks handling.
+- [GitHub](https://github.com/) - Source code hosted on GitHub, deployed using Git Pages.
+- [GitPod](https://www.gitpod.io/) - Used to commit, comment and push code during the development process.
+- [Font Awesome](https://fontawesome.com/) - Font Awesome use to source necessary icons used in the project.
+- [Balsamiq](https://balsamiq.com/) - Used to create wireframes and website structure map for the project.
+- [Gramarly](https://app.grammarly.com/) - Used for general spell-check.
+- [Google Fonts](https://fonts.google.com/) - Used to import fonts to the project.
+- [Heroku](https://www.heroku.com/) - Used to deploy the project.
+- [Lucidchart](https://www.lucidchart.com/pages/examples/flowchart-maker) - Used to make the iteration flowchart for the project.
+- [ElephantSQL](https://www.elephantsql.com/) - Free and open-source relational database management system (RDBMS).
+- [Bootstrap](https://getbootstrap.com/) - Used for adding predefined styled elements and creating responsiveness.
+- [JsHint](https://jshint.com/) - Used for validating the javascript code.
+- [CI Python Linter](https://pep8ci.herokuapp.com/#) - Used for validating the python code.
+- [HTML W3C HTML Validator](https://validator.w3.org/#validate_by_uri+with_options) - Used for validating the HTML.
+- [CSS Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri) - Used for validating the CSS.
+- [Chrome Del Tools](https://developer.chrome.com/docs/devtools/) - For debugging the project.
+- [W.A.V.E.](https://wave.webaim.org/) - Used for testing accessibility.
+- [LightHouse](https://developer.chrome.com/docs/lighthouse/overview/) - Used for testing performance.
+- [Stack Overflow](https://stackoverflow.com/) - Used for finding solutions to coding issues and asking programming-related questions.
+
+### Django and Python Packages
+The following Django applicaitons and Python Packages were used to develop the website:
+- [Django](https://www.djangoproject.com/) - A Python-based web framework that follows the model-template-view architectural pattern, used for building the project.
+- [django-allauth](https://django-allauth.readthedocs.io/) - A Django application used for account registration, management, and authentication.
+- [django-crispy-forms](https://pypi.org/project/django-crispy-forms/) - A Django application that makes it easy to style Django forms.
+- [gunicorn](https://pypi.org/project/gunicorn/) - A Python Web Server Gateway Interface (WSGI) HTTP server.
+- [Pillow](https://pypi.org/project/Pillow/) - The Python Imaging Library adds image processing capabilities to your Python interpreter.
+- [stripe](https://pypi.org/project/stripe/) - A Python library for the Stripe API.s
 
 ## Testing
 All Testing documentation can be found on the [TESTING.md](TESTING.md) file.
