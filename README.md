@@ -313,8 +313,10 @@ The following programs and tools were used to develop the website:
 The following Django applicaitons and Python Packages were used to develop the website:
 - [Django](https://www.djangoproject.com/) - A Python-based web framework that follows the model-template-view architectural pattern, used for building the project.
 - [django-allauth](https://django-allauth.readthedocs.io/) - A Django application used for account registration, management, and authentication.
-- [django-crispy-forms](https://pypi.org/project/django-crispy-forms/) - A Django application that makes it easy to style Django forms.
 - [gunicorn](https://pypi.org/project/gunicorn/) - A Python Web Server Gateway Interface (WSGI) HTTP server.
+- [boto3](https://pypi.org/project/boto3/) - Amazon Web Services (AWS) SDK for Python, providing access to AWS services.
+- [django-storages](https://pypi.org/project/django-storages/) - A collection of custom storage backends for Django.
+- [django-crispy-forms](https://pypi.org/project/django-crispy-forms/) - A Django application that makes it easy to style Django forms.
 - [Pillow](https://pypi.org/project/Pillow/) - The Python Imaging Library adds image processing capabilities to your Python interpreter.
 - [stripe](https://pypi.org/project/stripe/) - A Python library for the Stripe API.s
 
