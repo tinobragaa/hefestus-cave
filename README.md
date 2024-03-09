@@ -223,7 +223,110 @@ To streamline the site's design process, I've generated wireframes for each page
 
 </details>
 
-## Database Schemas
+## Database Design
+
+I utilized [dbdiagram](https://dbdiagram.io/home) to create an entity relationship diagram, offering a clear visualization of the interconnections among my data structures. This streamlined the development process by offering a comprehensive visualization.
+
+![Database Design](/documentation/database-design.png)
+
+### UserAllAuth Model
+
+- The user model is the default Django user model.
+
+| Key          | Field Type    | Validation                  |
+| ------------ | ------------- | --------------------------- |
+| username     | CharField     |                             |
+| email        | EmailField    | max_length=254, unique=True |
+| password     | CharField     |                             |
+| is_superuser | BooleanField  |                             |
+| is_staff     | BooleanField  |                             |
+| date_joined  | DateTimeField |                             |
+| last_login   | DateTimeField |                             |
+
+### UserProfile Model
+
+| Key                     | Field Type   | Validation                                                  |
+| ----------------------- | ------------ | ----------------------------------------------------------- |
+| default_phone_number    | CharField    | max_length=20, null=True, blank=True                        |
+| default_country         | CountryField | blank_label="Country", max_length=40, null=True, blank=True |
+| default_postcode        | CharField    | max_length=20, null=True, blank=True                        |
+| default_town_or_city    | CharField    | max_length=40, null=True, blank=True                        |
+| default_street_address1 | CharField    | max_length=80, null=True, blank=True                        |
+| default_street_address2 | CharField    | max_length=80, null=True, blank=True                        |
+| default_county          | CharField    | max_length=80, null=True, blank=True                        |
+
+### Order model 
+
+| Key             | Field Type    | Validation                                                                           |
+| --------------- | ------------- | ------------------------------------------------------------------------------------ |
+| order_number    | CharField     | max_length=32, null=False, editable=False                                            |
+| user_profile    | ForeignKey    | UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders' |
+| full_name       | CharField     | max_length=50, null=True, blank=True                                                 |
+| email           | EmailField    | max_length=254, null=True, blank=True                                                |
+| phone_number    | CharField     | max_length=20, null=True, blank=True                                                 |
+| country         | CountryField  | blank_label="Country", max_length=40, null=True, blank=True                          |
+| postcode        | CharField     | max_length=20, null=True, blank=True                                                 |
+| town_or_city    | CharField     | max_length=40, null=True, blank=True                                                 |
+| street_address1 | CharField     | max_length=80, null=True, blank=True                                                 |
+| street_address2 | CharField     | max_length=80, null=True, blank=True                                                 |
+| county          | CharField     | max_length=80, null=True, blank=True                                                 |
+| date            | DateTimeField | auto_now_add=True                                                                    |
+| delivery_cost   | DecimalField  | max_digits=6, decimal_places=2, null=False, default=0                                |
+| discount        | DecimalField  | default=False                                                                        |
+| order_total     | DecimalField  | max_digits=6, decimal_places=2, null=False, default=0                                |
+| grand_total     | DecimalField  | max_digits=6, decimal_places=2, null=False, default=0                                |
+| original_bag    | TextField     | null=False, blank=False, default=''                                                  |
+| stripe_pid      | CharField     | max_length=254, null=False, blank=False, default=''                                  |
+
+### OrderLineItem Model
+
+| Key            | Field Type   | Validation                                                                           |
+| -------------- | ------------ | ------------------------------------------------------------------------------------ |
+| order          | ForeignKey   | Order, null=False, blank=False, on_delete=models.CASCADE, , related_name='lineitems' |
+| product        | ForeignKey   | Product, null=False, blank=False, on_delete=models.CASCADE                           |
+| quantity       | IntegerField | null=False, blank=False, default=0                                                   |
+| lineitem_total | DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False              |
+
+### Product Model
+
+| Key         | Field Type     | Validation                                                 |
+| ----------- | -------------- | ---------------------------------------------------------- |
+| category    | ForeignKey     | Category, null=True, blank=True, on_delete=models.SET_NULL |
+| sku         | CharField      | max_length=255, null=True, blank=True                      |
+| description | TextField      | null=True, blank=True                                      |
+| year        | IntegerField   | max_digits=4, decimal_places=0, null=True, blank=True      |
+| condition   | ForeignKey     | null=True, blank=True                                      |
+| price       | DecimalField   | max_digits=6, decimal_places=2                             |
+| image       | ImageField     | null=True, blank=True                                      |
+| stock       | IntegerField   | null=True, blank=True                                      |
+
+### Category Model
+
+| Key           | Field Type    | Validation     |
+| ------------- | ------------- | -------------- |
+| name          | CharField     | max_length=250 |
+
+### Contact Model
+
+| Key          | Field Type | Validation      |
+| ------------ | ---------- | --------------- |
+| name         | CharField  | max_length=100  |
+| email        | EmailField | max_length=100  |
+| order_number | CharField  | max_length=32   |
+| message      | TextField  | max_length=1000 |
+
+### CouponCode Model
+
+| Key      | Field Type   | Validation                 |
+| -------- | ------------ | -------------------------- |
+| code     | CharField    | max_length=50, unique=True |
+| discount | IntegerField |                            |
+
+### NewsletterSubscribe Model
+
+| Key   | Field Type | Validation     |
+| ----- | ---------- | -------------- |
+| email | EmailField | max_length=100 |
 
 ## Features 
 
@@ -297,7 +400,7 @@ The following programs and tools were used to develop the website:
 - [Gramarly](https://app.grammarly.com/) - Used for general spell-check.
 - [Google Fonts](https://fonts.google.com/) - Used to import fonts to the project.
 - [Heroku](https://www.heroku.com/) - Used to deploy the project.
-- [Lucidchart](https://www.lucidchart.com/pages/examples/flowchart-maker) - Used to make the iteration flowchart for the project.
+- [dbdiagram](https://dbdiagram.io/home) - Used to make the database design.
 - [ElephantSQL](https://www.elephantsql.com/) - Free and open-source relational database management system (RDBMS).
 - [Bootstrap](https://getbootstrap.com/) - Used for adding predefined styled elements and creating responsiveness.
 - [JsHint](https://jshint.com/) - Used for validating the javascript code.
