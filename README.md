@@ -326,12 +326,15 @@ All Testing documentation can be found on the [TESTING.md](TESTING.md) file.
 ## Bugs
 
 Bug: I decided to add a custom domain to my project. After I bought the domain with the registrar and pointed to the heroku application, I was getting a error a bad request error (code 400) after pointing the new domain. [400 Error - Stack Overflow](https://stackoverflow.com/questions/23252733/i-get-an-error-400-bad-request-on-custom-heroku-domain-but-works-fine-on-foo-h/27402083#27402083).
+<br>
 Fix: I added the new domain into the list of allowed hosts on settings.py. 
 
 Bug:
+<br>
 Fix: 
 
 Bug:
+<br>
 Fix: 
 
 ## Deployment
@@ -458,9 +461,10 @@ A list of references used for the site:
 
 ### References and Tutorials
 
-*
-*
-*
+* [How to Point a Custom Domain to Heroku](https://stackoverflow.com/questions/49321317/setting-up-a-godaddy-domain-name-with-heroku).
+* [Bad Request Error After Adding a Custom Domain](https://stackoverflow.com/questions/23252733/i-get-an-error-400-bad-request-on-custom-heroku-domain-but-works-fine-on-foo-h/27402083#27402083).
+* The developer leveraged their past projects, including [Mil's Kitchen](https://tinobragaa.github.io/mils-kitchen/) (GitHub repository [here](https://github.com/tinobragaa/mils-kitchen)), [codit Quiz - Your JavaScript Quiz](https://tinobragaa.github.io/codit-quiz/) (GitHub repository [here](https://github.com/tinobragaa/codit-quiz)), [Password Creator](https://password-creatorr.herokuapp.com/) (GitHub repository [here](https://github.com/tinobragaa/password-creator)), and [Eire Settlers](https://eire-settlers-9b0e3e0c192c.herokuapp.com/) (GitHub repository [here](https://github.com/tinobragaa/eire-settlers)), as primary references for accessing code solutions and CSS, as well as for README documentation purposes.
+* The development process relied on The Code Institute's Boutique Ado walkthrough.
 
 ## Acknowledgements
 
