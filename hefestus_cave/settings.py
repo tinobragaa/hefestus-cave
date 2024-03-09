@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
     'hefestus-cave-bb2dd02aee20.herokuapp.com',
     'localhost',
     '8000-tinobragaa-hefestuscave-gaa8mr502xz.ws-eu108.gitpod.io',
+    'www.hefestuscave.com',
 ]
 
 CSRF_TRUSTED_ORIGINS=['https://8000-tinobragaa-hefestuscave-gaa8mr502xz.ws-eu108.gitpod.io', 'https://hefestus-cave-bb2dd02aee20.herokuapp.com/']
