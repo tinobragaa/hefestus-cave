@@ -5,7 +5,7 @@ Welcome to Hefestus Cave, where imagination knows no bounds and the wonders of f
 
 ![Mockup image]()
 
-[Live Website](https://hefestus-cave-bb2dd02aee20.herokuapp.com/)
+[Live Website](https://www.hefestuscave.com/)
 
 ## UX
 ### Typography
@@ -325,8 +325,8 @@ All Testing documentation can be found on the [TESTING.md](TESTING.md) file.
 
 ## Bugs
 
-Bug:
-Fix: 
+Bug: I decided to add a custom domain to my project. After I bought the domain with the registrar and pointed to the heroku application, I was getting a error a bad request error (code 400) after pointing the new domain. [400 Error - Stack Overflow](https://stackoverflow.com/questions/23252733/i-get-an-error-400-bad-request-on-custom-heroku-domain-but-works-fine-on-foo-h/27402083#27402083).
+Fix: I added the new domain into the list of allowed hosts on settings.py. 
 
 Bug:
 Fix: 
@@ -336,7 +336,7 @@ Fix:
 
 ## Deployment
 
-[Click Here To See The Live Website](https://hefestus-cave-bb2dd02aee20.herokuapp.com/)
+[Click Here To See The Live Website](https://www.hefestuscave.com/)
 
 ### ElephantSQL Database
 
@@ -373,6 +373,9 @@ As a backup, in case users prematurely close the purchase-order page during paym
 
 ### Deploy with Heroku
 
+This project uses [Heroku](https://www.heroku.com/) to host and deploy the website
+
+To deploy your website using Heroku, begin by signing up for a Heroku account. Then, proceed with the following steps:s
 1. Go on to [Heroku](https://www.heroku.com/) website and [log in](https://id.heroku.com/login) if you already have an account or [sign up](https://signup.heroku.com/) if you don't. 
 2. Click on the "New" button on the top right of the home page and select "Create new App" from the drop-down menu.
 3. In the "App name" field enter the name of your app. This name has to be unique. 
@@ -401,6 +404,33 @@ As a backup, in case users prematurely close the purchase-order page during paym
 12. You will see build log scrolling at the bottom of the screen after that. When successfully finished building the app, you should see the link to your app.
 
 NB: You will need to add your Heroku app link to the ALLOWED_HOSTS in the settings.py file. You also need to make sure that DEBUG is set to False, requirements.txt and Procfile are up to date and pushed to GitHub.
+
+### Custom Domain and SSL Certificate:
+
+This project utilizes a custom domain purchased through [GoDaddy](https://www.godaddy.com/) and hosted on Heroku.
+
+To add a custom domain to Heroku, follow these steps:
+
+1. Log in to the [Heroku](https://www.heroku.com/) website.
+2. Navigate to the desired app.
+3. Access the "Settings" tab and scroll down to the "Domains" section.
+4. Click on "Add Domain" and enter your new domain (assuming you've already purchased it from a registrar).
+5. Proceed to the next step.
+6. Copy the _DNS target_ provided by Heroku.
+7. Create a new CNAME record within your registrar account and point your domain to the _DNS target_ provided by Heroku.
+8. Allow for the propagation period, which may take up to 48 hours.
+
+For SSL certificate management, this project utilizes the free SSL certificate provided by Heroku's [Automatic Certificate Management (ACM)](https://devcenter.heroku.com/articles/automated-certificate-management) system. 
+
+To add the ACM SSL Certificate, follow these steps:
+
+1. Log in to the [Heroku](https://www.heroku.com/) website.
+2. Select the relevant app.
+3. Navigate to the "Settings" tab and locate the "SSL Certificates" section.
+4. Click on "Configure SSL".
+5. Choose "Automatic Certificate Management (ACM)" and proceed.
+6. Wait for the SSL certificate to be issued to your domain, which may take up to 60 minutes for propagation.
+
 
 ### Fork
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
