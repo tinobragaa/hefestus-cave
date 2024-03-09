@@ -24,6 +24,7 @@ To see the Epics List, click [here](https://github.com/tinobragaa/hefestus-cave/
 To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projects/5).
 
 ### Development Setup:
+
 - As a developer, I want to create user stories for project planning using agile methodology so that I can efficiently plan and organize project requirements.
 - As a developer, I want to create a wireframe so that I can visualize the project's layout and design and have a clear reference for implementation.
 - As a developer, I want to create a README file so that I can provide comprehensive information about the project, ensuring clarity and facilitating usage.
@@ -34,6 +35,7 @@ To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projec
 - As a developer, I want to plan my database interactions so that I can effectively organize and structure my project.
 
 ### User Authentication and Account Management:
+
 - As a user, I want to be able to create an account on the site so that I can conveniently save my billing and shipping details, as well as access a history of my purchases in one central location.
 - As a user, I want to be able to edit the details saved to my account so that I can keep my information up-to-date and accurate.
 - As a user, I want to sign in with one of my social accounts so that I can sign in or sign up quickly and easily.
@@ -41,6 +43,7 @@ To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projec
 - As a developer, I need to style the allauth pages so that they fit with the theme styling.
 
 ### Product Management and Shopping Cart:
+
 - As a user, I want to be able to view a comprehensive list of all products available on the site so that I can browse and explore the full range of offerings.
 - As a user, I want to be able to see the prices of products clearly so that I can make informed decisions about whether or not to purchase.
 - As a user, I want to be able to view a product on its own individual page so that I can access comprehensive information about the product.
@@ -54,11 +57,13 @@ To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projec
 - As a user, I want to be able to review products that I have purchased so that I can share my experience with other potential customers.
 
 ### Checkout and Payment:
+
 - As a user, I want to be able to securely pay for my purchase using Stripe during checkout, so that I can complete the transaction smoothly and begin enjoying my products.
 - As a user, I want to be able to receive an order confirmation email after I purchase from the shop so that I can have a record of what I've purchased in my email inbox.
 - As a site user, I want to be able to apply discount codes in my basket so that I can receive a discount on my purchase.
 
 ### Content Management and User Interaction:
+
 - As a user, I want to be able to navigate between related pages easily so that I can find relevant content and information quickly and efficiently.
 - As a user, I want to be able to clearly understand the purpose of the website so that I can form an impression and decide whether or not to engage further.
 - As a user, I would like the site to have a customised favicon so I can easily identify it when I have multiple tabs open.
@@ -68,6 +73,7 @@ To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projec
 - As a site admin, I want to be able to ensure the web app's responsiveness across all screen sizes so that users can smoothly switch devices and access the application without any constraints, ensuring a seamless user experience.
 
 ### SEO and Marketing:
+
 - As a site admin, I want to be able to optimize SEO so that my website ranks higher in search engine results, increasing visibility and attracting more organic traffic.
 - As a site admin, I want to leverage social media marketing strategies, specifically through meta platforms, to maximize brand visibility, engage with potential customers, and drive conversions.
 - As a user, I want to be able to share content from the website on various social media platforms, including Facebook, Instagram, X, and Pinterest, so that I can engage with my social network and amplify the reach of interesting content.
@@ -141,7 +147,6 @@ To streamline the site's design process, I've generated wireframes for each page
 ![Sign Up Mobile](/documentation/wireframes/sign-up-mobile.png)
 
 </details>
-
 
 ### Sign In Wireframes
 <details>
@@ -353,6 +358,7 @@ I utilized [dbdiagram](https://dbdiagram.io/home) to create an entity relationsh
 ## Agile Development
 
 ### GitHub Projects
+
 GitHub Projects was utilized as an Agile tool for managing this project. This platform facilitated the planning and tracking of user stories, issues, and epics, which were then monitored on a weekly basis using a basic Kanban board setup.
 
 - 39 User Stories: full list [here](https://github.com/tinobragaa/hefestus-cave/issues?q=is%3Aissue+sort%3Acreated-asc).
@@ -361,6 +367,7 @@ GitHub Projects was utilized as an Agile tool for managing this project. This pl
 ![Kanban Board](/documentation/kanban-board.png)
 
 ### GitHub Issues
+
 GitHub Issues functioned as an additional Agile tool for me. I employed my custom User Story Template within it to organize user stories effectively. Additionally, it facilitated tracking milestones (Epics) for the project.
 
 To see the User Stories list, click [here](https://github.com/tinobragaa/hefestus-cave/issues?q=is%3Aissue+sort%3Acreated-asc).
@@ -372,6 +379,7 @@ To see the Epics List, click [here](https://github.com/tinobragaa/hefestus-cave/
 To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projects/5).
 
 ### MoSCoW Prioritization
+
 I broke down my Epics into individual stories before prioritizing and implementing them. This method allowed me to utilize the MoSCoW prioritization and apply labels to the user stories in the Issues tab.
 
 - **Must Have**: guaranteed to be delivered (*max 60% of stories*)
@@ -382,6 +390,7 @@ I broke down my Epics into individual stories before prioritizing and implementi
 ## Technologies Used
 
 ### Languages
+
 The following languages were used to develop the website:
 - HTML
 - CSS
@@ -389,6 +398,7 @@ The following languages were used to develop the website:
 - JavaScript
 
 ### Programs and Tools
+
 The following programs and tools were used to develop the website:
 - [Amazon AWS](https://aws.amazon.com/) - Used to store the static and media files for the site.
 - [Mailchimp](https://mailchimp.com/) - Used to create the newsletter signup form.
@@ -413,6 +423,7 @@ The following programs and tools were used to develop the website:
 - [Stack Overflow](https://stackoverflow.com/) - Used for finding solutions to coding issues and asking programming-related questions.
 
 ### Django and Python Packages
+
 The following Django applicaitons and Python Packages were used to develop the website:
 - [Django](https://www.djangoproject.com/) - A Python-based web framework that follows the model-template-view architectural pattern, used for building the project.
 - [django-allauth](https://django-allauth.readthedocs.io/) - A Django application used for account registration, management, and authentication.
@@ -424,6 +435,7 @@ The following Django applicaitons and Python Packages were used to develop the w
 - [stripe](https://pypi.org/project/stripe/) - A Python library for the Stripe API.s
 
 ## Testing
+
 All Testing documentation can be found on the [TESTING.md](TESTING.md) file.
 
 ## Bugs
@@ -515,7 +527,7 @@ NB: You will need to add your Heroku app link to the ALLOWED_HOSTS in the settin
 
 This project utilizes a custom domain purchased through [GoDaddy](https://www.godaddy.com/) and hosted on Heroku.
 
-To add a custom domain to Heroku, follow these steps:
+- To add a custom domain to Heroku, follow these steps:
 
 1. Log in to the [Heroku](https://www.heroku.com/) website.
 2. Navigate to the desired app.
@@ -528,7 +540,7 @@ To add a custom domain to Heroku, follow these steps:
 
 For SSL certificate management, this project utilizes the free SSL certificate provided by Heroku's [Automatic Certificate Management (ACM)](https://devcenter.heroku.com/articles/automated-certificate-management) system. 
 
-To add the ACM SSL Certificate, follow these steps:
+- To add the ACM SSL Certificate, follow these steps:
 
 1. Log in to the [Heroku](https://www.heroku.com/) website.
 2. Select the relevant app.
@@ -539,6 +551,7 @@ To add the ACM SSL Certificate, follow these steps:
 
 
 ### Fork
+
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
 You can fork this repository by using the following steps:
 
@@ -547,6 +560,7 @@ You can fork this repository by using the following steps:
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
 ### Clone
+
 You can clone the repository by following these steps:
 
 1. Go to the [GitHub Repository](https://github.com/tinobragaa/hefestus-cave) 
@@ -566,6 +580,7 @@ A list of references used for the site:
 
 * [How to Point a Custom Domain to Heroku](https://stackoverflow.com/questions/49321317/setting-up-a-godaddy-domain-name-with-heroku).
 * [Bad Request Error After Adding a Custom Domain](https://stackoverflow.com/questions/23252733/i-get-an-error-400-bad-request-on-custom-heroku-domain-but-works-fine-on-foo-h/27402083#27402083).
+* [Removing input Background Colour for Chrome Autocomplete](https://stackoverflow.com/questions/2781549/removing-input-background-colour-for-chrome-autocomplete).
 * The developer leveraged their past projects, including [Mil's Kitchen](https://tinobragaa.github.io/mils-kitchen/) (GitHub repository [here](https://github.com/tinobragaa/mils-kitchen)), [codit Quiz - Your JavaScript Quiz](https://tinobragaa.github.io/codit-quiz/) (GitHub repository [here](https://github.com/tinobragaa/codit-quiz)), [Password Creator](https://password-creatorr.herokuapp.com/) (GitHub repository [here](https://github.com/tinobragaa/password-creator)), and [Eire Settlers](https://eire-settlers-9b0e3e0c192c.herokuapp.com/) (GitHub repository [here](https://github.com/tinobragaa/eire-settlers)), as primary references for accessing code solutions and CSS, as well as for README documentation purposes.
 * The development process relied on The Code Institute's Boutique Ado walkthrough.
 

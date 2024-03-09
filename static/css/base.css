@@ -1,13 +1,8 @@
-html {
-    height: 100%;
-}
-
-body {
-    background: url('/media/home-page.jpg') no-repeat center center fixed;
+.banner {
+    background: url('/media/home-page.jpg') no-repeat center center;
     background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato';
+    height: 100vh; /* Set height to 100% of viewport height */
+    width: 100%; /* Set width to 100% */
 }
 
 /* from Bulma */
@@ -64,7 +59,63 @@ body {
     background: #000 !important;
 }
 
-/* -------------------------------- Media Queries */
+/* ----- Footer ----- */
+
+.newsletter-input {
+    border: none;
+}
+
+.newsletter-input:focus {
+    box-shadow: none;
+}
+
+.newsletter-subdiv input::placeholder {
+    font-size: small; 
+  }
+
+.newsletter-subdiv input {
+    width: 250px;
+}
+
+.newsletter-subdiv {
+    border-bottom: 1px solid #000;
+}
+
+.newsletter-subdiv button:hover {
+    color: #6c6565;
+    transition: color 0.5s ease;
+}
+
+.newsletter-subdiv input:-webkit-autofill,
+.newsletter-subdiv input:-webkit-autofill:hover, 
+.newsletter-subdiv input:-webkit-autofill:focus, 
+.newsletter-subdiv input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+}
+
+.footer-logo {
+    text-transform: uppercase;
+    color: #000;
+}
+
+.footer-logo:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-link {
+    text-transform: uppercase;
+    color: #000;
+    margin-right: 15px;
+    font-size: small;
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    color: #6c6565;
+}
+
+/* ----- Media Queries ----- */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
