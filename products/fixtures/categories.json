@@ -3,7 +3,7 @@
       "pk": 1,
       "model": "products.category",
       "fields": {
-        "name": "shirts"
+        "name": "new_arrivals"
       }
     },
     {
@@ -32,13 +32,6 @@
       "model": "products.category",
       "fields": {
         "name": "sale"
-      }
-    },
-    {
-      "pk": 6,
-      "model": "products.category",
-      "fields": {
-        "name": "new_arrivals"
       }
     }
   ]
