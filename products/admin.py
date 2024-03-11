@@ -10,11 +10,13 @@ class ProductAdmin(admin.ModelAdmin):
         'category',
         'description',
         'stock',
-        'image'
+        'image',
     )
 
     ordering = ('name',)
 
+class CategoryAdmin(admin.ModelAdmin):
+    ordering = ('name',)
 
 admin.site.register(Product)
 admin.site.register(Category)
