@@ -1,0 +1,470 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "bk0001",
+      "name": "All The Weapons",
+      "description": "All The Weapons solves this problem, featuring a total of 228 new magic weapons, covering the entire simple and martial weapons tables detailed in the Player’s Handbook, from clubs and slings to whips and nets!",
+      "price": 15,
+      "category": 4,
+      "image": "book-all-the-weapons.webp",
+      "stock": 9
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "bk0002",
+      "name": "Azivar's Ancestral Almanac",
+      "description": "Are you looking for some additional options for character creation? Then this is the supplement for you! Azivar's Ancestral Alamanac contains 9 new ancestries for the world's most popular role playing game! Choose from 12 unique new peoples.",
+      "price": 10,
+      "category": 4,
+      "image": "book-ancestral-almanac.webp",
+      "stock": 9
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "bk0003",
+      "name": "Arena of Champions",
+      "description": "You always had a pension for seeking out the dark places of the world, for they called to you - especially the little spiders who spun their webs and toiled away. With amazing art from Hefestus Cave, great balancing and editing from Kai Linder, and narrative abilities by Cameron Day, sink your fangs into this newest addition to the Arena of Champions series. ",
+      "price": 30,
+      "category": 4,
+      "image": "book-arena-of-champions.webp",
+      "stock": 10
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "bk0004",
+      "name": "Fae, Fi, Fo, Fum: A Collection of Folklore",
+      "description": "30+ non-player characters for 5th edition Dungeons and Dragons. 23 Feywild Inspired Magical Items. Some items are attached to a certain NPC and give guidance on how they may be acquired or borrowed. Others are items that characters could come across in their adventures, with lore sections detailing their history.",
+      "price": 15,
+      "category": 4,
+      "image": "book-fae-fi-fo-fum.webp",
+      "stock": 10
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "bk0005",
+      "name": "Through the Veil: Monsters of the Feywild",
+      "description": "Through the Veil: Monsters of the Feywild features 200 pages of D&D5e feywild monsters, NPCs, and familars. Packed full of stat blocks and full color art to bring the Fey Realms to your D&D5e table! ",
+      "price": 20,
+      "category": 4,
+      "image": "book-feywild-monsters.webp",
+      "stock": 10
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "bk0006",
+      "name": "Sea Shanties: A Bardic Guide",
+      "description": "Sea Shanties: A Bardic Guide includes 18 D&D themed shanties party members can sing to the tunes of popular public domain shanties. This guide also includes sea themed magic items, trinkets, and hidden locations that serve as treasure to your adventuring party exploring the D&D seas!",
+      "price": 10,
+      "category": 4,
+      "image": "book-sea-shanties.webp",
+      "stock": 10
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "bk0007",
+      "name": "Sora Esma's Tome of Urban Legends",
+      "description": "",
+      "price": 20,
+      "category": 4,
+      "image": "book-urban-legends.webp",
+      "stock": 10
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "bk0008",
+      "name": "Whisper of the Weave Walker",
+      "description": "Whisper of the Weave walker is a horror adventure for Tier 1 players. In this adventure, players visit the remote village of Pardosa, where they discover an ancient tower or discover an unusual collection in a library. However, there is something wrong with this town. Something is very wrong. Why are their strange mark on the fields? Why are the villagers acting so strange? What secrets are they hidding? As characters face the bizarre events of Pardosa, they'll have to survive the unseen whispers that threatens to take control of them.",
+      "price": 5,
+      "category": 4,
+      "image": "book-weave-walker.webp",
+      "stock": 10
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "bk0009",
+      "name": "Tales From the World's End",
+      "description": "Read the correspondence between the Librarian and the Peddler, the individuals affected by the incomprehensible powers that lurk in the depths of the ocean and in the darkness behind the bright stars. Listen to their tales of cosmic horror whether you heed their warnings or follow in their footsteps. Tales From the World's End is a collection of horror encounters suited for the 1st, 2nd, and 3rd tiers of play.",
+      "price": 15,
+      "category": 4,
+      "image": "book-worlds-end.webp",
+      "stock": 10
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "ds0001",
+      "name": "Translucid Blue",
+      "description": "Embark on epic adventures and ignite your imagination with our meticulously crafted Dungeons and Dragons dice set. Each die is expertly designed and individually inspected to ensure quality and precision, promising fair and thrilling gameplay with every roll. With vibrant colors, intricate detailing, and a touch of magic, our dice sets are not just tools for gameplay, but treasures to enhance your tabletop experience. ",
+      "price": 20,
+      "category": 3,
+      "image": "dice-set-blue-translucid.webp",
+      "stock": 20
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "ds0002",
+      "name": "Stone Strong Green",
+      "description": "Embark on epic adventures and ignite your imagination with our meticulously crafted Dungeons and Dragons dice set. Each die is expertly designed and individually inspected to ensure quality and precision, promising fair and thrilling gameplay with every roll. With vibrant colors, intricate detailing, and a touch of magic, our dice sets are not just tools for gameplay, but treasures to enhance your tabletop experience. ",
+      "price": 20,
+      "category": 3,
+      "image": "dice-set-green-bank.webp",
+      "stock": 20
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "ds0003",
+      "name": "Green Runes",
+      "description": "Embark on epic adventures and ignite your imagination with our meticulously crafted Dungeons and Dragons dice set. Each die is expertly designed and individually inspected to ensure quality and precision, promising fair and thrilling gameplay with every roll. With vibrant colors, intricate detailing, and a touch of magic, our dice sets are not just tools for gameplay, but treasures to enhance your tabletop experience. ",
+      "price": 20,
+      "category": 3,
+      "image": "dice-set-green-runes.webp",
+      "stock": 20
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "ds0004",
+      "name": "Stone Green",
+      "description": "Embark on epic adventures and ignite your imagination with our meticulously crafted Dungeons and Dragons dice set. Each die is expertly designed and individually inspected to ensure quality and precision, promising fair and thrilling gameplay with every roll. With vibrant colors, intricate detailing, and a touch of magic, our dice sets are not just tools for gameplay, but treasures to enhance your tabletop experience. ",
+      "price": 20,
+      "category": 3,
+      "image": "dice-set-green-stone.webp",
+      "stock": 20
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "ds0005",
+      "name": "Stone Velud Green",
+      "description": "Embark on epic adventures and ignite your imagination with our meticulously crafted Dungeons and Dragons dice set. Each die is expertly designed and individually inspected to ensure quality and precision, promising fair and thrilling gameplay with every roll. With vibrant colors, intricate detailing, and a touch of magic, our dice sets are not just tools for gameplay, but treasures to enhance your tabletop experience. ",
+      "price": 20,
+      "category": 3,
+      "image": "dice-set-green.webp",
+      "stock": 20
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "ds0006",
+      "name": "Multiverse Set",
+      "description": "Embark on epic adventures and ignite your imagination with our meticulously crafted Dungeons and Dragons dice set. Each die is expertly designed and individually inspected to ensure quality and precision, promising fair and thrilling gameplay with every roll. With vibrant colors, intricate detailing, and a touch of magic, our dice sets are not just tools for gameplay, but treasures to enhance your tabletop experience. ",
+      "price": 40,
+      "category": 3,
+      "image": "dice-set-magic.webp",
+      "stock": 20
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "ds0007",
+      "name": "Stone Purple",
+      "description": "Embark on epic adventures and ignite your imagination with our meticulously crafted Dungeons and Dragons dice set. Each die is expertly designed and individually inspected to ensure quality and precision, promising fair and thrilling gameplay with every roll. With vibrant colors, intricate detailing, and a touch of magic, our dice sets are not just tools for gameplay, but treasures to enhance your tabletop experience. ",
+      "price": 20,
+      "category": 3,
+      "image": "dice-set-purple-stone.webp",
+      "stock": 20
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "ds0008",
+      "name": "Steel Silver",
+      "description": "Embark on epic adventures and ignite your imagination with our meticulously crafted Dungeons and Dragons dice set. Each die is expertly designed and individually inspected to ensure quality and precision, promising fair and thrilling gameplay with every roll. With vibrant colors, intricate detailing, and a touch of magic, our dice sets are not just tools for gameplay, but treasures to enhance your tabletop experience. ",
+      "price": 20,
+      "category": 3,
+      "image": "dice-set-steel-silver.webp",
+      "stock": 20
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "ds0009",
+      "name": "Steel White Gold",
+      "description": "Embark on epic adventures and ignite your imagination with our meticulously crafted Dungeons and Dragons dice set. Each die is expertly designed and individually inspected to ensure quality and precision, promising fair and thrilling gameplay with every roll. With vibrant colors, intricate detailing, and a touch of magic, our dice sets are not just tools for gameplay, but treasures to enhance your tabletop experience. ",
+      "price": 20,
+      "category": 3,
+      "image": "dice-set-steel-wtgold.webp",
+      "stock": 20
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "ds00010",
+      "name": "Wood Green",
+      "description": "Embark on epic adventures and ignite your imagination with our meticulously crafted Dungeons and Dragons dice set. Each die is expertly designed and individually inspected to ensure quality and precision, promising fair and thrilling gameplay with every roll. With vibrant colors, intricate detailing, and a touch of magic, our dice sets are not just tools for gameplay, but treasures to enhance your tabletop experience. ",
+      "price": 20,
+      "category": 3,
+      "image": "dice-set-wood-green.webp",
+      "stock": 20
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "ds00011",
+      "name": "Wood Kalinder",
+      "description": "Embark on epic adventures and ignite your imagination with our meticulously crafted Dungeons and Dragons dice set. Each die is expertly designed and individually inspected to ensure quality and precision, promising fair and thrilling gameplay with every roll. With vibrant colors, intricate detailing, and a touch of magic, our dice sets are not just tools for gameplay, but treasures to enhance your tabletop experience. ",
+      "price": 20,
+      "category": 3,
+      "image": "dice-set-wood-nature.webp",
+      "stock": 20
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "ds00012",
+      "name": "White Purple Runes",
+      "description": "Embark on epic adventures and ignite your imagination with our meticulously crafted Dungeons and Dragons dice set. Each die is expertly designed and individually inspected to ensure quality and precision, promising fair and thrilling gameplay with every roll. With vibrant colors, intricate detailing, and a touch of magic, our dice sets are not just tools for gameplay, but treasures to enhance your tabletop experience. ",
+      "price": 20,
+      "category": 3,
+      "image": "dice-set-wp.webp",
+      "stock": 20
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "ds00013",
+      "name": "Stone Purple Yellow",
+      "description": "Embark on epic adventures and ignite your imagination with our meticulously crafted Dungeons and Dragons dice set. Each die is expertly designed and individually inspected to ensure quality and precision, promising fair and thrilling gameplay with every roll. With vibrant colors, intricate detailing, and a touch of magic, our dice sets are not just tools for gameplay, but treasures to enhance your tabletop experience. ",
+      "price": 20,
+      "category": 3,
+      "image": "dice-set-yellow-purple.webp",
+      "stock": 20
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "il0001",
+      "name": "Artesan God",
+      "description": "Immerse yourself in the vivid world of fantasy with our full-body illustrations. Each piece captures the essence of your favorite characters, bringing them to life with dynamic poses, intricate details, and captivating storytelling. From valiant warriors to cunning rogues, our illustrations are meticulously crafted to evoke emotion and ignite your imagination. Whether adorning your gaming den or inspiring your next adventure, these full-body illustrations are sure to be cherished by players and collectors alike.",
+      "price": 50,
+      "category": 2,
+      "image": "il-artesan-god.webp",
+      "stock": 4
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "il0002",
+      "name": "Candle Sword",
+      "description": "Discover the magic of our item illustrations, each depicting legendary artifacts and mystical treasures that hold the key to untold riches and adventure. From enchanted swords to ancient tomes, our artwork showcases the beauty and significance of these coveted items, inviting players to dream of the quests that await. Whether used as visual aids during gameplay or hung as decorative pieces in your gaming room, our item illustrations spark curiosity and wonder, fueling the imagination of adventurers both seasoned and new.",
+      "price": 20,
+      "category": 2,
+      "image": "il-candle-sword.webp",
+      "stock": 4
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": "il0003",
+      "name": "Hook of Sinking",
+      "description": "Discover the magic of our item illustrations, each depicting legendary artifacts and mystical treasures that hold the key to untold riches and adventure. From enchanted swords to ancient tomes, our artwork showcases the beauty and significance of these coveted items, inviting players to dream of the quests that await. Whether used as visual aids during gameplay or hung as decorative pieces in your gaming room, our item illustrations spark curiosity and wonder, fueling the imagination of adventurers both seasoned and new.",
+      "price": 20,
+      "category": 2,
+      "image": "il-color-foice.webp",
+      "stock": 4
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sku": "il0004",
+      "name": "Death Fairy",
+      "description": "Immerse yourself in the vivid world of fantasy with our full-body illustrations. Each piece captures the essence of your favorite characters, bringing them to life with dynamic poses, intricate details, and captivating storytelling. From valiant warriors to cunning rogues, our illustrations are meticulously crafted to evoke emotion and ignite your imagination. Whether adorning your gaming den or inspiring your next adventure, these full-body illustrations are sure to be cherished by players and collectors alike.",
+      "price": 80,
+      "category": 2,
+      "image": "il-death-fairy.webp",
+      "stock": 4
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sku": "il0005",
+      "name": "Energy Quarterstaff",
+      "description": "Discover the magic of our item illustrations, each depicting legendary artifacts and mystical treasures that hold the key to untold riches and adventure. From enchanted swords to ancient tomes, our artwork showcases the beauty and significance of these coveted items, inviting players to dream of the quests that await. Whether used as visual aids during gameplay or hung as decorative pieces in your gaming room, our item illustrations spark curiosity and wonder, fueling the imagination of adventurers both seasoned and new.",
+      "price": 20,
+      "category": 2,
+      "image": "il-energy-catalisador.webp",
+      "stock": 4
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "sku": "il0006",
+      "name": "Face God",
+      "description": "Immerse yourself in the vivid world of fantasy with our full-body illustrations. Each piece captures the essence of your favorite characters, bringing them to life with dynamic poses, intricate details, and captivating storytelling. From valiant warriors to cunning rogues, our illustrations are meticulously crafted to evoke emotion and ignite your imagination. Whether adorning your gaming den or inspiring your next adventure, these full-body illustrations are sure to be cherished by players and collectors alike.",
+      "price": 50,
+      "category": 2,
+      "image": "il-face-god.webp",
+      "stock": 4
+    }
+  },
+  {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "sku": "il0007",
+      "name": "Gold God",
+      "description": "Immerse yourself in the vivid world of fantasy with our full-body illustrations. Each piece captures the essence of your favorite characters, bringing them to life with dynamic poses, intricate details, and captivating storytelling. From valiant warriors to cunning rogues, our illustrations are meticulously crafted to evoke emotion and ignite your imagination. Whether adorning your gaming den or inspiring your next adventure, these full-body illustrations are sure to be cherished by players and collectors alike.",
+      "price": 50,
+      "category": 2,
+      "image": "il-gold-god.webp",
+      "stock": 4
+    }
+  },
+  {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "sku": "il0008",
+      "name": "Nature God",
+      "description": "Immerse yourself in the vivid world of fantasy with our full-body illustrations. Each piece captures the essence of your favorite characters, bringing them to life with dynamic poses, intricate details, and captivating storytelling. From valiant warriors to cunning rogues, our illustrations are meticulously crafted to evoke emotion and ignite your imagination. Whether adorning your gaming den or inspiring your next adventure, these full-body illustrations are sure to be cherished by players and collectors alike.",
+      "price": 50,
+      "category": 2,
+      "image": "il-green-god.webp",
+      "stock": 4
+    }
+  },
+  {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+      "sku": "il0009",
+      "name": "Magic Mike",
+      "description": "Delve into the depths of character with our face illustrations, capturing the essence and personality of your Dungeons and Dragons heroes and villains. From stoic expressions to mischievous grins, each portrait is a window into the soul of the character, revealing their motivations, fears, and triumphs. Perfect for character sheets, player profiles, or as personal mementos, our face illustrations add depth and dimension to your tabletop adventures, forging connections between players and their alter egos in the world of fantasy.",
+      "price": 30,
+      "category": 2,
+      "image": "il-magic-mike.webp",
+      "stock": 4
+    }
+  },
+  {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+      "sku": "il00010",
+      "name": "Moon Hook",
+      "description": "Discover the magic of our item illustrations, each depicting legendary artifacts and mystical treasures that hold the key to untold riches and adventure. From enchanted swords to ancient tomes, our artwork showcases the beauty and significance of these coveted items, inviting players to dream of the quests that await. Whether used as visual aids during gameplay or hung as decorative pieces in your gaming room, our item illustrations spark curiosity and wonder, fueling the imagination of adventurers both seasoned and new.",
+      "price": 20,
+      "category": 2,
+      "image": "il-moon-sword.webp",
+      "stock": 4
+    }
+  },
+  {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+      "sku": "il00011",
+      "name": "Night God",
+      "description": "Immerse yourself in the vivid world of fantasy with our full-body illustrations. Each piece captures the essence of your favorite characters, bringing them to life with dynamic poses, intricate details, and captivating storytelling. From valiant warriors to cunning rogues, our illustrations are meticulously crafted to evoke emotion and ignite your imagination. Whether adorning your gaming den or inspiring your next adventure, these full-body illustrations are sure to be cherished by players and collectors alike.",
+      "price": 50,
+      "category": 2,
+      "image": "il-night-god.webp",
+      "stock": 4
+    }
+  },
+  {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+      "sku": "il00012",
+      "name": "Ocean Sword",
+      "description": "Discover the magic of our item illustrations, each depicting legendary artifacts and mystical treasures that hold the key to untold riches and adventure. From enchanted swords to ancient tomes, our artwork showcases the beauty and significance of these coveted items, inviting players to dream of the quests that await. Whether used as visual aids during gameplay or hung as decorative pieces in your gaming room, our item illustrations spark curiosity and wonder, fueling the imagination of adventurers both seasoned and new.",
+      "price": 20,
+      "category": 2,
+      "image": "il-ocean-sword.webp",
+      "stock": 4
+    }
+  },
+  {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+      "sku": "il00013",
+      "name": "Scroll Sword",
+      "description": "Discover the magic of our item illustrations, each depicting legendary artifacts and mystical treasures that hold the key to untold riches and adventure. From enchanted swords to ancient tomes, our artwork showcases the beauty and significance of these coveted items, inviting players to dream of the quests that await. Whether used as visual aids during gameplay or hung as decorative pieces in your gaming room, our item illustrations spark curiosity and wonder, fueling the imagination of adventurers both seasoned and new.",
+      "price": 20,
+      "category": 2,
+      "image": "il-potion-sword.webp",
+      "stock": 4
+    }
+  },
+  {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+      "sku": "il00014",
+      "name": "Rose Sword",
+      "description": "Discover the magic of our item illustrations, each depicting legendary artifacts and mystical treasures that hold the key to untold riches and adventure. From enchanted swords to ancient tomes, our artwork showcases the beauty and significance of these coveted items, inviting players to dream of the quests that await. Whether used as visual aids during gameplay or hung as decorative pieces in your gaming room, our item illustrations spark curiosity and wonder, fueling the imagination of adventurers both seasoned and new.",
+      "price": 20,
+      "category": 2,
+      "image": "il-rose-sword.webp",
+      "stock": 4
+    }
+  }
+]
