@@ -21,9 +21,10 @@
                 Illustrations
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="games-link">
-                <a href="{% url 'products' %}?category=illustrations" class="dropdown-item">Full Body</a>
-                <a href="{% url 'products' %}?category=illustrations" class="dropdown-item">Half Body</a>
-                <a href="{% url 'products' %}?category=illustrations" class="dropdown-item">Items</a>
+                <a href="{% url 'products' %}?category=full_body" class="dropdown-item">Full Body</a>
+                <a href="{% url 'products' %}?category=half_body" class="dropdown-item">Half Body</a>
+                <a href="{% url 'products' %}?category=items" class="dropdown-item">Items</a>
+                <a href="{% url 'products' %}?category=full_body,half_body,items" class="dropdown-item">View All</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -32,7 +33,8 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="consoles-link">
                 <a href="{% url 'products' %}?category=dices" class="dropdown-item">Sets</a>
-                <a href="{% url 'products' %}?category=dices" class="dropdown-item">Special Dices</a>
+                <a href="{% url 'products' %}?category=special_dices" class="dropdown-item">Special Dices</a>
+                <a href="{% url 'products' %}?category=dices,special_dices" class="dropdown-item">View All</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -40,12 +42,13 @@
                 Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="consoles-link">
-                <a href="{% url 'products' %}?category=books" class="dropdown-item">Adventure Books</a>
-                <a href="{% url 'products' %}?category=books" class="dropdown-item">Hefestu's Books</a>
+                <a href="{% url 'products' %}?category=adventure_books" class="dropdown-item">Adventure Books</a>
+                <a href="{% url 'products' %}?category=hefestus_books" class="dropdown-item">Hefestu's Books</a>
+                <a href="{% url 'products' %}?category=adventure_books,hefestus_books" class="dropdown-item">View All</a>
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'products' %}?category=sale" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sale
             </a>
         </li>
