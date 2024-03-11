@@ -21,10 +21,9 @@
                 Illustrations
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="games-link">
-                <a href="" class="dropdown-item">Full Body</a>
-                <a href="" class="dropdown-item">Torso</a>
-                <a href="" class="dropdown-item">Portrait</a>
-                <a href="" class="dropdown-item">Items</a>
+                <a href="{% url 'products' %}?category=illustrations" class="dropdown-item">Full Body</a>
+                <a href="{% url 'products' %}?category=illustrations" class="dropdown-item">Half Body</a>
+                <a href="{% url 'products' %}?category=illustrations" class="dropdown-item">Items</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -32,8 +31,8 @@
                 Dices
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="consoles-link">
-                <a href="" class="dropdown-item">Sets</a>
-                <a href="" class="dropdown-item">Single Dices</a>
+                <a href="{% url 'products' %}?category=dices" class="dropdown-item">Sets</a>
+                <a href="{% url 'products' %}?category=dices" class="dropdown-item">Special Dices</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -41,8 +40,8 @@
                 Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="consoles-link">
-                <a href="" class="dropdown-item">Adventure Books</a>
-                <a href="" class="dropdown-item">Hefestu's Books</a>
+                <a href="{% url 'products' %}?category=books" class="dropdown-item">Adventure Books</a>
+                <a href="{% url 'products' %}?category=books" class="dropdown-item">Hefestu's Books</a>
             </div>
         </li>
         <li class="nav-item dropdown">
