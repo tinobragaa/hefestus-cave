@@ -43,7 +43,7 @@
 /* ----- Hero Image ----- */
 
 .banner {
-    background: url('/media/home-page.jpg') no-repeat center center;
+    background: url('/media/hero-image.jpg') no-repeat center center;
     background-size: cover;
     height: 80vh;
 }
