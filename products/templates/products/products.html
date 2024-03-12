@@ -13,6 +13,12 @@
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font">Products</h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>  
+        <div class="row">
             <div class="product-container col-10 offset-1">
                 <div class="row mt-1 mb-2">
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
@@ -30,9 +36,9 @@
                     </div>
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
-                            {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span class="small"><a href="{% url 'products' %}">View All Products</a> | </span>
-                            {% endif %}
+                            {% for c in current_categories %}
+                            <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.display_name }}</span>
+                            {% endfor %}
                             <small>{{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}</small>
                         </p>
                     </div>
