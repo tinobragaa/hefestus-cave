@@ -23,14 +23,19 @@ def add_to_cart(request, item_id):
     cart = request.session.get('cart', {})
 
     if item_id in list(cart.keys()):
-        cart[item_id] += quantity
-        messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
+            if product.stock >= cart[item_id] + quantity:
+                cart[item_id] += quantity
+                messages.success(
+                    request, f'Updated {product.name} quantity \
+                        to {cart[item_id]}')
+            else:
+                messages.error(
+                    request, f'Error {product.name} has only \
+                    {product.stock} units left, you have {cart[item_id]} \
+                        in your cart')
     else:
         cart[item_id] = quantity
-        messages.error(
-                request, f'Error {product.name} has only \
-                {product.stock} units left, you have {cart[item_id]} \
-                    in your cart')
+        messages.success(request, f'Added {product.name} to your cart')
 
     request.session['cart'] = cart
     return redirect(redirect_url)
