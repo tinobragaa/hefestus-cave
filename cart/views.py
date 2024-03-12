@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, HttpResponse, reverse, get_object_or_404
+)
 from products.models import Product
 
 def view_cart(request):
