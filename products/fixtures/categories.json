@@ -3,63 +3,72 @@
       "pk": 1,
       "model": "products.category",
       "fields": {
-        "name": "new_arrivals"
+        "name": "new_arrivals",
+        "display_name": "New Arrivals"
       }
     },
     {
       "pk": 2,
       "model": "products.category",
       "fields": {
-        "name": "full_body"
+        "name": "full_body",
+        "display_name": "Full Body"
       }
     },
     {
       "pk": 3,
       "model": "products.category",
       "fields": {
-        "name": "half_body"
+        "name": "half_body",
+        "display_name": "Half Body"
       }
     },
     {
       "pk": 4,
       "model": "products.category",
       "fields": {
-        "name": "items"
+        "name": "items",
+        "display_name": "Items"
       }
     },
     {
       "pk": 5,
       "model": "products.category",
       "fields": {
-        "name": "hefestus_books"
+        "name": "hefestus_books",
+        "display_name": "Hefestus's Books"
       }
     },
     {
       "pk": 6,
       "model": "products.category",
       "fields": {
-        "name": "adventure_books"
+        "name": "adventure_books",
+        "display_name": "Adventure Books"
       }
     },
     {
       "pk": 7,
       "model": "products.category",
       "fields": {
-        "name": "dices"
+        "name": "dices",
+        "display_name": "Dices"
       }
     },
     {
       "pk": 8,
       "model": "products.category",
       "fields": {
-        "name": "special_dices"
+        "name": "special_dices",
+        "display_name": "Special Dices"
       }
     },
     {
       "pk": 9,
       "model": "products.category",
       "fields": {
-        "name": "sale"
+        "name": "sale",
+        "display_name": "Sale"
       }
     }
   ]
