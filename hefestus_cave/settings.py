@@ -34,11 +34,11 @@ DEBUG = 'DEVELOPMENT' in os.environ
 ALLOWED_HOSTS = [
     'hefestus-cave-bb2dd02aee20.herokuapp.com',
     'localhost',
-    '8000-tinobragaa-hefestuscave-gaa8mr502xz.ws-eu108.gitpod.io',
+    '8000-tinobragaa-hefestuscave-gaa8mr502xz.ws-eu109.gitpod.io',
     'www.hefestuscave.com',
 ]
 
-CSRF_TRUSTED_ORIGINS=['https://8000-tinobragaa-hefestuscave-gaa8mr502xz.ws-eu108.gitpod.io', 'https://hefestus-cave-bb2dd02aee20.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS=['https://8000-tinobragaa-hefestuscave-gaa8mr502xz.ws-eu109.gitpod.io', 'https://hefestus-cave-bb2dd02aee20.herokuapp.com/']
 
 # Application definition
 
@@ -95,6 +95,8 @@ TEMPLATES = [
         },
     },
 ]
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
