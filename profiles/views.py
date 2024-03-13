@@ -2,7 +2,9 @@ from django.shortcuts import render
 
 
 def profile(request):
-    """ Display the user's profile. """
+    """ 
+    Display the user's profile. 
+    """
 
     template = 'profiles/profile.html'
     context = {}
