@@ -6,7 +6,6 @@ from products.models import Product
 from django_countries.fields import CountryField
 from discount_codes.models import DiscountCode
 
-
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     full_name = models.CharField(max_length=50, null=False, blank=False)
