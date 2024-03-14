@@ -1,7 +1,13 @@
 # Hefestus Cave
 (Developer: Valentino Braga)
 
-Welcome to Hefestus Cave, where imagination knows no bounds and the wonders of fantasy come to life. Our online cave is a store for those who cherish the mystique of mythical realms of RPG, offering a curated selection of art, books, and t-shirts inspired by the enchanting worlds of fantasy.
+HefestusCave is a comprehensive digital project developed as a full-stack application. Serving as a B2C (Business-to-Consumer) online platform, it seamlessly integrates both front-end and back-end functionalities. Primarily developed using Django for the back-end and Bootstrap for the front-end, it is integrated with Stripe for secure payment processing.
+
+The platform offers users the opportunity to explore and purchase a curated selection of illustrations, books, and dice sets. Behind HefestusCave lies a personal connection and inspiration; it is a tribute to my husband's talents and passions. As an illustrator and contributor to numerous books, his dedication and creativity have inspired the creation of this platform. All illustrations and books within Hefestus's Books are real products from previous projects.
+
+Through HefestusCave, my goal is to provide a platform for showcasing his art and offering users a chance to own a piece of his imaginative world. Created with passion and driven by the intention to showcase my husband's drawings, HefestusCave represents not only a technical achievement but also a genuine dedication to sharing his talent with the world.
+
+I guess I should close with a branded call: Welcome to HefestusCave: where imagination meets commerce, and creativity knows no bounds!
 
 ![Mockup image]()
 
@@ -349,11 +355,12 @@ I utilized [dbdiagram](https://dbdiagram.io/home) to create an entity relationsh
 
 ## Future Features
 
-1.
-2.
-3.
-4.
-5.
+1. Multi-Language Support: Introduce multi-language support to cater to a diverse global audience. Allow users to choose their preferred language from a list of available options, ensuring that all website content, including product descriptions, navigation menus, and checkout pages, is displayed in the selected language. 
+2. Express Checkout and Wallet Integration: Simplify the checkout process for returning customers by offering an express checkout option. Enable users to save their payment information securely in a digital wallet within their account. This allows them to complete transactions quickly without having to enter payment details every time they make a purchase. 
+3. Wishlist Functionality: Introduce a wishlist feature that allows users to save products they're interested in for future purchase consideration. Users can easily add products to their wishlist from the product detail page or the listing page.
+4. Enable social media login/signup options for users and incorporate social sharing buttons for products. Additionally, integrate features like user reviews and ratings, allowing customers to share their shopping experiences on social media platforms.
+5. Loyalty Program and Discounts: Create a loyalty program where customers can earn points for every purchase they make, which can be redeemed for discounts or free products in the future. Offer special discounts and promotions to loyal customers.
+6. Multi-Currency Support: Implement a multi-currency system that allows users to view product prices and complete transactions in their preferred currency. Provide an option for users to select their currency from a dropdown menu or automatically detect their location and display prices accordingly. Utilize currency conversion APIs or services to ensure accurate and up-to-date exchange rates. Additionally, enable users to switch between different currencies seamlessly 
 
 ## Agile Development
 
@@ -425,14 +432,26 @@ The following programs and tools were used to develop the website:
 ### Django and Python Packages
 
 The following Django applicaitons and Python Packages were used to develop the website:
+- [asgiref](https://pypi.org/project/asgiref/) - ASGI (Asynchronous Server Gateway Interface) framework, a standard interface between web servers and Python web applications.
+- [boto3](https://pypi.org/project/boto3/) - Amazon Web Services (AWS) SDK for Python, providing access to AWS services.
+- [botocore](https://pypi.org/project/botocore/) - Low-level, core functionality of AWS SDK for Python (Boto3).
+- [dj-database-url](https://pypi.org/project/dj-database-url/) - A utility for utilizing database URLs in Django applications.
 - [Django](https://www.djangoproject.com/) - A Python-based web framework that follows the model-template-view architectural pattern, used for building the project.
 - [django-allauth](https://django-allauth.readthedocs.io/) - A Django application used for account registration, management, and authentication.
-- [gunicorn](https://pypi.org/project/gunicorn/) - A Python Web Server Gateway Interface (WSGI) HTTP server.
-- [boto3](https://pypi.org/project/boto3/) - Amazon Web Services (AWS) SDK for Python, providing access to AWS services.
-- [django-storages](https://pypi.org/project/django-storages/) - A collection of custom storage backends for Django.
+- [django-countries](https://pypi.org/project/django-countries/) - A Django application for providing country choices for forms.
 - [django-crispy-forms](https://pypi.org/project/django-crispy-forms/) - A Django application that makes it easy to style Django forms.
+- [django-storages](https://pypi.org/project/django-storages/) - A collection of custom storage backends for Django.
+- [gunicorn](https://pypi.org/project/gunicorn/) - A Python Web Server Gateway Interface (WSGI) HTTP server.
+- [jmespath](https://pypi.org/project/jmespath/) - A query language for JSON, allowing you to search and manipulate JSON data.
+- [oauthlib](https://pypi.org/project/oauthlib/) - A generic and reusable Python library for implementing OAuth1 and OAuth2 providers.
 - [Pillow](https://pypi.org/project/Pillow/) - The Python Imaging Library adds image processing capabilities to your Python interpreter.
-- [stripe](https://pypi.org/project/stripe/) - A Python library for the Stripe API.s
+- [psycopg2](https://pypi.org/project/psycopg2/) - A PostgreSQL adapter for Python.
+- [python3-openid](https://pypi.org/project/python3-openid/) - A set of Python packages for implementing OpenID Connect.
+- [requests-oauthlib](https://pypi.org/project/requests-oauthlib/) - OAuthlib authentication support for Requests.
+- [s3transfer](https://pypi.org/project/s3transfer/) - An Amazon S3 Transfer Manager for Python.
+- [sqlparse](https://pypi.org/project/sqlparse/) - A non-validating SQL parser module for Python.
+- [urllib3](https://pypi.org/project/urllib3/) - A powerful HTTP client for Python, which provides features such as connection pooling, request retries, and more.
+- [stripe](https://pypi.org/project/stripe/) - A Python library for the Stripe API.
 
 ## Testing
 
@@ -587,9 +606,4 @@ A list of references used for the site:
 
 ## Acknowledgements
 
-I would like to take this opportunity to acknowledge and thank the following people:
-
--
--
--
--
+I would like to acknowledge myself for embarking on this challenging journey. This project represents not only a technical endeavor but a testament of my commitment and perseverance. Despite the inevitable obstacles and setbacks encountered along the way, I stayed determined to see this course through to the end.The countless late nights, moments of frustration, and challenges overcome have all contributed to my personal and professional development. I am immensely proud of the progress made and the skills acquired throughout this journey. This project serves as a reminder of my resilience and determination, and I am excited to embrace future challenges.
