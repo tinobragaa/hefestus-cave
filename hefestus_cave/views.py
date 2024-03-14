@@ -17,7 +17,7 @@ def handler500(request):
     return render(request, "errors/500.html", status=500)
 
 
-def handler403(request):
+def handler403(request, exception):
     """
     Error Handler 403 - Forbidden.
     """
