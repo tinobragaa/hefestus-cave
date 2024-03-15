@@ -85,6 +85,10 @@ input[name='q']::placeholder {
     text-decoration: none;
 }
 
+.hidden {
+    display: none;
+}
+
 /* ----- Promotion Banner ----- */
 
 .bg-black {
@@ -274,7 +278,6 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-
 .form-control:-webkit-autofill,
 .form-control:-webkit-autofill:hover, 
 .form-control:-webkit-autofill:focus, 
@@ -420,6 +423,7 @@ input[name='q']::placeholder {
     }
   }
 
+
 /* 600px wide and down */
 @media (max-width: 600px) {
     footer .col-lg-4:nth-child(3) {
@@ -443,11 +447,19 @@ input[name='q']::placeholder {
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 160px;
     }
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    footer .col-lg-4:nth-child(3) a {
+        margin-bottom: 10px;
     }
 }
 
