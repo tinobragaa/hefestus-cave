@@ -2,14 +2,12 @@
     // Disable +/- buttons outside stock range
     function handleEnableDisable(itemId) {
         var currentValue = parseInt($(`.id_qty_${itemId}`).val());
-        max_stock = $(`.id_qty_${itemId}`).attr('max');
-        console.log('STOCK: ', max_stock)
-        var minusDisabled = currentValue < 2;p
-        var plusDisabled = currentValue >= max_stock;
-        console.log('MAX: ', currentValue)
+        var minusDisabled = currentValue < 2;
+        var plusDisabled = currentValue >= document.getElementById("ItemStock").value;
         $(`.decrement-qty_${itemId}`).prop('disabled', minusDisabled);
         $(`.increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
+
 
     // Ensure proper enabling/disabling of all inputs on page load
     var allQtyInputs = $('.qty_input');
