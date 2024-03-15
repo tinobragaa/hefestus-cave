@@ -140,6 +140,10 @@ input[name='q']::placeholder {
     width: 250px;
 }
 
+.newsletter-subdiv input:hover {
+    border: none;
+}
+
 .newsletter-subdiv {
     border-bottom: 1px solid #000;
 }
@@ -147,13 +151,6 @@ input[name='q']::placeholder {
 .newsletter-subdiv button:hover {
     color: #6c6565;
     transition: color 0.5s ease;
-}
-
-.newsletter-subdiv input:-webkit-autofill,
-.newsletter-subdiv input:-webkit-autofill:hover, 
-.newsletter-subdiv input:-webkit-autofill:focus, 
-.newsletter-subdiv input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px #fff inset;
 }
 
 .footer-logo {
@@ -234,6 +231,22 @@ input[name='q']::placeholder {
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
 }
+
+.form-control {
+    border-radius: 0;
+}
+
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover, 
+.form-control:-webkit-autofill:focus, 
+.form-control:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+}
+
+.form-control:hover, .form-control:focus {
+    border: 1px solid #000;
+}
+
 
 /* ----- Bootstrap Toasts ----- */
 
