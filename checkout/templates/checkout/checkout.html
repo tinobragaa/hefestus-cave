@@ -62,11 +62,17 @@
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>
                         <p class="my-0">Delivery Cost:</p>
+                        {% if discount > 0 %}
+                        <p class="my-0">Discount:</p>
+                        {% endif %}
                         <p class="my-0">Grand Total:</p>
                     </div>
                     <div class="col-3">
                         <p class="my-0">${{ total | floatformat:2 }}</p>
                         <p class="my-0">${{ delivery | floatformat:2 }}</p>
+                        {% if discount > 0 %}
+                        <p class="my-0">-€{{ savings|floatformat:2 }}</p>
+                        {% endif %}
                         <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
@@ -109,10 +115,6 @@
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                         <!-- Pass the client secret to the view so we can get the payment intent id -->
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
-                    </fieldset>
-                    <fieldset class="px-3">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Discount Code</legend>
-                        {{ order_form.discount_code | as_crispy_field }}
                     </fieldset>
                     <div class="submit-button text-right mt-5 mb-2">                    
 						<a href="{% url 'view_cart' %}" class="btn btn-outline-black rounded-0">

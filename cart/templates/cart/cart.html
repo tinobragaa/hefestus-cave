@@ -2,6 +2,7 @@
 {% load static %}
 {% load cart_tools %}
 
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -33,6 +34,7 @@
                             <th scope="col"></th>
                             <th scope="col">Qty</th>
                             <th scope="col">Price</th>
+                            <th scope="col">Subtotal</th>
                         </tr>
                     </thead>
 
@@ -57,15 +59,8 @@
                         </tr>
                     {% endfor %}
                         <tr>
-                            <td colspan="5" class="pt-5 text-right">
-                                <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-                                <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
-                                <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
-                                {% if free_delivery_delta > 0 %}
-                                    <p class="mb-1 text-danger">
-                                        You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
-                                    </p>
-                                {% endif %}
+                            <td colspan="5" class="pt-5">
+                                {% include "cart/includes/shopping_cart_details.html" %}
                             </td>
                         </tr>
                         <tr>

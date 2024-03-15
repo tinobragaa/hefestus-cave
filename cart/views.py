@@ -2,7 +2,11 @@ from django.shortcuts import (
     render, redirect, HttpResponse, reverse, get_object_or_404
 )
 from django.contrib import messages
+from django.views.generic import View
+from django.core.exceptions import ObjectDoesNotExist
 from products.models import Product
+from discount_codes.forms import DiscountForm
+from discount_codes.models import DiscountCode
 
 
 def view_cart(request):
@@ -10,7 +14,11 @@ def view_cart(request):
     A view to return the cart content page.
     """
 
-    return render(request, 'cart/cart.html')
+    context = {
+        'discount_form': DiscountForm(),
+    }
+
+    return render(request, 'cart/cart.html', context)
 
 
 def add_to_cart(request, item_id):
@@ -18,7 +26,7 @@ def add_to_cart(request, item_id):
     Add quantity of product to cart.
     """
 
-    product = Product.objects.get(pk=item_id)
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     cart = request.session.get('cart', {})
@@ -94,8 +102,8 @@ def get_discount_code(request, code):
     Verify whether the user-inputted code
     is valid. If valid, return the discount
     amount, otherwise, return 0.
-
     """
+
     try:
         discount_code = DiscountCode.objects.get(code=code)
         messages.info(request, "Successfully added coupon")
@@ -111,6 +119,7 @@ def add_discount(request, *args, **kwargs):
     via the discount code form, updating the
     session's discount code if the input is valid.
     """
+
     discount_form = DiscountForm(request.POST or None)
     discount = request.session.get('discount')
     if discount_form.is_valid():
@@ -124,6 +133,7 @@ def remove_discount(request):
     """
     Remove discount from session.
     """
+    
     del request.session['discount']
     messages.info(request, "Successfully removed coupon")
     return redirect(reverse('view_cart'))
