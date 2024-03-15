@@ -10,6 +10,7 @@ def cart_contents(request):
     total = 0
     product_count = 0
     cart = request.session.get('cart', {})
+    discount = request.session.get('discount')
 
     for item_id, quantity in cart.items():
         product = get_object_or_404(Product, pk=item_id)
@@ -30,6 +31,12 @@ def cart_contents(request):
 
     grand_total = delivery + total
 
+    if discount:
+        savings = ((grand_total/100) * discount)
+        grand_total -= savings
+    else:
+        savings = 0
+
     context = {
         'cart_items': cart_items,
         'total': total,
@@ -38,6 +45,8 @@ def cart_contents(request):
         'free_delivery_delta': free_delivery_delta,
         'free_shipping_threshold': settings.FREE_SHIPPING_THRESHOLD,
         'grand_total': grand_total,
+        'discount': discount,
+        'savings': savings,
     }
 
     return context
