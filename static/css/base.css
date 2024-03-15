@@ -116,9 +116,32 @@ input[name='q']::placeholder {
 
 /* ----- All Products View ----- */
 
-.product-image {
-    max-width: 100%;
-    object-fit: contain;
+.add-cart {
+    border: 1px solid #000;
+    border-radius: 0;
+}
+
+.add-cart:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.price-position {
+    text-align: center;
+    margin: 1px 0;
+}
+
+.button-soldout:focus {
+    box-shadow: none;
+}
+
+.card-footer:last-child {
+    border-radius: 0;
+}
+
+.card-box {
+    border: 1px solid #000;
+    border-radius: 0;
 }
 
 /* ----- Footer ----- */
