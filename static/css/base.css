@@ -144,6 +144,11 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/* ----- All Products View ----- */
+
+.invoice-line {
+    margin: 5px 0;
+}
 /* ----- Footer ----- */
 
 .newsletter-input {
