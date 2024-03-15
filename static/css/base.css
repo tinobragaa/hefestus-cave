@@ -262,9 +262,18 @@ input[name='q']::placeholder {
 	color: #17a2b8; /* text-info */
 }
 
+.btn:focus {
+    box-shadow: none; 
+}
+
+.input-group {
+    flex-direction: row-reverse;
+}
+
 .form-control {
     border-radius: 0;
 }
+
 
 .form-control:-webkit-autofill,
 .form-control:-webkit-autofill:hover, 
@@ -275,6 +284,7 @@ input[name='q']::placeholder {
 
 .form-control:hover, .form-control:focus {
     border: 1px solid #000;
+    box-shadow: none;
 }
 
 

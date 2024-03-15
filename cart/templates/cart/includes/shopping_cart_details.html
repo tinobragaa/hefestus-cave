@@ -7,13 +7,13 @@
 {% if discount > 0 %}
 <h6 class="mb-4">Discount: -€{{ savings|floatformat:2 }} <a class="text-danger" href="{% url 'remove-discount' %}"><i class="fa-regular fa-trash-can"></i></a></h6>
 {% else %}
-<form action="{% url 'add-discount' %}" method="POST">
+<form action="{% url 'add-discount' %}" class="form-container" method="POST">
     {% csrf_token %}
     <div class="input-group">
-        {{ discount_form|crispy  }}
         <div>
-        <button class="btn btn-outline-black ml-2" type="submit">Apply</button>
+            <button class="btn btn-outline-black ml-2 .no-box-shadow" type="submit">Apply</button>
         </div>
+        {{ discount_form|crispy  }}
     </div>
 </form>
 {% endif %}
