@@ -73,6 +73,7 @@ input[name='q']::placeholder {
     background: white;
     color: black !important;
     border: 1px solid black;
+    border-radius: 0;
 }
 
 .btn-outline-black:hover,
