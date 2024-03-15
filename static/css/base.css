@@ -91,7 +91,7 @@ input[name='q']::placeholder {
 /* ----- Hero Image ----- */
 
 .banner {
-    background: url('/media/hero-image.jpg') no-repeat center center;
+    background: url('/media/hero-image.webp') no-repeat center center;
     background-size: cover;
     height: 85vh;
 }
@@ -100,6 +100,7 @@ input[name='q']::placeholder {
     background: white;
     color: black;
     min-width: 260px;
+    border: 1px solid #000;
 }
 
 .shop-now-button:hover,
@@ -108,7 +109,7 @@ input[name='q']::placeholder {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #000;
     color: white;
 }
 
