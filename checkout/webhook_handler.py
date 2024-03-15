@@ -56,9 +56,9 @@ class StripeWH_Handler:
             intent.latest_charge
         )
 
-        billing_details = stripe_charge.billing_details 
+        billing_details = stripe_charge.billing_details
         shipping_details = intent.shipping
-        grand_total = round(stripe_charge.amount / 100, 2) 
+        grand_total = round(stripe_charge.amount / 100, 2)
 
         for field, value in shipping_details.address.items():
             if value == "":
@@ -74,8 +74,8 @@ class StripeWH_Handler:
                 profile.default_country = shipping_details.address.country
                 profile.default_postcode = shipping_details.address.postal_code
                 profile.default_town_or_city = shipping_details.address.city
-                profile.default_street_address1 = shipping_details.address.line1  
-                profile.default_street_address2 = shipping_details.address.line2  
+                profile.default_street_address1 = shipping_details.address.line1 # noqa
+                profile.default_street_address2 = shipping_details.address.line2 # noqa
                 profile.default_county = shipping_details.address.state
                 profile.save()
 
