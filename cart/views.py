@@ -87,3 +87,34 @@ def remove_from_cart(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
+
+
+def get_discount_code(request, code):
+    """
+    Verify whether the user-inputted code
+    is valid. If valid, return the discount
+    amount, otherwise, return 0.
+
+    """
+    try:
+        discount_code = DiscountCode.objects.get(code=code)
+        messages.info(request, "Successfully added coupon")
+        return discount_code.discount
+    except ObjectDoesNotExist:
+        messages.error(request, "This code does not exist")
+        return 0
+
+
+def add_discount(request, *args, **kwargs):
+    """
+    Handle user submission of a discount code
+    via the discount code form, updating the
+    session's discount code if the input is valid.
+    """
+    discount_form = DiscountForm(request.POST or None)
+    discount = request.session.get('discount')
+    if discount_form.is_valid():
+        code = discount_form.cleaned_data.get('code').upper()
+        discount_code = get_discount_code(request, code)
+        request.session['discount'] = discount_code
+        return redirect(reverse('view_basket'))
