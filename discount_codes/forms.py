@@ -1,5 +1,4 @@
 from django import forms
-from .models import DiscountCode
 
 
 class DiscountForm(forms.Form):

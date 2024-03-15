@@ -4,7 +4,6 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import get_object_or_404
 from products.models import Product
 from django.contrib import messages
-from . import views
 
 
 def cart_contents(request):
