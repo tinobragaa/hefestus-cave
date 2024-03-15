@@ -19,8 +19,8 @@
   
     {% block corecss %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Truculenta:opsz,wght@12..72,100..900&family=Yatra+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
   
@@ -48,12 +48,12 @@
   
     <title>HefestusCave {% block extra_title %}{% endblock %}</title>
   </head>
-  <body>
-    <header class="container-fluid fixed-top something">
+  <body class="d-flex flex-column min-vh-100">
+    <header class="container-fluid fixed-top">
       <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
           <a href="{% url 'home' %}" class="nav-link main-logo-link">
-            <h2 class="logo-font text-black my-0">HefestusCaves</h2>
+            <h2 class="logo-font text-black my-0">HefestusCave</h2>
           </a>
         </div>
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -77,10 +77,10 @@
                 aria-expanded="false">
                 <div class="text-center">
                   <div><i class="fa-regular fa-user fa-lg"></i></div>
-                  <p class="my-0">My Account</p>
+                  <p class="my-0">Account</p>
                 </div>
               </a>
-              <div class="dropdown-menu border-0" aria-labelledby="user-options">
+              <div class="dropdown-menu border-0 base-text-font" aria-labelledby="user-options">
                 {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
                 <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
@@ -122,7 +122,7 @@
       </div>
       <div id="delivery-banner" class="row text-center">
         <div class="col bg-black text-white">
-          <p class="text-md my-1">Free delivery on orders over €{{ free_shipping_threshold }}!</p>
+          <p class="text-md my-1 base-text-font">Free shipping: orders over €{{ free_shipping_threshold }}</p>
         </div>
       </div>
     </header>
@@ -148,13 +148,13 @@
     {% block page_header %}
     {% endblock %}
   
-    <main>
+    <main class="flex-grow-1">
       {% block content %}
       {% endblock %}
     </main>
   
     <!-- Footer -->
-    <footer class="container-fluid">
+    <footer class="container-fluid mt-auto">
       <div class="row my-4 footer-divs">
         <div class="col-lg-4 d-flex align-items-center justify-content-center">
           <form class="d-flex justify-content-center" method="POST" action="#">
@@ -162,15 +162,15 @@
             <div class="newsletter-subdiv my-2">
               <input class="form-control newsletter-input" type="email" name="email" placeholder="Email">
             </div>
-            <div class="newsletter-subdiv my-2">
-              <button class="btn" type="submit"><small><strong>SUBSCRIBE</strong></small></button>
+            <div class="newsletter-subdiv my-2 sub-heading-font">
+              <button class="btn text-uppercase" type="submit"><small><strong>Subscribe</strong></small></button>
             </div>
           </form>
         </div>
-        <div class="col-lg-4 d-flex align-items-center justify-content-center">
-          <small><a class="footer-logo" href="#">HEFESTUSCAVE</a></small>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center sub-heading-font">
+          <small><a class="footer-logo" href="#">HefestusCave</a></small>
         </div>
-        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+        <div class="col-lg-4 d-flex align-items-center justify-content-center sub-heading-font">
           <a class="footer-link" href="#">Contact</a>
           <a class="footer-link" href="#">Returns & Exchanges</a>
           <a class="footer-link" href="#">Policies</a>

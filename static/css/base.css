@@ -1,8 +1,25 @@
+body {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+}
+
 /* ----- Navigation ----- */
 
 .logo-font {
-    text-transform: uppercase;
+    font-family: 'Font1', sans-serif;
 }
+
+.sub-heading-font {
+    font-family: "Alegreya Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+@font-face {
+    font-family: 'Font1';
+    src: url('../fonts/Spikle.woff') format('woff');
+  }
+  
 
 .main-logo-link {
     width: fit-content;
@@ -76,7 +93,7 @@ input[name='q']::placeholder {
 .banner {
     background: url('/media/hero-image.jpg') no-repeat center center;
     background-size: cover;
-    height: 80vh;
+    height: 85vh;
 }
 
 .shop-now-button {
@@ -107,6 +124,7 @@ input[name='q']::placeholder {
 
 .newsletter-subdiv input::placeholder {
     font-size: small; 
+    color: #717171;
   }
 
 .newsletter-subdiv input {
@@ -132,11 +150,14 @@ input[name='q']::placeholder {
 .footer-logo {
     text-transform: uppercase;
     color: #000;
+    font-size: xx-large;
+    font-family: 'Font1', sans-serif;
 }
 
 .footer-logo:hover {
     text-decoration: none;
-    color: #000;
+    color: #ff0000;
+    transition: color 0.5s ease;
 }
 
 .footer-link {
