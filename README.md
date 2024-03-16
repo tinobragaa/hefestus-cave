@@ -13,10 +13,6 @@ I guess I should close with a branded call: Welcome to HefestusCave: where imagi
 
 [Live Website](https://www.hefestuscave.com/)
 
-## UX
-### Typography
-### Colour Scheme
-
 ## User Stories
 
 For the project's advancement, I generated user stories that detailed the essential tasks for achieving a well-constructed website. Following an agile development approach, I then categorized these user stories into six distinct epics on the Kanban board to manage the project's progression effectively.
@@ -85,6 +81,44 @@ To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projec
 - As a user, I want to be able to share content from the website on various social media platforms, including Facebook, Instagram, X, and Pinterest, so that I can engage with my social network and amplify the reach of interesting content.
 - As a user, I want to be able to change the language of the website so that I can access content in a language that is more familiar or comfortable for me.
 - As a site user, I want to be able to subscribe to the site's mailing list so that I can receive exclusive offers and updates directly in my inbox, enhancing my engagement with the website.
+
+## Design
+### Typography
+### Colour Scheme
+
+## SEO and Marketing
+
+### Business Model
+
+HefestusCave operates on a straightforward Business to Customer (B2C) model, catering to individual customers without the need for subscriptions or recurring fees. In its developmental phase, the platform already incorporates essential features such as a newsletter and integration with social media platforms for marketing purposes.
+
+Social media integration is crucial for HefestusCave's growth strategy, as it has the potential to build a strong community around the business and increase site traffic, particularly on widely used platforms like Facebook. The newsletter functionality allows the business to maintain direct communication with site users, informing them about special offers, new product releases, changes in business operations, upcoming events, and other relevant updates.
+
+These features are integral to HefestusCave's user engagement strategy, providing avenues for both marketing outreach and customer retention as the platform continues to develop and expand its offerings.
+
+### SEO
+
+- Descriptive meta tags were added to base.html which is extended on all the pages. Including title, description and keywords. Meta tags are important for SEO as they help search engines to understand what the page is about. Meta tags are also important for accessibility as they are used by screen readers to describe the page to the user.
+
+- Used xml-sitemaps to generate sitemap.xml file. Sitemap.xml file is important for SEO as it helps search engines to crawl the website. Sitemap.xml file is also important for accessibility as it helps screen readers to navigate the website.
+
+- Used robots.txt to tell search engines which pages to crawl and which pages to ignore. robots.txt file is important for SEO as it helps search engines to crawl the website. robots.txt file is also important for accessibility as it helps screen readers to navigate the website.
+
+- Add rel attribute to all links. rel attribute is important for SEO as it helps search engines to understand the relationship between pages. rel attribute is also important for accessibility as it helps screen readers to navigate the website.
+
+### Social Media Marketing
+
+Building a robust social presence with active engagement can significantly enhance sales. Integrating popular platforms like Facebook, known for their extensive user base, can effectively drive traffic to the business website.
+
+Furthermore, I've utilized a [Balsamiq](https://balsamiq.com/) template provided by Code Institute to design a mockup Facebook business account.
+
+![Facebook Mockup](/documentation/facebook-mockup.png)
+
+### Newsletter Marketing
+
+A newsletter sign-up form has been seamlessly integrated into the website footer. Streamlined for user convenience, this single-field form ensures a hassle-free experience for subscribers. The inclusion of a newsletter sign-up form holds significant importance in web marketing endeavors, as it serves as a conduit to engage with a broader audience. The service is facilitated through Mailchimp, a trusted platform renowned for its reliability and functionality.
+
+![Mailchimp Form](/documentation/newsletter-marketing.png)
 
 ## Wireframes
 
@@ -234,6 +268,20 @@ To streamline the site's design process, I've generated wireframes for each page
 
 </details>
 
+## Features 
+
+### Homepage
+- 
+-
+-
+<details>
+<summary>Homepage</summary>
+<br>
+
+![Homepage]()
+
+</details>
+
 ## Database Design
 
 I utilized [dbdiagram](https://dbdiagram.io/home) to create an entity relationship diagram, offering a clear visualization of the interconnections among my data structures. This streamlined the development process by offering a comprehensive visualization.
@@ -338,20 +386,6 @@ I utilized [dbdiagram](https://dbdiagram.io/home) to create an entity relationsh
 | Key   | Field Type | Validation     |
 | ----- | ---------- | -------------- |
 | email | EmailField | max_length=100 |
-
-## Features 
-
-### Homepage
-- 
--
--
-<details>
-<summary>Homepage</summary>
-<br>
-
-![Homepage]()
-
-</details>
 
 ## Future Features
 
