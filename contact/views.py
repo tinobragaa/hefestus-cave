@@ -55,10 +55,10 @@ def contact(request):
 
             subject = f'HefestusCave - Support Case Confirmation'
 
-            message = render_to_string('contact/case_confirmation_emails/case_confirmation.txt', {
-                    'name': name,
-                    'message': user_message
-                })
+            message = render_to_string(
+                'contact/case_confirmation_emails/case_confirmation.txt',
+                {'name': name, 'message': user_message}
+            )
 
             email_from = settings.DEFAULT_FROM_EMAIL
             email_to = [form.cleaned_data['email']]
