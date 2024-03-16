@@ -1,0 +1,16 @@
+Hi {{ name }}!
+
+Thank you for contacting us,
+we will be in touch with you shortly!
+
+This is a copy of your message:
+
+-----------------
+
+{{ message }}
+
+-----------------
+
+A member of the team will be in touch with you shortly!
+
+HefestusCave
