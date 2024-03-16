@@ -7,9 +7,9 @@ The platform offers users the opportunity to explore and purchase a curated sele
 
 Through HefestusCave, my goal is to provide a platform for showcasing his art and offering users a chance to own a piece of his imaginative world. Created with passion and driven by the intention to showcase my husband's drawings, HefestusCave represents not only a technical achievement but also a genuine dedication to sharing his talent with the world.
 
-I guess I should close with a branded call: Welcome to HefestusCave: where imagination meets commerce, and creativity knows no bounds!
+I guess I should close with a branded call. Welcome to HefestusCave: where imagination meets commerce, and creativity knows no bounds!
 
-![Mockup image]()
+![Website Mockup Image](/documentation/hefestuscave-mockup.png)
 
 [Live Website](https://www.hefestuscave.com/)
 
