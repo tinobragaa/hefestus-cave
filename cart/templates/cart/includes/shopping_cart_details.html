@@ -9,7 +9,7 @@
 {% else %}
 <form action="{% url 'add-discount' %}" class="form-container" method="POST">
     {% csrf_token %}
-    <div class="input-group">
+    <div class="input-group discount-box">
         <div>
             <button class="btn btn-outline-black ml-2 .no-box-shadow" type="submit">Apply</button>
         </div>

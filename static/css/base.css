@@ -220,6 +220,10 @@ input[name='q']::placeholder {
     color: #6c6565;
 }
 
+.subtotal-table thead tr th:last-child {
+    text-align: right;
+}
+
 /* ----- Allauth Form Formatting ----- */
 
 .allauth-form-inner-content p {
@@ -278,7 +282,7 @@ input[name='q']::placeholder {
     box-shadow: none; 
 }
 
-.input-group {
+.discount-box {
     flex-direction: row-reverse;
 }
 
