@@ -8,6 +8,14 @@ from .models import Contact
 from .forms import ContactForm
 
 
+def policies_page(request):
+    """
+    A view to return the policies page.
+    """
+
+    return render(request, 'contact/policies.html')
+
+
 def contact(request):
     """
     A view to return the contact page.
