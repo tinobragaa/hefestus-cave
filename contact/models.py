@@ -12,3 +12,6 @@ class Contact(models.Model):
     contact_reason = models.CharField(max_length=100)
     message = models.TextField(null=False, blank=False)
     date_submmited = models.DateTimeField(default=timezone.now)
+
+    def __str__(self) -> str:
+        return f'Contact {self.name} and message created'
