@@ -1,9 +1,8 @@
-Hi {{ name }}!
+Hey {{ name }},
 
-Thank you for contacting us,
-we will be in touch with you shortly!
+Thanks a bunch for dropping us a message! Your message is like a breath of fresh air. 🌬️
 
-This is a copy of your message:
+Here's what you shared:
 
 -----------------
 
@@ -11,6 +10,8 @@ This is a copy of your message:
 
 -----------------
 
-A member of the team will be in touch with you shortly!
+Expect to hear back from our crew real soon.
+
+May your dice roll ever in your favor,
 
 HefestusCave
