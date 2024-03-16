@@ -16,6 +16,14 @@ def policies_page(request):
     return render(request, 'contact/policies.html')
 
 
+def r_and_e(request):
+    """
+    A view to return the returns and exchanges page.
+    """
+
+    return render(request, 'contact/legal/returns_excchanges.html')
+
+
 def contact(request):
     """
     A view to return the contact page.
