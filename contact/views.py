@@ -21,7 +21,7 @@ def r_and_e(request):
     A view to return the returns and exchanges page.
     """
 
-    return render(request, 'contact/legal/returns_excchanges.html')
+    return render(request, 'contact/returns_excchanges.html')
 
 
 def contact(request):
@@ -55,7 +55,7 @@ def contact(request):
 
             subject = f'HefestusCave - Support Case Confirmation'
 
-            message = render_to_string('contact/case_confirmation.txt', {
+            message = render_to_string('contact/case_confirmation_emails/case_confirmation.txt', {
                     'name': name,
                     'message': user_message
                 })
