@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}| Returns & Exchanges{% endblock %}
+
+{% block extra_meta %}
+<meta name="keywords" content="polivy, terms of use, contract, support">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="p-3 p-sm-4 p-lg-5">
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 col-lg-6 col-xl-5">
+                <div>
+                    <h1 class="font-weight-bold text-center mb-3 text-uppercase logo-font">Policies</h1>
+                    <div>
+                        <h3>Order Processing Time:</h3>
+                        <p>Orders are typically processed and shipped within 1-2 business days of receipt. In the event of any delays or issues with your order, our customer service team will promptly notify you via email.</p>
+                    </div>
+                    <div>
+                        <h3>Shipping:</h3>
+                        <p>We offer standard shipping options with estimated delivery times provided at checkout. Expedited shipping options are available for an additional fee. Please ensure that your shipping address is correct as we are not responsible for orders shipped to incorrect addresses provided by the customer.</p>
+                    </div>
+                    <div>
+                        <h3>Returns and Exchanges:</h3>
+                        <p>We accept returns and exchanges within 30 days of purchase. Items must be unused, in their original packaging, and accompanied by a receipt or proof of purchase. Return shipping fees are the responsibility of the customer unless the return is due to an error on our part.</p>
+                    </div>
+                    <div>
+                        <h3>Refunds:</h3>
+                        <p>Refunds will be issued to the original payment method used at the time of purchase. Once your return is received and inspected, we will notify you of the approval or rejection of your refund. If approved, refunds will be processed within 5-7 business days.</p>
+                    </div>
+                    <div>
+                        <h3>Contact Us:</h3>
+                        <p>If you have any questions or concerns regarding your order, please don't hesitate to contact our customer service team through the <a href="{% url 'contact' %}">Contact</a> form.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
