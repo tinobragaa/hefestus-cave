@@ -171,28 +171,29 @@ input[name='q']::placeholder {
 
 .newsletter-input:focus {
     box-shadow: none;
+    border: none !important;
 }
 
-.newsletter-subdiv input::placeholder {
-    font-size: small; 
-    color: #717171;
-  }
-
-.newsletter-subdiv input {
-    width: 250px;
+.newsletter-input:hover {
+    border: none !important;
 }
 
-.newsletter-subdiv input:hover {
-    border: none;
+.subscribe-btn-newsletter {
+    font-weight: bolder;
 }
 
-.newsletter-subdiv {
-    border-bottom: 1px solid #000;
-}
-
-.newsletter-subdiv button:hover {
+.subscribe-btn-newsletter:hover {
     color: #6c6565;
     transition: color 0.5s ease;
+}
+
+.newsletter-container {
+    border-bottom: 1px solid #000;
+    margin-bottom: 5px;
+}
+
+#mc-embedded-subscribe {
+    margin: 0 !important;
 }
 
 .footer-logo {

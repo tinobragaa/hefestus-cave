@@ -163,29 +163,44 @@
     <!-- Footer -->
     <footer class="container-fluid mt-auto">
       <div class="row my-4 footer-divs">
-        <div class="col-lg-4 d-flex align-items-center justify-content-center">
-          <form class="d-flex justify-content-center" method="POST" action="#">
-            {% csrf_token %}
-            <div class="newsletter-subdiv my-2">
-              <input class="form-control newsletter-input" type="email" name="email" placeholder="Email">
-            </div>
-            <div class="newsletter-subdiv my-2 sub-heading-font">
-              <button class="btn text-uppercase" type="submit"><small><strong>Subscribe</strong></small></button>
-            </div>
-          </form>
-        </div>
-        <div class="col-lg-4 d-flex align-items-center justify-content-center sub-heading-font">
-          <small><a class="footer-logo" href="{% url 'home' %}">HefestusCave</a></small>
-        </div>
-        <div class="col-lg-4 d-flex align-items-center justify-content-center sub-heading-font">
-          <a class="footer-link" href="#">Contact</a>
-          <a class="footer-link" href="#">Returns & Exchanges</a>
-          <a class="footer-link" href="#">Policies</a>
-          <a class="footer-link" href="https://www.instagram.com/hefestuscave" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">Instagram</a>
-          <a class="footer-link" href="https://hefestuscave.artstation.com/" target="_blank" rel="noopener" aria-label="Visit our Artstation page (opens in a new tab)">Artstation</a>
-        </div>
+          <div class="col-lg-4 d-flex align-items-center justify-content-center">
+              <div class="d-flex justify-content-center">
+                  <form action="https://hefestuscave.us18.list-manage.com/subscribe/post?u=337aaf7cd20fe582d151e0182&amp;id=3fbeb5716e&amp;f_id=002a2ce2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                      {% csrf_token %}
+                      <div class="row newsletter-container">
+                          <div class="col">
+                              <div>
+                                  <input class="form-control newsletter-input" type="email" name="EMAIL" placeholder="Email" id="mce-EMAIL" required="" value="">
+                              </div>
+                          </div>
+                          <div>
+                            <div>
+                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn subscribe-btn-newsletter" value="SUBSCRIBE">
+                            </div>
+                          </div>
+                      </div>
+                      <div id="mce-responses" class="clear foot">
+                          <div class="response" id="mce-error-response" style="display: none;"></div>
+                          <div class="response" id="mce-success-response" style="display: none;"></div>
+                      </div>
+                      <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                          <input type="text" name="b_337aaf7cd20fe582d151e0182_3fbeb5716e" tabindex="-1" value="">
+                      </div>
+                  </form>
+              </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-center justify-content-center sub-heading-font">
+              <small><a class="footer-logo" href="{% url 'home' %}">HefestusCave</a></small>
+          </div>
+          <div class="col-lg-4 d-flex align-items-center justify-content-center sub-heading-font">
+              <a class="footer-link" href="#">Contact</a>
+              <a class="footer-link" href="#">Returns & Exchanges</a>
+              <a class="footer-link" href="#">Policies</a>
+              <a class="footer-link" href="https://www.instagram.com/hefestuscave" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">Instagram</a>
+              <a class="footer-link" href="https://hefestuscave.artstation.com/" target="_blank" rel="noopener" aria-label="Visit our Artstation page (opens in a new tab)">Artstation</a>
+          </div>
       </div>
-    </footer>
+  </footer>
   
     {% block postloadjs %}
       <script type="text/javascript">
@@ -196,27 +211,3 @@
   
   </body>
 </html>
-
-
-
-
-<div id="mc_embed_signup">
-<form action="https://hefestuscave.us18.list-manage.com/subscribe/post?u=337aaf7cd20fe582d151e0182&amp;id=3fbeb5716e&amp;f_id=002a2ce2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-    <div id="mc_embed_signup_scroll">
-        <div class="mc-field-group"><label for="mce-EMAIL"></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
-    <div id="mce-responses" class="clear foot">
-        <div class="response" id="mce-error-response" style="display: none;"></div>
-        <div class="response" id="mce-success-response" style="display: none;"></div>
-    </div>
-<div aria-hidden="true" style="position: absolute; left: -5000px;">
-    <input type="text" name="b_337aaf7cd20fe582d151e0182_3fbeb5716e" tabindex="-1" value="">
-</div>
-    <div class="optionalParent">
-        <div class="clear foot">
-            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-            <p style="margin: 0px auto;"><a href="http://eepurl.com/iMawiY" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
-        </div>
-    </div>
-</div>
-</form>
-</div>
