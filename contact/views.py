@@ -21,7 +21,7 @@ def r_and_e(request):
     A view to return the returns and exchanges page.
     """
 
-    return render(request, 'contact/returns_excchanges.html')
+    return render(request, 'contact/returns_exchanges.html')
 
 
 def contact(request):
