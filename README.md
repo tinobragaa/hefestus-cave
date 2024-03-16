@@ -83,8 +83,26 @@ To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projec
 - As a site user, I want to be able to subscribe to the site's mailing list so that I can receive exclusive offers and updates directly in my inbox, enhancing my engagement with the website.
 
 ## Design
+
+In crafting the design for HefestusCave, I drew inspiration from a fusion of high culture aesthetics and modern design principles. My goal was to evoke an air of artistry while maintaining a contemporary appeal, resonating with both the streets and renowned museums like [Moco](https://mocomuseum.com/).
+
 ### Typography
+
+For the typography, I opted for a blend of sophistication and modernity. The logo and primary headings feature the bespoke font "Spikle," designed by [Valentino Vergan](https://www.behance.net/valentinovergan), specifically acquired for the website. Complemented by various weights of the "Alegreya Sans" font from Google Fonts, the typography conveys a sense of refinement and abstraction.
+
+![Spikle Font](/documentation/spikle-font.png)
+
+![Alegreya Sans Font](/documentation/alegreya-font.png)
+
 ### Colour Scheme
+
+The colour palette employed in our design revolves around a playful interplay between classic contrasts of black and white, with a vibrant pop of bright neon orange. This combination not only exudes a modern vibe but also adds a dynamic energy to the overall aesthetic.
+
+![Colour Scheme](/documentation/colour-scheme.png)
+
+### Imagery
+
+All illustrations and books showcased on the website are authentic works created by my husband through previous commissions. To visualize these products, we utilized mockups created in Photoshop, with the structural framework sourced from ls.graphics. It's important to note that the dice designs are generated using [OpenArt](https://openart.ai/) and do not exist as physical products. If you are interested in comssioning a draw, you can contact my husband on [HefestusCave Instagram](https://www.instagram.com/hefestuscave/) on through the email hefestuscave@gmail.com.
 
 ## SEO and Marketing
 
@@ -116,7 +134,7 @@ Furthermore, I've utilized a [Balsamiq](https://balsamiq.com/) template provided
 
 ### Newsletter Marketing
 
-A newsletter sign-up form has been seamlessly integrated into the website footer. Streamlined for user convenience, this single-field form ensures a hassle-free experience for subscribers. The inclusion of a newsletter sign-up form holds significant importance in web marketing endeavors, as it serves as a conduit to engage with a broader audience. The service is facilitated through Mailchimp, a trusted platform renowned for its reliability and functionality.
+A newsletter sign-up form has been seamlessly integrated into the website footer. Streamlined for user convenience, this single-field form ensures a hassle-free experience for subscribers. The inclusion of a newsletter sign-up form holds significant importance in web marketing endeavors, as it serves as a conduit to engage with a broader audience. The service is facilitated through [Mailchimp](https://mailchimp.com/), a trusted platform renowned for its reliability and functionality.
 
 ![Mailchimp Form](/documentation/newsletter-marketing.png)
 
@@ -446,12 +464,18 @@ The following programs and tools were used to develop the website:
 - [Stripe](https://stripe.com/gb) has been used for the payment processing and webhooks handling.
 - [GitHub](https://github.com/) - Source code hosted on GitHub, deployed using Git Pages.
 - [GitPod](https://www.gitpod.io/) - Used to commit, comment and push code during the development process.
-- [Font Awesome](https://fontawesome.com/) - Font Awesome use to source necessary icons used in the project.
+- [Font Awesome](https://fontawesome.com/) - Used to source necessary icons used in the project.
+- [ls.graphics](https://www.ls.graphics/free-mockups) - Used to to create the store's placeholders and mockups.
+- [Behance](https://www.behance.net/) - Used to research design trends.
+- [OpenArt](https://openart.ai/create) - Used to create the dice images.
 - [Balsamiq](https://balsamiq.com/) - Used to create wireframes and website structure map for the project.
+- [Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html) - Used to design the store's mockups and placeholders. 
 - [Gramarly](https://app.grammarly.com/) - Used for general spell-check.
 - [Google Fonts](https://fonts.google.com/) - Used to import fonts to the project.
 - [Heroku](https://www.heroku.com/) - Used to deploy the project.
 - [dbdiagram](https://dbdiagram.io/home) - Used to make the database design.
+- [Am I Responsive?](https://ui.dev/amiresponsive) - Used to create the website mockup.
+- [TOC](https://ecotrust-canada.github.io/markdown-toc/) - Used to create the TOC of this file.
 - [ElephantSQL](https://www.elephantsql.com/) - Free and open-source relational database management system (RDBMS).
 - [Bootstrap](https://getbootstrap.com/) - Used for adding predefined styled elements and creating responsiveness.
 - [JsHint](https://jshint.com/) - Used for validating the javascript code.
@@ -640,4 +664,4 @@ A list of references used for the site:
 
 ## Acknowledgements
 
-I would like to acknowledge myself for embarking on this challenging journey. This project represents not only a technical endeavor but a testament of my commitment and perseverance. Despite the inevitable obstacles and setbacks encountered along the way, I stayed determined to see this course through to the end.The countless late nights, moments of frustration, and challenges overcome have all contributed to my personal and professional development. I am immensely proud of the progress made and the skills acquired throughout this journey. This project serves as a reminder of my resilience and determination, and I am excited to embrace future challenges.
+I'd like to take a moment to thank myself for the relentless effort and determination I've shown in completing my bootcamp journey. It's been a challenging road, but I've pushed through every obstacle and stayed committed to my growth and learning. This experience has taught me invaluable lessons and has helped me develop both personally and professionally. Here's to acknowledging the hard work and dedication that have brought me to this point, and to continuing this journey with resilience and determination.
