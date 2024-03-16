@@ -96,12 +96,12 @@
               </div>
             </li>
             <li class="list-inline-item">
-              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_cart' %}">
+              <a class="text-black nav-link" href="{% url 'view_cart' %}">
                 <div class="text-center">
-                  <div><i class="fa-solid fa-cart-shopping fa-lg"></i></div>
+                  <div><i class="{% if grand_total %}text-orange{% else %} text-black {% endif %} fa-solid fa-cart-shopping fa-lg"></i></div>
                   <p class="my-0">
                     {% if grand_total %}
-                    €{{ grand_total|floatformat:2 }}
+                    <span class="font-weight-bold">€{{ grand_total|floatformat:2 }}</span>
                     {% else %}
                     €0.00
                     {% endif %}
@@ -182,6 +182,7 @@
           <a class="footer-link" href="#">Returns & Exchanges</a>
           <a class="footer-link" href="#">Policies</a>
           <a class="footer-link" href="https://www.instagram.com/hefestuscave" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">Instagram</a>
+          <a class="footer-link" href="https://hefestuscave.artstation.com/" target="_blank" rel="noopener" aria-label="Visit our Artstation page (opens in a new tab)">Artstation</a>
         </div>
       </div>
     </footer>

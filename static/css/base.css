@@ -25,6 +25,10 @@ body {
     width: fit-content;
 }
 
+.text-orange {
+    color: #ff2e2e;
+}
+
 /* From Bulma */
 .icon {
     align-items: center;
@@ -83,6 +87,10 @@ input[name='q']::placeholder {
     background: black;
     color: white !important;
     text-decoration: none;
+}
+
+.navbar {
+    padding: 0;
 }
 
 .hidden {
@@ -474,7 +482,7 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 160px;
+        padding-top: 145px;
     }
 }
 
