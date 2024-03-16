@@ -40,6 +40,7 @@ def checkout(request):
 
     if request.method == 'POST':
         cart = request.session.get('cart', {})
+        discount = request.session.get('discount')
 
         form_data = {
             'full_name': request.POST['full_name'],
@@ -68,9 +69,10 @@ def checkout(request):
                         product=product,
                         quantity=item_data,
                     )
-                    # Reduce stock on purchase
+
                     product.stock = product.stock - order_line_item.quantity
                     product.save()
+
                     order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
@@ -80,6 +82,14 @@ def checkout(request):
                     )
                     order.delete()
                     return redirect(reverse('view_cart'))
+            
+            if discount:
+                savings = ((order.grand_total/100) * discount)
+                order.grand_total -= savings
+                order.discount = savings
+                order.save()
+            else:
+                savings = 0
 
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse(
@@ -142,7 +152,8 @@ def checkout_success(request, order_number):
     Handle successful checkouts.
     """
     save_info = request.session.get('save_info')
-    del request.session['discount']
+    if 'discount' in request.session:
+        del request.session['discount']
     order = get_object_or_404(Order, order_number=order_number)
 
     if request.user.is_authenticated:
