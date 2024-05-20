@@ -13,9 +13,70 @@ I guess I should close with a branded call. Welcome to HefestusCave: where imagi
 
 [Live Website](https://www.hefestuscave.com/)
 
+## Table of Contents
+
+- [Hefestus Cave](#hefestus-cave)
+  * [User Stories](#user-stories)
+    + [Development Setup](#development-setup)
+    + [User Authentication and Account Management](#user-authentication-and-account-management)
+    + [Product Management and Shopping Cart](#product-management-and-shopping-cart)
+    + [Checkout and Payment](#checkout-and-payment)
+    + [Content Management and User Interaction](#content-management-and-user-interaction)
+    + [SEO and Marketing](#seo-and-marketing)
+  * [Design](#design)
+    + [Typography](#typography)
+    + [Colour Scheme](#colour-scheme)
+    + [Imagery](#imagery)
+  * [SEO and Marketing](#seo-and-marketing-1)
+    + [Business Model](#business-model)
+    + [SEO](#seo)
+    + [Social Media Marketing](#social-media-marketing)
+    + [Newsletter Marketing](#newsletter-marketing)
+  * [Wireframes](#wireframes)
+    + [Homepage Wireframes](#homepage-wireframes)
+    + [All Products Wireframes](#all-products-wireframes)
+    + [Product's Detail Wireframes](#product-s-detail-wireframes)
+    + [Sign Up Wireframes](#sign-up-wireframes)
+    + [Sign In Wireframes](#sign-in-wireframes)
+    + [Sign Out Wireframes](#sign-out-wireframes)
+    + [Cart Wireframes](#cart-wireframes)
+    + [Checkout Wireframes](#checkout-wireframes)
+    + [Order Confirmation Page Wireframes](#order-confirmation-page-wireframes)
+  * [Features](#features)
+    + [Existing Features](#existing-features)
+    + [Future Features](#future-features)
+  * [Database Design](#database-design)
+    + [UserAllAuth Model](#userallauth-model)
+    + [UserProfile Model](#userprofile-model)
+    + [Order model](#order-model)
+    + [OrderLineItem Model](#orderlineitem-model)
+    + [Product Model](#product-model)
+    + [Category Model](#category-model)
+    + [Contact Model](#contact-model)
+    + [CouponCode Model](#couponcode-model)
+    + [NewsletterSubscribe Model](#newslettersubscribe-model)
+  * [Agile Development](#agile-development)
+    + [GitHub Projects](#github-projects)
+    + [GitHub Issues](#github-issues)
+    + [MoSCoW Prioritization](#moscow-prioritization)
+  * [Technologies Used](#technologies-used)
+    + [Languages and Frameworks](#languages-and-frameworks)
+    + [Resources and Tools](#resources-and-tools)
+    + [Django and Python Packages](#django-and-python-packages)
+  * [Testing](#testing)
+  * [Deployment](#deployment)
+    + [ElephantSQL Database](#elephantsql-database)
+    + [Stripe API](#stripe-api)
+    + [Deploy with Heroku](#deploy-with-heroku)
+    + [Custom Domain and SSL Certificate:](#custom-domain-and-ssl-certificate-)
+    + [Fork](#fork)
+    + [Clone](#clone)
+  * [Credits](#credits)
+  * [Acknowledgements](#acknowledgements)
+
 ## User Stories
 
-For the project's advancement, I generated user stories that detailed the essential tasks for achieving a well-constructed website. Following an agile development approach, I then categorized these user stories into six distinct epics on the Kanban board to manage the project's progression effectively.
+For the project's advancement, I generated user stories that detailed the essential tasks for achieving a well-constructed website. Following an agile development approach, I then categorized these user stories into six distinct Epics on the Kanban board to manage the project's progression effectively.
 
 To see the User Stories list, click [here](https://github.com/tinobragaa/hefestus-cave/issues?q=is%3Aissue+sort%3Acreated-asc).
 <br>
@@ -25,7 +86,7 @@ To see the Epics List, click [here](https://github.com/tinobragaa/hefestus-cave/
 
 To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projects/5).
 
-### Development Setup:
+### Development Setup
 
 - As a developer, I want to create user stories for project planning using agile methodology so that I can efficiently plan and organize project requirements.
 - As a developer, I want to create a wireframe so that I can visualize the project's layout and design and have a clear reference for implementation.
@@ -36,7 +97,7 @@ To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projec
 - As a developer, I want to create a database schema for the project so that I can have a clear idea of what models I need to create.
 - As a developer, I want to plan my database interactions so that I can effectively organize and structure my project.
 
-### User Authentication and Account Management:
+### User Authentication and Account Management
 
 - As a user, I want to be able to create an account on the site so that I can conveniently save my billing and shipping details, as well as access a history of my purchases in one central location.
 - As a user, I want to be able to edit the details saved to my account so that I can keep my information up-to-date and accurate.
@@ -44,7 +105,7 @@ To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projec
 - As a user, I want to be able to reset my password if I forget it so that I can access my account.
 - As a developer, I need to style the allauth pages so that they fit with the theme styling.
 
-### Product Management and Shopping Cart:
+### Product Management and Shopping Cart
 
 - As a user, I want to be able to view a comprehensive list of all products available on the site so that I can browse and explore the full range of offerings.
 - As a user, I want to be able to see the prices of products clearly so that I can make informed decisions about whether or not to purchase.
@@ -58,13 +119,14 @@ To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projec
 - As a user, I want to be able to add products to a wishlist so that I can keep a collection of items I am interested in buying in the future.
 - As a user, I want to be able to review products that I have purchased so that I can share my experience with other potential customers.
 
-### Checkout and Payment:
+### Checkout and Payment
 
 - As a user, I want to be able to securely pay for my purchase using Stripe during checkout, so that I can complete the transaction smoothly and begin enjoying my products.
 - As a user, I want to be able to receive an order confirmation email after I purchase from the shop so that I can have a record of what I've purchased in my email inbox.
-- As a site user, I want to be able to apply discount codes in my basket so that I can receive a discount on my purchase.
+- As a site user, I want to be able to apply discount codes in my cart so that I can receive a discount on my purchase.
+- As a user, I want to have an express checkout option that allows me to save my payment information securely in a digital wallet within my account, so that I can complete transactions quickly without having to enter payment details every time I make a purchase.
 
-### Content Management and User Interaction:
+### Content Management and User Interaction
 
 - As a user, I want to be able to navigate between related pages easily so that I can find relevant content and information quickly and efficiently.
 - As a user, I want to be able to clearly understand the purpose of the website so that I can form an impression and decide whether or not to engage further.
@@ -73,14 +135,16 @@ To see the Kanban Board, click [here](https://github.com/users/tinobragaa/projec
 - As a developer, I need to create a 404 page so that users are redirected when entering a broken URL.
 - As a site admin, I want to ensure that the website is designed and developed with accessibility features so that users with disabilities can navigate and interact with the site effectively.
 - As a site admin, I want to be able to ensure the web app's responsiveness across all screen sizes so that users can smoothly switch devices and access the application without any constraints, ensuring a seamless user experience.
+- As a user, I want to view product prices and complete transactions in my preferred currency so that I can better understand the costs and avoid currency conversion fees.
 
-### SEO and Marketing:
+### SEO and Marketing
 
 - As a site admin, I want to be able to optimize SEO so that my website ranks higher in search engine results, increasing visibility and attracting more organic traffic.
 - As a site admin, I want to leverage social media marketing strategies, specifically through meta platforms, to maximize brand visibility, engage with potential customers, and drive conversions.
 - As a user, I want to be able to share content from the website on various social media platforms, including Facebook, Instagram, X, and Pinterest, so that I can engage with my social network and amplify the reach of interesting content.
 - As a user, I want to be able to change the language of the website so that I can access content in a language that is more familiar or comfortable for me.
 - As a site user, I want to be able to subscribe to the site's mailing list so that I can receive exclusive offers and updates directly in my inbox, enhancing my engagement with the website.
+- As a user, I want to earn points for every purchase I make, which I can redeem for discounts or free products in the future, so that I feel rewarded for my loyalty and continue shopping at this store.
 
 ## Design
 
@@ -286,19 +350,557 @@ To streamline the site's design process, I've generated wireframes for each page
 
 </details>
 
-## Features 
+## Features
 
-### Homepage
-- 
--
--
-<details>
-<summary>Homepage</summary>
-<br>
+### Existing Features
 
-![Homepage]()
+- **Landing Page**
 
-</details>
+    - When users arrive at the site for the first time, they are welcomed and given several options: explore products via the "Shop Now" button, browse links in the navigation bar, and find additional information in the footer.
+    <br>
+    <details>
+    <summary>Landing Page</summary>
+    <br>
+
+    ![screenshot](/documentation/features/landing-page.jpg)
+
+    </details>
+
+- **Sign Up Page**
+
+    - This is where the user can create an account for themselves by entering their desired email, username and password. If the user accidentally comes to this page instead of the login page they can get to the right page using the link in the card text.
+    <br>
+    <details>
+    <summary>Sign Up Page</summary>
+    <br>
+
+    ![screenshot](/documentation//features/sign-up-page.jpg)
+
+    </details>
+
+- **Sign In Page**
+
+    - This is where users with existing accounts can log in with their username or email and password. They can choose to let their browser remember them if they plan on returning to the site on the same device to avoid having to log in again. There's a link to the sign up page too if the user accidentally navigated to this page instead of trying to create an account.
+    <br>
+    <details>
+    <summary>Sign In Page</summary>
+    <br>
+
+    ![screenshot](/documentation/features/sign-in-page.jpg)
+
+    </details>
+
+- **Sign Out Page**
+
+    - When the user wants to finish their session and logout, they can do so from the nav menu. When a user clicks the "Sign Out" button they're met with a page asking them to confirm they want to log out. They're redirected to the landing page if they click the confirmation button and a message pops up confirming that they've logged out.
+    <br>
+    <details>
+    <summary>Sign Out Page</summary>
+    <br>
+
+    ![screenshot](/documentation/features/sign-out-page.jpg)
+
+    </details>
+
+- **Reset Password Page**
+
+    - If a user is trying to log in and has forgotten their password they can visit the password reset page. Here a user must enter their email address they used to sign up with and an email will be sent to them with further instructions on resetting their password to regain access to their account.
+    <br>
+    <details>
+    <summary>Reset Password Page</summary>
+    <br>
+
+    ![screenshot](/documentation/features/reset-password-page.jpg)
+
+    </details>
+    <details>
+    <summary>Reset Password Email</summary>
+    <br>
+
+    ![screenshot](/documentation/features/reset-password-email.jpg)
+
+    </details>
+    <details>
+    <summary>Change Password Page</summary>
+    <br>
+
+    ![screenshot](/documentation/features/change-password-page.jpg)
+
+    </details>
+    <details>
+    <summary>New Password Confirmation</summary>
+    <br>
+
+    ![screenshot](/documentation/features/change-password-confirmation.jpg)
+
+    </details>
+
+- **Navigation Bar**
+
+    - The main navigation bar is accessible throughout the entire site, offering essential features such as a logo link redirecting to the homepage, a search bar for easy product discovery, access to the user's account/profile, a cart link displaying the number of items and running total if items are added to the cart, a banner advertising free shipping and links to product categories for streamlined navigation.
+    <br>
+    <details>
+    <summary>Navigation Bar</summary>
+    <br>
+
+    ![screenshot](/documentation/features/navigation-bar.jpg)
+
+    </details>
+
+- **Category Navigation**
+
+    - Through the navigation bar, users can filter products when selecting to view all products. They can sort products by price, category, sale status, and newest arrivals. Additionally, users can choose specific categories and subcategories they wish to explore further.
+    <br>
+    <details>
+    <summary>All Products Filtering</summary>
+    <br>
+
+    ![screenshot](/documentation/features/all-product-filtering.jpg)
+
+    </details>
+    <details>
+    <summary>Category/Subcategory Navigation</summary>
+    <br>
+
+    ![screenshot](/documentation/features/categories-subcategories.jpg)
+
+    </details>
+
+- **Search Bar**
+
+    - Users can use the navigation's search bar to find specific products. The search term is matched up with products' name and description to give the user a list of products to match their search query.
+    <br>
+    <details>
+    <summary>Search Bar</summary>
+    <br>
+
+    ![screenshot](/documentation/features/search-bar.jpg)
+
+    </details>
+
+- **Footer**
+
+    - This appears across the whole site and contains links to the contact us page, returns & exchanges pages, policies, social media pages (instagram and artstation) and a form to subscribe to the newsletter (mailchimp integration).
+    <br>
+    <details>
+    <summary>Footer</summary>
+    <br>
+
+    ![screenshot](/documentation/features/footer.jpg)
+
+    </details>
+
+- **All Products Page**
+
+    - This page displays all the products available for sale on the site. It includes a button to quickly return to the top of the page, a product count section, and a dropdown box for filtering products.
+    <br>
+    <details>
+    <summary>All Products Page</summary>
+    <br>
+
+    ![screenshot](/documentation/features/all-products-page.jpg)
+
+    </details>
+
+- **Product Stock Count**
+
+    - Every product has a finite stock left for each product. If the product has less than 3 (2 or 1) stock left then the badge displaying the count is displayed to add a sense of urgency. When a product is purchased, the stock will automatically decrease by the number of units of each product the customer purchases. When a product's stock reaches 0, the "add to cart" button replaced with a "sold out" text and button is disabled so product is not able to be added to the user's cart.
+    <br>
+    <details>
+    <summary>Product Stock</summary>
+    <br>
+
+    ![screenshot](/documentation/features/product-stock.jpg)
+
+    </details>
+
+- **Add to Cart Button**
+
+    - Every product has a button that lets the user to add it to their cart when viewing it both on the products listing pages or the individual product page. This adds one unit of the product to the user's cart and they can increase the quantity from their cart if they want to purchase more than one. When clicking on the button, the user is shown a message confirming when an item has been added to their cart. If there is no stock, the button is disabled and the text is changed to "sold out". 
+    <br>
+    <details>
+    <summary>Add to Cart Button</summary>
+    <br>
+
+    ![screenshot](/documentation/features/add-to-cart-button.jpg)
+
+    </details>
+    <details>
+    <summary>Added to Cart Confirmation Message</summary>
+    <br>
+
+    ![screenshot](/documentation/features/add-to-cart-message.jpg)
+
+    </details>
+    <details>
+    <summary>Sold Out Button</summary>
+    <br>
+
+    ![screenshot](/documentation/features/sold-out-button.jpg)
+
+    </details>
+
+- **Product Card**
+
+    - Each product is displayed on its own card, featuring the product image, name, price, "add to cart"/"sold out" button and a low stock tag if the stock is under 3 (1 or 2). If a product is out of stock, the "Add to Cart" button is disabled and shows "Sold Out." Logged-in admins will also see edit and delete buttons for each product.
+    <br>
+    <details>
+    <summary>Product Card</summary>
+    <br>
+
+    ![screenshot](/documentation/features/product-card.jpg)
+
+    </details>
+
+- **Product Filtering**
+
+    - When the user is viewing the products listing pages, they can sort the products in a number of ways. Products can be sorted by: Price (low to high), Price (high to low), Name (A-Z), Name (Z-A), Category (A-Z) and Category (Z-A).
+    <br>
+    <details>
+    <summary>Product Filtering</summary>
+    <br>
+
+    ![screenshot](/documentation/features/product-filtering.jpg)
+
+    </details>
+
+- **Individual Product Page**
+
+    - Each product also has its own individual page for the user to see more information about the product including a description, stock information, quantity selector along with buttons to add the product to the user's cart or to return to the all products page and keep shopping. Logged-in admins will also see edit and delete buttons for each product.
+    <br>
+    <details>
+    <summary>Individual Product Page</summary>
+    <br>
+
+    ![screenshot](/documentation/features//individual-product-page.jpg)
+
+    </details>
+
+- **Quantity Selector**
+
+    - Each individual product page contains a quantity selector if the product is in stock. The selector lets the user add a minimum of 1 and a maximum of whatever the product's current stock is to their cart. After setting the quantity, a user can click the add to cart button to add that number of the product to their cart. If the user enters a number higher than the stock available an error is raised.
+    <br>
+    <details>
+    <summary>Quantity Selector</summary>
+    <br>
+
+    ![screenshot](/documentation/features/product-quantity.jpg)
+
+    </details>
+
+- **Account Options**
+
+    - If the user is logged in, the my account dropdown in the navigation will contain a link to the user's profile. If the user is a guest they will be given the option to either register for an account or sign in to an existing account. If the user is logged in as admin, they will see a link for product management.
+    <br>
+    <details>
+    <summary>User Account</summary>
+    <br>
+
+    ![screenshot](/documentation/features/user-account.jpg)
+
+    </details>
+    <details>
+    <summary>Guest Account</summary>
+    <br>
+
+    ![screenshot](/documentation/features/guest-account.jpg)
+
+    </details>
+    <details>
+    <summary>Admin Account</summary>
+    <br>
+
+    ![screenshot](/documentation/features/admin-account.jpg)
+
+    </details>
+
+- **Add - Product Management Page**
+
+    - If the user is logged in and has admin permissions, they can add new products to the site from the admin dropdown in the navigation. The add product page contains a form for the admin to fill out with the details of the new product.
+    <br>
+    <details>
+    <summary>Add Product</summary>
+    <br>
+
+    ![screenshot](/documentation/features/product-management-page.jpg)
+
+    </details>
+
+- **Edit - Product Management Page**
+
+    - If the user is logged in and has admin permissions, they can edit site products by clicking the edit button on either the product card on the all products page or the individual product page. The edit product page contains the same form as the add product page but the fields are already populated with the product's current data.
+    <br>
+    <details>
+    <summary>Edit Product</summary>
+    <br>
+
+    ![screenshot](/documentation/features/edit-product-management-page.jpg)
+
+    </details>
+
+- **Remove Product**
+
+    - If the user is logged in and has admin permissions, they can delete site products by clicking the delete button on either the product card on the all products page or the individual product page. After deleting the product, a confirmation message will be displayed on the screen. 
+    <br>
+    <details>
+    <summary>Remove Product</summary>
+    <br>
+
+    ![screenshot](/documentation/features/delete-product-message.jpg)
+
+    </details>
+
+- **User Profile**
+
+    - When a user has completed registration on the site, they are given a profile. The profile is pretty simple in that it contains the user's default delivery information if set and a list of the user's previous orders.
+    <br>
+    <details>
+    <summary>User Profile</summary>
+    <br>
+
+    ![screenshot](/documentation/features/user-profile-page.jpg)
+
+    </details>
+
+- **Newsletter**
+
+    - Using the form in the footer, users can sign up to the site's newsletter. Users can only sign up to the newsletter once and if they try to sign up with an already registered email address, a message will be displayed to inform they are already subscribed. 
+    <br>
+    <details>
+    <summary>Newsletter Subscription</summary>
+    <br>
+
+    ![screenshot](/documentation/features/newsletter-subscription.jpg)
+
+    </details>
+    <details>
+    <summary>Already Subscribed Message</summary>
+    <br>
+
+    ![screenshot](/documentation/features/already-subscribed-message.jpg)
+
+    </details>
+    <details>
+    <summary>Mailchimp Confirmation</summary>
+    <br>
+
+    ![screenshot](/documentation/features/mailchimp-subscription.jpg)
+
+    </details>
+
+- **Contact Us Page**
+
+    - This is a simple form that a user can fill out to contact the site owners. When the form is submitted, the user is sent an automated email confirming that their message has been seen and that a member of the team will follow up with them.
+    <br>
+    <details>
+    <summary>Contact Us Form</summary>
+    <br>
+
+    ![screenshot](/documentation/features/contact-us-page.jpg)
+
+    </details>
+    <details>
+    <summary>Support Email Confirmation</summary>
+    <br>
+
+    ![screenshot](/documentation/features/email-confirmation-contact.jpg)
+
+    </details>
+
+- **Returns & Exchanges Page**
+
+    - When a user click on the Returns and Exchanges page, they can view pertinent information regarding product returns and exchanges. 
+    <br>
+    <details>
+    <summary>Returns & Exchanges Page</summary>
+    <br>
+
+    ![screenshot](/documentation/features/returns-and-exchanges-page.jpg)
+
+    </details>
+
+- **Policies Page**
+
+    - When a user click on the Policies page, they can view pertinent information regarding the store's policies. 
+    <br>
+    <details>
+    <summary>Policies Page</summary>
+    <br>
+
+    ![screenshot](/documentation/features/policies-page.jpg)
+
+    </details>
+
+- **Cart**
+
+    - The cart can be accessed from the main navigation. In the navigation a running total is shown of the items in the user's cart. When the user clicks on this they can see all the items in their cart, individual price of each product, subtotal per product if the quantity is greater than 1 and a quantity selector for each product with buttons to update the quantity or remove the product completely from their cart. If a user doesn't have anything in their cart, a message will appear prompting the user to continue shopping.
+    <br>
+    <details>
+    <summary>Cart</summary>
+    <br>
+
+    ![screenshot](/documentation/features/cart.jpg)
+
+    </details>
+    <details>
+    <summary>Empty Cart</summary>
+    <br>
+
+    ![screenshot](/documentation/features/empty-cart.jpg)
+
+    </details>
+
+- **Coupon**
+
+    - If a user has a discount code, they can add it in their cart to receive a percentage off their order. If a user enters a code that doesn't exist they will see a message telling them so. If the code they use does exist, they will see a message confirming the discount has been added and the form will be replaced with the amount that has been taken off their order. When a user successfully adds a discount code, the amount that has been taken off is displayed in place of the discount code form. A delete icon appears next to the discount amount if the user wants to use a different discount code and on clicking, a message appears confirming the discount has been removed and the discount code form will appear in place of the discount amount.
+    <br>
+    <details>
+    <summary>Discount Code Field</summary>
+    <br>
+
+    ![screenshot](/documentation/features/discount-field.jpg)
+
+    </details>
+    <details>
+    <summary>Valid Code</summary>
+    <br>
+
+    ![screenshot](/documentation/features/existent-code.jpg)
+
+    </details>
+    <details>
+    <summary>Invalid Code</summary>
+    <br>
+
+    ![screenshot](/documentation/features/inexistent-code.jpg)
+
+    </details>
+    <details>
+    <summary>Discount Added</summary>
+    <br>
+
+    ![screenshot](/documentation/features/discount-added.jpg)
+
+    </details>
+
+- **Checkout**
+
+    - This page contains a form for the user's delivery and payment information and a summary of the user's order. If the user has an account on the site, they can save their delivery information on their profile to automatically be filled in the checkout.
+    <br>
+    <details>
+    <summary>Checkout</summary>
+    <br>
+
+    ![screenshot](/documentation/features/checkout.jpg)
+
+    </details>
+
+- **Customer Detail Form**
+
+    - In the checkout the user can add their details and if they're logged in, can check the box to save their details for future transactions. Users must enter their payment information before completing the checkout and all payments are handled via Stripe.
+    <br>
+    <details>
+    <summary>Customer Detail Form</summary>
+    <br>
+
+    ![screenshot](/documentation/features/customer-detail-form.jpg)
+
+    </details>
+
+- **Order Summary**
+
+    - A final summary of the user's order is shown containing all the user's cart items, quantity and subtotal for each item. The user can also see their order total, delivery costs, any discounts that have been applied and the grand total in the summary.
+    <br>
+    <details>
+    <summary>Order Summary</summary>
+    <br>
+
+    ![screenshot](/documentation/features/order-summary.jpg)
+
+    </details>
+
+- **Checkout Buttons**
+
+    - At the very end of the checkout the user will see two buttons, one to adjust their cart and another to complete their order. The grand total is displayed under the complete order button to further inform the user of how much their card will be charged on order completion.
+    <br>
+    <details>
+    <summary>Checkout Buttons</summary>
+    <br>
+
+    ![screenshot](/documentation/features/checkout-buttons.jpg)
+
+    </details>
+
+- **Order Confirmation Email**
+
+    - Once the order is complete and payment has been received, the user will receive an order confirmation email containing their order number and a receipt with the total paid.
+    <br>
+    <details>
+    <summary>Order Confirmation Email</summary>
+    <br>
+
+    ![screenshot](/documentation/features/order-confirmation-email.jpg)
+
+    </details>
+
+- **Order Confirmation Page**
+
+    - After the order has been completed, the user is redirected to a confirmation page letting them know an order confirmation email has been sent to their provided email address. This page contains a final rundown of the order and what the user purchased. This page can be accessed again from the user's profile if they have an account on the site by clicking the order number from the list of past orders.
+    <br>
+    <details>
+    <summary>Order Confirmation Page</summary>
+    <br>
+
+    ![screenshot](/documentation/features/order-confirmation-page.jpg)
+
+    </details>
+
+- **Error Pages**
+
+    - If a user ends up on a page that either doesn't exist or that they shouldn't be on (regular user using admin page links or trying to edit/delete something through a link) then they'll be shown an error page with a button to bring them back to the shop.
+    <br>
+    <details>
+    <summary>403</summary>
+    <br>
+
+    ![screenshot](/documentation/features/403-page.jpg)
+
+    </details>
+    <details>
+    <summary>404</summary>
+    <br>
+
+    ![screenshot](/documentation/features/404-page.jpg)
+
+    </details>
+    <details>
+    <summary>500</summary>
+    <br>
+
+    ![screenshot](/documentation/features/500-page.jpg)
+
+    </details>
+
+### Future Features
+
+A few features that could make the website even better are listed here. These features have been logged as "Future Release" in my [Kanban Board](https://github.com/users/tinobragaa/projects/5/views/1).
+
+- **Multi-Language Support**
+  - Introduce multi-language support to cater to a diverse global audience. Allow users to choose their preferred language from a list of available options, ensuring that all website content, including product descriptions, navigation menus, and checkout pages, is displayed in the selected language. 
+- **Wishlist Functionality**
+  - Introduce a wishlist feature that allows users to save products they're interested in for future purchase consideration. Users can easily add products to their wishlist from the product detail page or the listing page.
+- **Social Media Login**
+  - Enable social media login/signup options for users and incorporate social sharing buttons for products. Additionally, integrate features like user reviews and ratings, allowing customers to share their shopping experiences on social media platforms.
+- **Express Checkout and Wallet Integration**
+  - Simplify the checkout process for returning customers by offering an express checkout option. Enable users to save their payment information securely in a digital wallet within their account. This allows them to complete transactions quickly without having to enter payment details every time they make a purchase. 
+- **Loyalty Program and Discounts** 
+  - Create a loyalty program where customers can earn points for every purchase they make, which can be redeemed for discounts or free products in the future. Offer special discounts and promotions to loyal customers.
+- **Multi-Currency Support**
+  - Implement a multi-currency system that allows users to view product prices and complete transactions in their preferred currency. Provide an option for users to select their currency from a dropdown menu or automatically detect their location and display prices accordingly. Utilize currency conversion APIs or services to ensure accurate and up-to-date exchange rates. Additionally, enable users to switch between different currencies seamlessly 
+- **Product Review**
+  - Develop a comprehensive review system that allows users to rate products on multiple criteria such as quality, value for money, and usability. Users can leave detailed written reviews and upload images or videos of the products, enhancing the credibility and usefulness of the feedback. 
+- **Social Media Sharing**
+  - Add social media sharing buttons to product pages, allowing users to easily share products on platforms like Facebook, Twitter, Instagram, and Pinterest. This can help increase product visibility and attract more potential customers through social media channels.
 
 ## Database Design
 
@@ -405,22 +1007,13 @@ I utilized [dbdiagram](https://dbdiagram.io/home) to create an entity relationsh
 | ----- | ---------- | -------------- |
 | email | EmailField | max_length=100 |
 
-## Future Features
-
-1. Multi-Language Support: Introduce multi-language support to cater to a diverse global audience. Allow users to choose their preferred language from a list of available options, ensuring that all website content, including product descriptions, navigation menus, and checkout pages, is displayed in the selected language. 
-2. Express Checkout and Wallet Integration: Simplify the checkout process for returning customers by offering an express checkout option. Enable users to save their payment information securely in a digital wallet within their account. This allows them to complete transactions quickly without having to enter payment details every time they make a purchase. 
-3. Wishlist Functionality: Introduce a wishlist feature that allows users to save products they're interested in for future purchase consideration. Users can easily add products to their wishlist from the product detail page or the listing page.
-4. Enable social media login/signup options for users and incorporate social sharing buttons for products. Additionally, integrate features like user reviews and ratings, allowing customers to share their shopping experiences on social media platforms.
-5. Loyalty Program and Discounts: Create a loyalty program where customers can earn points for every purchase they make, which can be redeemed for discounts or free products in the future. Offer special discounts and promotions to loyal customers.
-6. Multi-Currency Support: Implement a multi-currency system that allows users to view product prices and complete transactions in their preferred currency. Provide an option for users to select their currency from a dropdown menu or automatically detect their location and display prices accordingly. Utilize currency conversion APIs or services to ensure accurate and up-to-date exchange rates. Additionally, enable users to switch between different currencies seamlessly 
-
 ## Agile Development
 
 ### GitHub Projects
 
 GitHub Projects was utilized as an Agile tool for managing this project. This platform facilitated the planning and tracking of user stories, issues, and epics, which were then monitored on a weekly basis using a basic Kanban board setup.
 
-- 39 User Stories: full list [here](https://github.com/tinobragaa/hefestus-cave/issues?q=is%3Aissue+sort%3Acreated-asc).
+- 42 User Stories: full list [here](https://github.com/tinobragaa/hefestus-cave/issues?q=is%3Aissue+sort%3Acreated-asc).
 - 6 Epics: Development Setup, User Authentication and Account Management, Product Management and Shopping Cart, Checkout and Payment, Content Management and User Interaction and SEO and Marketing.
 
 ![Kanban Board](/documentation/kanban-board.png)
@@ -448,17 +1041,22 @@ I broke down my Epics into individual stories before prioritizing and implementi
 
 ## Technologies Used
 
-### Languages
+### Languages and Frameworks
 
-The following languages were used to develop the website:
-- HTML
-- CSS
-- Python
-- JavaScript
+This project was created using the following languages and frameworks:
 
-### Programs and Tools
+- [HTML](https://en.wikipedia.org/wiki/HTML) as the markup language and templating language.
+- [CSS](https://en.wikipedia.org/wiki/CSS) as the style sheet language.
+  - [Bootstrap](https://getbootstrap.com/) as the CSS framework.
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) to create carousel on index.html.
+  - [jQuery](https://jquery.com/) to simplify DOM manipulation.
+- [Python](https://www.python.org/) as the backend programming language.
+  - [Django](https://www.djangoproject.com/) as the Python web framework.
 
-The following programs and tools were used to develop the website:
+### Resources and Tools
+
+The following resources and tools were used to develop the website:
+
 - [Amazon AWS](https://aws.amazon.com/) - Used to store the static and media files for the site.
 - [Mailchimp](https://mailchimp.com/) - Used to create the newsletter signup form.
 - [Stripe](https://stripe.com/gb) has been used for the payment processing and webhooks handling.
@@ -489,7 +1087,7 @@ The following programs and tools were used to develop the website:
 
 ### Django and Python Packages
 
-The following Django applicaitons and Python Packages were used to develop the website:
+The following Django applications and Python Packages were used to develop the website:
 - [asgiref](https://pypi.org/project/asgiref/) - ASGI (Asynchronous Server Gateway Interface) framework, a standard interface between web servers and Python web applications.
 - [boto3](https://pypi.org/project/boto3/) - Amazon Web Services (AWS) SDK for Python, providing access to AWS services.
 - [botocore](https://pypi.org/project/botocore/) - Low-level, core functionality of AWS SDK for Python (Boto3).
@@ -515,21 +1113,6 @@ The following Django applicaitons and Python Packages were used to develop the w
 
 All Testing documentation can be found on the [TESTING.md](TESTING.md) file.
 
-## Bugs
-
-`Bug`: I decided to add a custom domain to my project. After I bought the domain with the registrar and pointed to the heroku application, I was getting a error a bad request error (code 400) after pointing the new domain. [400 Error - Stack Overflow](https://stackoverflow.com/questions/23252733/i-get-an-error-400-bad-request-on-custom-heroku-domain-but-works-fine-on-foo-h/27402083#27402083).
-<br>
-`Fix`: I added the new domain into the list of allowed hosts on settings.py. 
-
-
-`Bug`: When I was bulding up the homepage, I noticed a problem where the hero image and the footer were causing a white space on the left side. After inspecting it, I found out that the issue stemmed from the "row" class in Bootstrap, which has a negative margin. [Boostrap's "Row" Negative Margin - Stack Overflow](https://stackoverflow.com/questions/23153497/bootstrap-row-class-contains-margin-left-and-margin-right-which-creates-problems).
-<br>
-`Fix`: After reading the [Bootstrap Documentation](https://getbootstrap.com/docs/3.4/css/), I discovered that Bootstrap's "row" class naturally includes a negative margin. However, Bootstrap also offers containers such as container-fluid or container that automatically adjust margins to offset this negative margin. So, to fix the issue, I need to ensure that rows are properly nested within a container.
-
-`Bug`: After uploading the product's images, the images uploaded to the AWS bucket were appearing as broken links on the deployed site. I observed that the CSS files were loading correctly, upon closer inspection of the AWS image paths, I discovered that the URLs included the AWS region, leading to the inaccessibility of the images on the production site.
-<br>
-`Fix`: The AWS_S3_CUSTOM_DOMAIN variable in the settings is updated to include the AWS region in the URL path. By setting AWS_S3_CUSTOM_DOMAIN to f'{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com', the URL paths for images are now valid, ensuring they are correctly displayed on the deployed version of the website.
-
 ## Deployment
 
 [Click Here To See The Live Website](https://www.hefestuscave.com/)
@@ -540,7 +1123,7 @@ This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL 
 
 To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
 - Click **Create New Instance** to start a new database.
-- Provide a name (this is commonly the name of the project: retro-reboot).
+- Provide a name (this is commonly the name of the project: hefestus-cave).
 - Select the **Tiny Turtle (Free)** plan.
 - You can leave the **Tags** blank.
 - Select the **Region** and **Data Center** closest to you.
@@ -561,7 +1144,7 @@ As a backup, in case users prematurely close the purchase-order page during paym
 
 - From your Stripe dashboard, click **Developers**, and select **Webhooks**.
 - From there, click **Add Endpoint**.
-	- `https://retro-reboot.herokuapp.com/checkout/wh/`
+	- `https://hefestus-cave.herokuapp.com/checkout/wh/`
 - Click **receive all events**.
 - Click **Add Endpoint** to complete the process.
 - You'll have a new key here:
@@ -627,7 +1210,6 @@ For SSL certificate management, this project utilizes the free SSL certificate p
 5. Choose "Automatic Certificate Management (ACM)" and proceed.
 6. Wait for the SSL certificate to be issued to your domain, which may take up to 60 minutes for propagation.
 
-
 ### Fork
 
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
@@ -653,8 +1235,6 @@ You can clone the repository by following these steps:
 ## Credits
 
 A list of references used for the site:
-
-### References and Tutorials
 
 * [How to Point a Custom Domain to Heroku](https://stackoverflow.com/questions/49321317/setting-up-a-godaddy-domain-name-with-heroku).
 * [Bad Request Error After Adding a Custom Domain](https://stackoverflow.com/questions/23252733/i-get-an-error-400-bad-request-on-custom-heroku-domain-but-works-fine-on-foo-h/27402083#27402083).
