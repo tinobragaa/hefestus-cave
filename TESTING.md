@@ -1,37 +1,32 @@
-# Testing
+# Table of Contents
 
-Return back to the [README.md](README.md) file.
+- [Testing](#testing)
+  * [Validation](#validation)
+    + [HTML](#html)
+    + [CSS](#css)
+    + [JavaScript](#javascript)
+    + [Python](#python)
+  * [Browser Compatibility](#browser-compatibility)
+  * [Responsiveness Testing](#responsiveness)
+  * [Lighthouse Audit](#lighthouse-audit)
+  * [Manual Testing](#manual-testing)
+  * [User Story Testing](#user-story-testing)
+  * [Bugs](#bugs)
+
+**Return back to the [README.md](README.md) file.**
+
+# Testing
 
 During the evolution of this project, I've conducted a multitude of tests to verify the functionality of the site. Within this section, you'll discover comprehensive documentation detailing every test performed across the site.
 
-# HTML Validation
+## HTML Validation
 
 The Nu HTML Checker [HTML W3C Validator](https://validator.w3.org) was used to validate HTML documents. The files passed without any errors.
 
 | Page | W3C | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | W3C | ![screenshot]() | Pass: No Errors |
-| All Products | W3C | ![screenshot]() | Pass: No Errors |
-| Individual Product | W3C | ![screenshot]() | Pass: No Errors |
-| Contact | W3C | ![screenshot]() | Pass: No Errors |
-| Blog | W3C | ![screenshot]() | Pass: No Errors |
-| Blog Post | W3C | ![screenshot]() | Pass: No Errors |
-| Sign Up | W3C | ![screenshot]() | Pass: No Errors |
-| Sign In | W3C | ![screenshot]() | Pass: No Errors |
-| Password Reset | W3C | ![screenshot]() | Pass: No Errors |
-| Search | W3C | ![screenshot]() | Pass: No Errors |
-| Log Out | W3C | ![screenshot]() | Pass: No Errors |
-| Basket | W3C | ![screenshot]() | Pass: No Errors |
-| Checkout | W3C | ![screenshot]() | Pass: No Errors  |
-| Checkout Success | W3C | ![screenshot]() | Pass: No Errors |
-| Profile | W3C | ![screenshot]() | Pass: No Errors |
-| Add Product | W3C | ![screenshot]() | Pass: No Errors |
-| Edit Product | W3C | ![screenshot]() | Pass: No Errors |
-| Delete Product | W3C | ![screenshot]() | Pass: No Errors |
-| Add Blog | W3C | ![screenshot]() | Pass: No Errors |
-| Edit Blog | W3C | ![screenshot]() | Pass: No Errors |
-| Delete Blog | W3C | ![screenshot]() | Pass: No Errors |
-| Open Tickets | W3C | ![screenshot]() | Pass: No Errors |
+| Home | W3C | ![screenshot](/documentation/testing/) | Pass: No Errors |
+| All Products | W3C | ![screenshot](/documentation/testing/) | Pass: No Errors |
 
 ### CSS
 
@@ -39,7 +34,7 @@ The [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) was used to vali
 
 | File | Validator | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css | Jigsaw | ![screenshot]() | Pass: No Errors |
+| style.css | Jigsaw | ![screenshot](/documentation/testing/) | Pass: No Errors |
 
 ### JavaScript
 
@@ -47,7 +42,7 @@ The [JShint Validator](https://jshint.com) was used to validate JS files.
 
 | File | Validator | Screenshot | Notes |
 | --- | --- | --- | --- |
-| script.js  | JShint | ![screenshot]() | Pass: No Errors |
+| script.js  | JShint | ![screenshot](/documentation/testing/) | Pass: No Errors |
 
 ### Python
 
@@ -55,30 +50,47 @@ The [CI Python Linter](https://pep8ci.herokuapp.com) was used to validate Python
 
 | File | Validator | Screenshot | Notes |
 | --- | --- | --- | --- |
-| settings.py | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| urls.py (main) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| forms.py (comments) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| models.py (comments) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| urls.py (home) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| views.py (home) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| forms.py (messaging) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| models.py (messaging) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| urls.py (messaging) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| views.py (messaging) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| models.py (notifications) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| urls.py (notifications) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| views.py (notifications) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| notification_tags.py (notifications) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| forms.py (posts) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| models.py (posts) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| urls.py (posts) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| views.py (posts) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| models.py (profiles) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| urls.py (profiles) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| views.py (profiles) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| urls.py (search) | CI PEP8 | ![screenshot]() | Pass: No Errors |
-| views.py (search) | CI PEP8 | ![screenshot]() | Pass: No Errors |
+| settings.py | CI PEP8 | ![screenshot](/documentation/testing/) | Pass: No Errors |
+| urls.py (main) | CI PEP8 | ![screenshot](/documentation/testing/) | Pass: No Errors |
+| forms.py (comments) | CI PEP8 | ![screenshot](/documentation/testing/) | Pass: No Errors |
+| models.py (comments) | CI PEP8 | ![screenshot](/documentation/testing/) | Pass: No Errors |
+| urls.py (home) | CI PEP8 | ![screenshot](/documentation/testing/) | Pass: No Errors |
+| views.py (home) | CI PEP8 | ![screenshot](/documentation/testing/) | Pass: No Errors |
+| forms.py (messaging) | CI PEP8 | ![screenshot](/documentation/testing/) | Pass: No Errors |
 
+## Browser Compatibility
+
+I've tested my deployed project on multiple browsers to check for compatibility issues.
+
+| Browser | Screenshot | Notes |
+| --- | --- | --- |
+| Chrome | ![screenshot](/documentation/testing/chrome-compatibility.jpg) | Works as expected |
+| Firefox | ![screenshot](/documentation/testing/firefox-compatibility.jpg) | Works as expected |
+| Safari | ![screenshot](/documentation/testing/safari-compatibility.jpg) | Works as expected |
+| Edge | ![screenshot](/documentation/testing/edge-compatibility.jpg) | Works as expected |
+
+## Responsiveness
+
+I've tested my deployed project on multiple devices to check for responsiveness issues.
+
+| Device | Screenshot | Notes |
+| --- | --- | --- |
+| Mobile (DevTools) | ![screenshot](/documentation/testing/) | Works as expected |
+| Tablet (DevTools) | ![screenshot](/documentation/testing/) | Works as expected |
+| Desktop | ![screenshot](/documentation/testing/) | Works as expected |
+
+## Lighthouse Audit
+
+All pages were tested with [Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/). Testing was performed in private browsing mode and on the live website on Heroku.
+
+| Page | Image |
+| --- | --- |
+| Homepage | ![Lighthouse Screenshot](/documentation/testing/) |
+| All Products Page | ![Lighthouse Screenshot](/documentation/testing/) |
+
+## Manual Testing
+
+## User Story Testing
 
 ## Bugs
 

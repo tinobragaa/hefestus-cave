@@ -33,15 +33,8 @@ I guess I should close with a branded call. Welcome to HefestusCave: where imagi
     + [Social Media Marketing](#social-media-marketing)
     + [Newsletter Marketing](#newsletter-marketing)
   * [Wireframes](#wireframes)
-    + [Homepage Wireframes](#homepage-wireframes)
-    + [All Products Wireframes](#all-products-wireframes)
-    + [Product's Detail Wireframes](#product-s-detail-wireframes)
-    + [Sign Up Wireframes](#sign-up-wireframes)
-    + [Sign In Wireframes](#sign-in-wireframes)
-    + [Sign Out Wireframes](#sign-out-wireframes)
-    + [Cart Wireframes](#cart-wireframes)
-    + [Checkout Wireframes](#checkout-wireframes)
-    + [Order Confirmation Page Wireframes](#order-confirmation-page-wireframes)
+    + [Desktop](#desktop)
+    + [Mobile](#mobile)
   * [Features](#features)
     + [Existing Features](#existing-features)
     + [Future Features](#future-features)
@@ -206,140 +199,128 @@ A newsletter sign-up form has been seamlessly integrated into the website footer
 
 To streamline the site's design process, I've generated wireframes for each page, ensuring alignment with industry best practices by producing versions tailored for both mobile and desktop interfaces. [Balsamiq](https://balsamiq.com/wireframes/?gad_source=1&gclid=CjwKCAiAloavBhBOEiwAbtAJO391J15sKFC7QKvUeqWQ4LfYPMV7B8CcAIxDhhL2wFml7luEHdXmChoCU6sQAvD_BwE) was utilized as the primary tool for crafting these wireframes.
 
-### Homepage Wireframes
+### Desktop
+
 <details>
-<summary>Homepage Desktop</summary>
+<summary>Homepage</summary>
 <br>
 
 ![Homepage Desktop](/documentation/wireframes/homepage-desktop.png)
 
 </details>
 <details>
-<summary>Homepage Mobile</summary>
-<br>
-
-![Homepage Mobile](/documentation/wireframes/homepage-mobile.png)
-
-</details>
-
-### All Products Wireframes
-<details>
-<summary>All Products Desktop</summary>
+<summary>All Products View</summary>
 <br>
 
 ![All Products Desktop](/documentation/wireframes/all-products-desktop.png)
 
 </details>
 <details>
-<summary>All Products Mobile</summary>
-<br>
-
-![All Products Mobile](/documentation/wireframes/all-products-mobile.png)
-
-</details>
-
-### Product's Detail Wireframes
-<details>
-<summary>Product's Detail Desktop</summary>
+<summary>Product's Detail</summary>
 <br>
 
 ![Product's Detail Desktop](/documentation/wireframes/product-details-desktop.png)
 
 </details>
 <details>
-<summary>Product's Detail Mobile</summary>
-<br>
-
-![Product's Detail Desktop](/documentation/wireframes/product-details-mobile.png)
-
-</details>
-
-### Sign Up Wireframes
-<details>
-<summary>Sign Up Desktop</summary>
+<summary>Sign Up</summary>
 <br>
 
 ![Sign Up Desktop](/documentation/wireframes/sign-up-desktop.png)
 
 </details>
 <details>
-<summary>Sign Up Mobile</summary>
-<br>
-
-![Sign Up Mobile](/documentation/wireframes/sign-up-mobile.png)
-
-</details>
-
-### Sign In Wireframes
-<details>
-<summary>Sign In Desktop</summary>
+<summary>Sign In</summary>
 <br>
 
 ![Sign In Desktop](/documentation/wireframes/sign-in-desktop.png)
 
 </details>
 <details>
-<summary>Sign In Mobile</summary>
-<br>
-
-![Sign In Mobile](/documentation/wireframes/sign-in-mobile.png)
-
-</details>
-
-### Sign Out Wireframes
-<details>
-<summary>Sign Out Desktop</summary>
+<summary>Sign Out</summary>
 <br>
 
 ![Sign Out Desktop](/documentation/wireframes/sign-out-desktop.png)
 
 </details>
 <details>
-<summary>Sign Out Mobile</summary>
-<br>
-
-![Sign Out Mobile](/documentation/wireframes/sign-out-mobile.png)
-
-</details>
-
-### Cart Wireframes
-<details>
-<summary>Cart Desktop</summary>
+<summary>Cart</summary>
 <br>
 
 ![Cart Desktop](/documentation/wireframes/cart-desktop.png)
 
 </details>
 <details>
-<summary>Cart Mobile</summary>
-<br>
-
-![Cart Mobile](/documentation/wireframes/cart-mobile.png)
-
-</details>
-
-### Checkout Wireframes
-<details>
-<summary>Checkout Desktop</summary>
+<summary>Checkout</summary>
 <br>
 
 ![Checkout Desktop](/documentation/wireframes/checkout-desktop.png)
 
 </details>
 <details>
-<summary>Checkout Mobile</summary>
-<br>
-
-![Checkout Mobile](/documentation/wireframes/checkout-mobile.png)
-
-</details>
-
-### Order Confirmation Page Wireframes
-<details>
 <summary>Order Confirmation Desktop</summary>
 <br>
 
 ![Order Confirmation Desktop](/documentation/wireframes/order-confirmation-desktop.png)
+
+</details>
+
+### Mobile
+
+<details>
+<summary>Homepage</summary>
+<br>
+
+![Homepage Mobile](/documentation/wireframes/homepage-mobile.png)
+
+</details>
+<details>
+<summary>All Products View</summary>
+<br>
+
+![All Products Mobile](/documentation/wireframes/all-products-mobile.png)
+
+</details>
+<details>
+<summary>Product's Detail</summary>
+<br>
+
+![Product's Detail Desktop](/documentation/wireframes/product-details-mobile.png)
+
+</details>
+<details>
+<summary>Sign Up</summary>
+<br>
+
+![Sign Up Mobile](/documentation/wireframes/sign-up-mobile.png)
+
+</details>
+<details>
+<summary>Sign In</summary>
+<br>
+
+![Sign In Mobile](/documentation/wireframes/sign-in-mobile.png)
+
+</details>
+<details>
+<summary>Sign Out</summary>
+<br>
+
+![Sign Out Mobile](/documentation/wireframes/sign-out-mobile.png)
+
+</details>
+<details>
+<summary>Cart</summary>
+<br>
+
+![Cart Mobile](/documentation/wireframes/cart-mobile.png)
+
+</details>
+<details>
+<summary>Checkout</summary>
+<br>
+
+![Checkout Mobile](/documentation/wireframes/checkout-mobile.png)
 
 </details>
 <details>
@@ -887,18 +868,25 @@ A few features that could make the website even better are listed here. These fe
 
 - **Multi-Language Support**
   - Introduce multi-language support to cater to a diverse global audience. Allow users to choose their preferred language from a list of available options, ensuring that all website content, including product descriptions, navigation menus, and checkout pages, is displayed in the selected language. 
+
 - **Wishlist Functionality**
   - Introduce a wishlist feature that allows users to save products they're interested in for future purchase consideration. Users can easily add products to their wishlist from the product detail page or the listing page.
+
 - **Social Media Login**
   - Enable social media login/signup options for users and incorporate social sharing buttons for products. Additionally, integrate features like user reviews and ratings, allowing customers to share their shopping experiences on social media platforms.
+
 - **Express Checkout and Wallet Integration**
   - Simplify the checkout process for returning customers by offering an express checkout option. Enable users to save their payment information securely in a digital wallet within their account. This allows them to complete transactions quickly without having to enter payment details every time they make a purchase. 
+
 - **Loyalty Program and Discounts** 
   - Create a loyalty program where customers can earn points for every purchase they make, which can be redeemed for discounts or free products in the future. Offer special discounts and promotions to loyal customers.
+
 - **Multi-Currency Support**
-  - Implement a multi-currency system that allows users to view product prices and complete transactions in their preferred currency. Provide an option for users to select their currency from a dropdown menu or automatically detect their location and display prices accordingly. Utilize currency conversion APIs or services to ensure accurate and up-to-date exchange rates. Additionally, enable users to switch between different currencies seamlessly 
+  - Implement a multi-currency system that allows users to view product prices and complete transactions in their preferred currency. Provide an option for users to select their currency from a dropdown menu or automatically detect their location and display prices accordingly. Utilize currency conversion APIs or services to ensure accurate and up-to-date exchange rates. Additionally, enable users to switch between different currencies seamlessly.
+
 - **Product Review**
   - Develop a comprehensive review system that allows users to rate products on multiple criteria such as quality, value for money, and usability. Users can leave detailed written reviews and upload images or videos of the products, enhancing the credibility and usefulness of the feedback. 
+  
 - **Social Media Sharing**
   - Add social media sharing buttons to product pages, allowing users to easily share products on platforms like Facebook, Twitter, Instagram, and Pinterest. This can help increase product visibility and attract more potential customers through social media channels.
 
