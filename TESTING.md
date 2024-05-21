@@ -34,7 +34,8 @@ The [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) was used to vali
 
 | File | Validator | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css | Jigsaw | ![screenshot](/documentation/testing/) | Pass: No Errors |
+| base.css | Jigsaw | ![screenshot](/documentation/testing/base-css-validation.jpg) | Pass: No Errors |
+| checkout.css | Jigsaw | ![screenshot](/documentation/testing/checkout-css-validation.jpg) | Pass: No Errors |
 
 ### JavaScript
 
