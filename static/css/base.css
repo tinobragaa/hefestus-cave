@@ -440,6 +440,7 @@ input[name='q']::placeholder {
   }
 
 
+
 /* 600px wide and down */
 @media (max-width: 600px) {
     footer .col-lg-4:nth-child(3) {
@@ -450,6 +451,10 @@ input[name='q']::placeholder {
 
     footer .col-lg-4:nth-child(3) a {
         margin-bottom: 10px;
+    }
+
+    .shop-now-button {
+        min-width: 160px;
     }
 }
 
