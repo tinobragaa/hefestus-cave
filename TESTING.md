@@ -43,7 +43,13 @@ The [JShint Validator](https://jshint.com) was used to validate JS files.
 
 | File | Validator | Screenshot | Notes |
 | --- | --- | --- | --- |
-| script.js  | JShint | ![screenshot](/documentation/testing/) | Pass: No Errors |
+| countryfields.js | JShint | ![screenshot](/documentation/testing/country-js-validation.jpg) | Pass: No Errors |
+| stripe_elements.js | JShint | ![screenshot](/documentation/testing/stripe-elements-js.jpg) | Pass: No Errors |
+| products.html (postloadjs) | JShint | ![screenshot](/documentation/testing/products-js.jpg) | Pass: No Errors |
+| cart.html (postloadjs) | JShint | ![screenshot](/documentation/testing/cart-js.jpg) | Pass: No Errors |
+| quantity_input_script.html (script) | JShint | ![screenshot](/documentation/testing/quantity-input-js.jpg) | Pass: No Errors |
+| add_product.html (postloadjs) | JShint | ![screenshot](/documentation/testing/edit-add-product-js.jpg) | Pass: No Errors |
+| edit_product.html (postloadjs) | JShint | ![screenshot](/documentation/testing/edit-add-product-js.jpg) | Pass: No Errors |
 
 ### Python
 
@@ -51,13 +57,39 @@ The [CI Python Linter](https://pep8ci.herokuapp.com) was used to validate Python
 
 | File | Validator | Screenshot | Notes |
 | --- | --- | --- | --- |
-| settings.py | CI PEP8 | ![screenshot](/documentation/testing/) | Pass: No Errors |
-| urls.py (main) | CI PEP8 | ![screenshot](/documentation/testing/) | Pass: No Errors |
-| forms.py (comments) | CI PEP8 | ![screenshot](/documentation/testing/) | Pass: No Errors |
-| models.py (comments) | CI PEP8 | ![screenshot](/documentation/testing/) | Pass: No Errors |
-| urls.py (home) | CI PEP8 | ![screenshot](/documentation/testing/) | Pass: No Errors |
-| views.py (home) | CI PEP8 | ![screenshot](/documentation/testing/) | Pass: No Errors |
-| forms.py (messaging) | CI PEP8 | ![screenshot](/documentation/testing/) | Pass: No Errors |
+| context.py (cart) | CI PEP8 | ![screenshot](/documentation/testing/context-cart-python-validation.jpg) | Pass: No Errors |
+| urls.py (cart) | CI PEP8 | ![screenshot](/documentation/testing/urls-cart-python-validation.jpg) | Pass: No Errors |
+| views.py (cart) | CI PEP8 | ![screenshot](/documentation/testing/views-cart-python-validation.jpg) | Pass: No Errors |`
+| admin.py (checkout) | CI PEP8 | ![screenshot](/documentation/testing/admin-checkout-python-validation.jpg) | Pass: No Errors |
+| forms.py (checkout) | CI PEP8 | ![screenshot](/documentation/testing/forms-checkout-python-validation.jpg) | Pass: No Errors |
+| models.py (checkout) | CI PEP8 | ![screenshot](/documentation/testing/models-checkout-python-validation.jpg) | Pass: No Errors |
+| signals.py (checkout) | CI PEP8 | ![screenshot](/documentation/testing/signals-checkout-python-validation.jpg) | Pass: No Errors |
+| urls.py (checkout) | CI PEP8 | ![screenshot](/documentation/testing/urls-checkout-python-validation.jpg) | Pass: No Errors |
+| views.py (checkout) | CI PEP8 | ![screenshot](/documentation/testing/views-checkout-python-validation.jpg) | Pass: No Errors |
+| webhooker_handler.py (checkout) | CI PEP8 | ![screenshot](/documentation/testing/webhook-handler-checkout-python-validation.jpg) | Pass: No Errors |
+| webhooks.py (checkout) | CI PEP8 | ![screenshot](/documentation/testing/webhooks-checkout-python-validation.jpg) | Pass: No Errors |
+| admin.py (contact) | CI PEP8 | ![screenshot](/documentation/testing/admin-contact-python-validation.jpg) | Pass: No Errors |
+| forms.py (contact) | CI PEP8 | ![screenshot](/documentation/testing/forms-contact-python-validation.jpg) | Pass: No Errors |
+| models.py (contact) | CI PEP8 | ![screenshot](/documentation/testing/models-contact-python-validation.jpg) | Pass: No Errors |
+| urls.py (contact) | CI PEP8 | ![screenshot](/documentation/testing/urls-contact-python-validation.jpg) | Pass: No Errors |
+| views.py (contact) | CI PEP8 | ![screenshot](/documentation/testing/views-contact-python-validation.jpg) | Pass: No Errors |
+| admin.py (discount_code) | CI PEP8 | ![screenshot](/documentation/testing/admin-discount-python-validation.jpg) | Pass: No Errors |
+| forms.py (discount_code) | CI PEP8 | ![screenshot](/documentation/testing/forms-discount-python-validation.jpg) | Pass: No Errors |
+| models.py (discount_code) | CI PEP8 | ![screenshot](/documentation/testing/models-discount-python-validation.jpg) | Pass: No Errors |
+| urls.py (home) | CI PEP8 | ![screenshot](/documentation/testing/urls-home-python-validation.jpg) | Pass: No Errors |
+| views.py (home) | CI PEP8 | ![screenshot](/documentation/testing/views-home-python-validation.jpg) | Pass: No Errors |
+| admin.py (product) | CI PEP8 | ![screenshot](/documentation/testing/admin-products-python-validation.jpg) | Pass: No Errors |
+| forms.py (product) | CI PEP8 | ![screenshot](/documentation/testing/forms-products-python-validation.jpg) | Pass: No Errors |
+| models.py (product) | CI PEP8 | ![screenshot](/documentation/testing/models-products-python-validation.jpg) | Pass: No Errors |
+| urls.py (product) | CI PEP8 | ![screenshot](/documentation/testing/urls-products-python-validation.jpg) | Pass: No Errors |
+| views.py (product) | CI PEP8 | ![screenshot](/documentation/testing/views-products-python-validation.jpg) | Pass: No Errors |
+| forms.py (profiles) | CI PEP8 | ![screenshot](/documentation/testing/forms-profiles-python-validation.jpg) | Pass: No Errors |
+| models.py (profiles) | CI PEP8 | ![screenshot](/documentation/testing/models-profiles-python-validation.jpg) | Pass: No Errors |
+| urls.py (profiles) | CI PEP8 | ![screenshot](/documentation/testing/urls-profiles-python-validation.jpg) | Pass: No Errors |
+| views.py (profiles) | CI PEP8 | ![screenshot](/documentation/testing/views-profiles-python-validation.jpg) | Pass: No Errors |
+| settings.py (hefestus_cave) | CI PEP8 | ![screenshot](/documentation/testing/settings-hefestus-python-validation.jpg) | Pass: No Errors |
+| urls.py (hefestus_cave) | CI PEP8 | ![screenshot](/documentation/testing/urls-hefestus-python-validation.jpg) | Pass: No Errors |
+| views.py (hefestus_cave) | CI PEP8 | ![screenshot](/documentation/testing/views-hefestus-python-validation.jpg) | Pass: No Errors |
 
 ## Browser Compatibility
 
@@ -86,8 +118,21 @@ All pages were tested with [Google Chrome Lighthouse](https://developer.chrome.c
 
 | Page | Image |
 | --- | --- |
-| Homepage | ![Lighthouse Screenshot](/documentation/testing/) |
-| All Products Page | ![Lighthouse Screenshot](/documentation/testing/) |
+| Homepage | ![Lighthouse Screenshot](/documentation/testing/homepage-lighthouse.jpg) |
+| All Products | ![Lighthouse Screenshot](/documentation/testing/all-products-lighthouse.jpg) |
+| Individual Product | ![Lighthouse Screenshot](/documentation/testing/individual-product-lighthouse.jpg) |
+| Sign In | ![Lighthouse Screenshot](/documentation/testing/sign-in-lighthouse.jpg) |
+| Sign Out | ![Lighthouse Screenshot](/documentation/testing/sign-out-lighthouse.jpg) |
+| Sign Up | ![Lighthouse Screenshot](/documentation/testing/sign-up-lighthouse.jpg) |
+| Profile | ![Lighthouse Screenshot](/documentation/testing/profile-lighthouse.jpg) |
+| Product Management | ![Lighthouse Screenshot](/documentation/testing/product-management-lighthouse.jpg) |
+| Contact | ![Lighthouse Screenshot](/documentation/testing/contact-lighthouse.jpg) |
+| Policies | ![Lighthouse Screenshot](/documentation/testing/policies-lighthouse.jpg) |
+| Returns & Exchanges | ![Lighthouse Screenshot](/documentation/testing/returns-lighthouse.jpg) |
+| Cart | ![Lighthouse Screenshot](/documentation/testing/cart-lighthouse.jpg) |
+| Empty Cart | ![Lighthouse Screenshot](/documentation/testing/empty-cart-lighthouse.jpg) |
+| Checkout | ![Lighthouse Screenshot](/documentation/testing/checkout-lighthouse.jpg) |
+| Order Confirmation Page | ![Lighthouse Screenshot](/documentation/testing/order-confirmation-lighthouse.jpg) |
 
 ## Manual Testing
 

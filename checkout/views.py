@@ -82,7 +82,7 @@ def checkout(request):
                     )
                     order.delete()
                     return redirect(reverse('view_cart'))
-            
+
             if discount:
                 savings = ((order.grand_total/100) * discount)
                 order.grand_total -= savings

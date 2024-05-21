@@ -27,4 +27,4 @@ class ContactForm(forms.ModelForm):
 
         for field_name, placeholder_text in self.placeholders.items():
             if field_name in self.fields:
-                self.fields[field_name].widget.attrs['placeholder'] = placeholder_text
+                self.fields[field_name].widget.attrs['placeholder'] = placeholder_text  # noqa
