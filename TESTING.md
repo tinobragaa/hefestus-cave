@@ -76,9 +76,9 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 | Device | Screenshot | Notes |
 | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](/documentation/testing/) | Works as expected |
-| Tablet (DevTools) | ![screenshot](/documentation/testing/) | Works as expected |
-| Desktop | ![screenshot](/documentation/testing/) | Works as expected |
+| Mobile (DevTools) | ![screenshot](/documentation/testing/mobile-responsiveness.jpg) | Works as expected |
+| Tablet (DevTools) | ![screenshot](/documentation/testing/tablet-responsiveness.jpg) | Works as expected |
+| Desktop | ![screenshot](/documentation/features/landing-page.jpg) | Works as expected |
 
 ## Lighthouse Audit
 
