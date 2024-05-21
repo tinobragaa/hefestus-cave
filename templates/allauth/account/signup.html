@@ -26,9 +26,9 @@
         <img src="{% static 'img/allauth-img.webp' %}" class="card-img-top" alt="HefestusCave signup page image">
         <div class="card-body">
           <h1 class="card-title logo-font text-center">{% trans "Sign Up" %}</h1>
-          <h5 class="card-text text-center">{% blocktrans %}Already have an account? Then please
+          <p class="card-text text-center med-size">{% blocktrans %}Already have an account? Then please
             <a class="text-teal" href="{{ login_url }}">sign in</a>.{% endblocktrans %}
-          </h5>
+          </p>
           <div class="col-lg-10 p-2 m-auto">
             <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
               {% csrf_token %}

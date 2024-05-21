@@ -22,8 +22,8 @@
         <img src="{% static 'img/allauth-img.webp' %}" class="card-img-top" alt="HefestusCave logout page image">
         <div class="card-body">
           <h1 class="card-title logo-font text-yellow">{% trans "Time to log out?" %}</h1>
-          <h5 class="card-text">{% trans 'No problem, see you soon!' %}</h5>
-          <form class="text-center" method="post" action="{% url 'account_logout' %}">
+          <p class="card-text">{% trans 'No problem, see you soon!' %}</p>
+          <form class="text-center med-size" method="post" action="{% url 'account_logout' %}">
             {% csrf_token %}
             {% if redirect_field_value %}
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />

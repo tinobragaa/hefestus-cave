@@ -1,11 +1,11 @@
-<h6><strong>Cart Total: ${{ total|floatformat:2 }}</strong></h6>
+<p class="cart-subtitle"><strong>Cart Total: ${{ total|floatformat:2 }}</strong></p>
 {% if free_delivery_delta != 0 %}
-<h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
+<p class="cart-subtitle">Delivery: €{{ delivery|floatformat:2 }}</p>
 {% else %}
-<h6>Delivery: FREE</h6>
+<p class="cart-subtitle">Delivery: FREE</p>
 {% endif %}
 {% if discount > 0 %}
-<h6 class="mb-4">Discount: -€{{ savings|floatformat:2 }} <a class="text-danger" href="{% url 'remove-discount' %}"><i class="fa-regular fa-trash-can"></i></a></h6>
+<p class="mb-4 cart-subtitle">Discount: -€{{ savings|floatformat:2 }} <a class="text-danger" href="{% url 'remove-discount' %}"><i class="fa-regular fa-trash-can"></i></a></p>
 {% else %}
 <form action="{% url 'add-discount' %}" class="form-container" method="POST">
     {% csrf_token %}
@@ -17,7 +17,7 @@
     </div>
 </form>
 {% endif %}
-<h4><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+<p class="cart-title"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></p>
 {% if free_delivery_delta > 0 %}
     <p class="mb-1 text-danger">
         You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
