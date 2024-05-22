@@ -138,6 +138,53 @@ All pages were tested with [Google Chrome Lighthouse](https://developer.chrome.c
 
 ## User Story Testing
 
+The following are user stories I've implemented with screenshots accordingly. 
+
+| User Story | Screenshot |
+| --- | --- |
+| As a user, I want to sign in with one of my social accounts so that I can sign in or sign up quickly and easily. | ![screenshot](/documentation/features/sign-in-page.jpg) |
+| As a user, I want to be able to reset my password if I forget it so that I can access my account. | ![screenshot](/documentation/features/reset-password-page.jpg) |
+| As a user, I want to be able to view a comprehensive list of all products available on the site so that I can browse and explore the full range of offerings. | ![screenshot](/documentation/features/all-products-page.jpg) |
+| As a user, I want to be able to see the prices of products clearly so that I can make informed decisions about whether or not to purchase. | ![screenshot](/documentation/features/products-grid.jpg) |
+| As a user, I want to be able to view a product on its own individual page so that I can access comprehensive information about the product. | ![screenshot](/documentation/features/individual-product-page.jpg) |
+| As a user, I want to be able to search for a product by name or description so that I can find what I want quickly. | ![screenshot](/documentation/features/search-bar.jpg) |
+| As a user, I want to be able to add a product to my shopping cart so that I can easily purchase it later. | ![screenshot](/documentation/features/add-to-cart-button.jpg) |
+| As a user, I want to be able to view my shopping cart so that I can review the contents and total cost of my intended purchase. | ![screenshot](/documentation/features/cart.jpg) |
+| As a user, I want to be able to edit the quantity of a product in my shopping cart so that I can purchase the quantity I desire. | ![screenshot](/documentation/features/edit-cart.jpg) |
+| As a user, I want to be able to delete items from my shopping cart so that I can remove unwanted products before proceeding to checkout. | ![screenshot](/documentation/features/remove-cart.jpg) |
+| As a user, I want to be able to sort products by various criteria (price, newest) so that I can easily find items that match my preferences and needs, enhancing my shopping experience. | ![screenshot](/documentation/features/product-filtering.jpg) |
+| As a user, I want to be able to securely pay for my purchase using Stripe during checkout, so that I can complete the transaction smoothly and begin enjoying my products. | ![screenshot](/documentation/features/checkout.jpg) |
+| As a user, I want to be able to receive an order confirmation email after I purchase from the shop so that I can have a record of what I've purchased in my email inbox. | ![screenshot](/documentation/features/order-confirmation-email.jpg) |
+| As a site user, I want to be able to apply discount codes in my cart so that I can receive a discount on my purchase. | ![screenshot](/documentation/features/discount-added.jpg) |
+| As a user, I want to be able to navigate between related pages easily so that I can find relevant content and information quickly and efficiently. | ![screenshot](/documentation/features/navigation-bar.jpg) |
+| As a user, I want to be able to clearly understand the purpose of the website so that I can form an impression and decide whether or not to engage further. | ![screenshot](/documentation/features/landing-page.jpg) |
+| As a user, I would like the site to have a customised favicon so I can easily identify it when I have multiple tabs open. | ![screenshot](/documentation/features/favicon.jpg) |
+| As a user, I want to be able to contact the website administrators through a "Contact Us" page using a form so that I can communicate any inquiries, feedback, or issues. | ![screenshot](/documentation/features/contact-us-page.jpg) |
+| As a developer, I need to create a 404 page so that users are redirected when entering a broken URL. | ![screenshot](/documentation/features/404-page.jpg) |
+| As a site user, I want to be able to subscribe to the site's mailing list so that I can receive exclusive offers and updates directly in my inbox, enhancing my engagement with the website. | ![screenshot](/documentation/features/newsletter-subscription.jpg) |
+
+
+The following are user stories I wasn't able to implement and have been set as Future Release on the [Kanban Board](https://github.com/users/tinobragaa/projects/5/views/1).
+
+<details>
+<summary>Future Release Issues</summary>
+<br>
+
+![screenshot](/documentation/testing/future-release-issues.jpg)
+
+</details>
+
+| User Story | Status |Issue |
+| --- | --- | --- |
+| As a user, I want to be able to change the language of the website so that I can access content in a language that is more familiar or comfortable for me. | Open | [Multi-Language Support](https://github.com/tinobragaa/hefestus-cave/issues/39) |
+| As a user, I want to be able to add products to a wishlist so that I can keep a collection of items I am interested in buying in the future. | Open | [Wishlist Functionality](https://github.com/tinobragaa/hefestus-cave/issues/35) |
+| As a user, I want to sign in with one of my social accounts so that I can sign in or sign up quickly and easily. | Open | [Social Media Login](https://github.com/tinobragaa/hefestus-cave/issues/25) |
+| As a user, I want to be able to review products that I have purchased so that I can share my experience with other potential customers. | Open | [Product Review](https://github.com/tinobragaa/hefestus-cave/issues/33) |
+| As a user, I want to be able to share content from the website on various social media platforms, including Facebook, Instagram, X, and Pinterest, so that I can engage with my social network and amplify the reach of interesting content. | Open | [Social Media Sharing](https://github.com/tinobragaa/hefestus-cave/issues/38) |
+| As a user, I want to have an express checkout option that allows me to save my payment information securely in a digital wallet within my account so that I can complete transactions quickly without having to enter payment details every time I make a purchase. | Open | [Express Checkout and Wallet Integration](https://github.com/tinobragaa/hefestus-cave/issues/40) |
+| As a user, I want to earn points for every purchase I make, which I can redeem for discounts or free products in the future so that I feel rewarded for my loyalty and continue shopping at this store. | Open | [Loyalty Program](https://github.com/tinobragaa/hefestus-cave/issues/41) |
+| As a user, I want to view product prices and complete transactions in my preferred currency so that I can better understand the costs and avoid currency conversion fees. | Open | [Multi-Currency Support](https://github.com/tinobragaa/hefestus-cave/issues/42) |
+
 ## Bugs
 
 `Bug`: I decided to add a custom domain to my project. After I bought the domain with the registrar and pointed to the heroku application, I was getting a error a bad request error (code 400) after pointing the new domain. [400 Error - Stack Overflow](https://stackoverflow.com/questions/23252733/i-get-an-error-400-bad-request-on-custom-heroku-domain-but-works-fine-on-foo-h/27402083#27402083).
