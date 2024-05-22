@@ -7,7 +7,7 @@
     + [JavaScript](#javascript)
     + [Python](#python)
   * [Browser Compatibility](#browser-compatibility)
-  * [Responsiveness Testing](#responsiveness)
+  * [Responsiveness](#responsiveness)
   * [Lighthouse Audit](#lighthouse-audit)
   * [Manual Testing](#manual-testing)
   * [User Story Testing](#user-story-testing)
@@ -19,7 +19,9 @@
 
 During the evolution of this project, I've conducted a multitude of tests to verify the functionality of the site. Within this section, you'll discover comprehensive documentation detailing every test performed across the site.
 
-## HTML Validation
+## Validation
+
+### HTML
 
 The Nu HTML Checker [HTML W3C Validator](https://validator.w3.org) was used to validate HTML documents. The files passed without any errors.
 
@@ -135,6 +137,108 @@ All pages were tested with [Google Chrome Lighthouse](https://developer.chrome.c
 | Order Confirmation Page | ![Lighthouse Screenshot](/documentation/testing/order-confirmation-lighthouse.jpg) |
 
 ## Manual Testing
+
+| Page | User Action | Expected Result | Pass/Fail |
+| --- | --- | --- | --- |
+| **Homepage** | | | |
+| | Click on Logo | Redirection to Home page | Pass |
+| | Click on Shop Now button | Redirection to All Products page | Pass |
+| **Navigation Bar** | | | |
+| | Click on Account icon | Opens a dropdown menu with Register and Login options | Pass |
+| | Click on Register | Redirection to sign up page | Pass |
+| | Click on Login | Redirection to sign in page | Pass |
+| | Click on one of the main categories | Opens a dropdown with subcategories or filters | Pass |
+| | Click on one of the subcategories | Redirection to the subcategory page  | Pass |
+| | Click on one of the filters | Redirection to the all products page with the chosen filter applied | Pass |
+| | Click on All Products link in the navigation | Opens a drodown menu with filters | Pass |
+| | Click on All Products link in the dropdon | Redirection to All Products page | Pass |
+| **All Products Page** | | | |
+| | Click on Product card image | Redirection to Product Detail page for that product | Pass |
+| | Click on Add to Cart button | Product added to basket | Pass |
+| | Click on disabled Sold Out button | Nothing happens | Pass |
+| | Admin - Click on edit product button | Redirection to Edit Product page for that product | Pass |
+| | Admin - Click on remove product button | Product is removed | Pass |
+| **Product Detail Page** | | | |
+| | Click on Keep Shopping button | Redirection to All Products page | Pass |
+| | Click on Add to Cart button | Product added to basket | Pass |
+| | Click + button on quantity selector form | Quantity number increases if number + 1 is less than or equal to product's stock | Pass |
+| | Click - button on quantity selector form | Quantity number decreases if current quantity is greater than one | Pass |
+| | Click + button on quantity selector form if quantity is at the product's stock | Nothing happens | Pass |
+| | Manually enter number greater than product stock in quantity selector form | Error message appears letting the user know what the product's stock is | Pass |
+| | Admin - Click on edit product button | Redirection to Edit Product page for that product | Pass |
+| | Admin - Click on remove product button | Product is removed | Pass |
+| **Search** | | | |
+| | Center word into search bar that appears in at least one product's name or description | Redirection to All Products page filtered to only show products containing search term | Pass |
+| | Enter word into search bar that doesn't appear in any product's name or description | Redirection to All Products page and it is empty and shows user that 0 products were returned | Pass |
+| | Enter nothing into search bar | Redirection to All Products page and an eror message shows and lets user know they entered nothing into the search bar and all products are displayed | Pass |
+| **Contact** | | | |
+| | Click on Contact Us link in footer | Redirection to Contact page | Pass |
+| | Click to submit with missing fields | Message lets user know all fields are required | Pass |
+| **Returns & Exchanges** | | | |
+| | Click on Contact link | Redirection to Contact page | Pass |
+| **Policies** | | | |
+| | Click on Contact Us link in footer | Redirection to Contact page | Pass |
+| **Sign Up** | | | |
+| | Click on Register button under account on nav menu | Redirection to Sign Up page | Pass |
+| | Enter invalid email address | Field will only accept email address format | Pass |
+| | Click Sign Up button on sign up page | Sends confirmation email and lets user know to check their email | Pass |
+| | Click ee in confirmation email | Redirects user to sign in page | Pass |
+| **Sign In** | | | |
+| | Click on Login button under account on nav menu | Redirection to Sign In page | Pass |
+| | Enter invalid email address | Field will only accept email address format | Pass |
+| | Click Login button on login page | Redirects user to homepage | Pass |
+| | Click Forgot Password | Redirects user to password reset page | Pass |
+| **Sign Out** | | | |
+| | Click Logout button | Redirects user to logout page | Pass |
+| | Click Confirm Logout button | Redirects user to home page | Pass |
+| **Password Reset** | | | |
+| | Click Reset Password button | Sends email with instructions to reset password | Pass |
+| | Enter invalid email address | Field will only accept email address format | Pass |
+| **Profile** | | | |
+| | Click on the My Profile link under account on the navigation | Redirection to User profile page page | Pass |
+| | Click Order Number for previous order in Order History | Redirects user to order confirmation page for that order | Pass |
+| | Brute forcing the URL to profile if not logged in | User given an error | Pass |
+| **Product Management** | | | |
+| | Admin Click Product Management link from dropdown | Redirects admin to add product page | Pass |
+| | Click Cancel button | Redirects admin to all products page | Pass |
+| | Click Add Product button with form filled correctly | Creates a new product on the site using the information provided | Pass |
+| | Click Add Product button with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass |
+| | Click Add Product button with no image set | Product will be created but will be displayed with default product image | Pass |
+| **Edit Product Page** | | | |
+| | Click edit icon on product | Redirects user to Edit Product page | Pass |
+| | Click Cancel button | Redirects to all products page | Pass |
+| | Click Update Product button with form filled correctly | Updates product with information provided | Pass |
+| | Click Back to profile button button | Redirects user to their profile | Pass |
+| **Cart** | | | |
+| | Click Cart icon in main nav | Redirects user to cart page | Pass |
+| | Click + button on quantity selector form | Quantity number increases if number + 1 is less than or equal to product's stock | Pass |
+| | Click - button on quantity selector form | Quantity number decreases if current quantity is greater than one | Pass |
+| | Click + button on quantity selector form if quantity is at the product's stock | Nothing happens | Pass |
+| | Click update button under quantity selector form | Updated quantity of product in basket to number in quantity select form | Pass |
+| | Click remove button under quantity selector form | Removes product from basket completely | Pass |
+| | Click on discount apply button with empty discount field | Message appears letting user know the field can't be blank | Pass |
+| | Click on discount apply button with invalid code in the discount field | Error message shows letting user know the code entered doesn't exist | Pass |
+| | Click on discount apply button with valid code in the discount field | Alert message shows letting user know the discount has been added | Pass |
+| | Discount code added successfully | Percentage gets taken off the basket total, discount form is replaced with discount amount | Pass |
+| | Click on trash icon next to discount amount | Discount removed and discount code form reappears in place of discount amount | Pass |
+| | If products reach a total of $100 | Free shipping is included, otherwise, 10% is charged | Pass |
+| | Click on Keep Shopping button | Redirection to All Products page | Pass |
+| | Click on Secure Checkout button | Redirection to checkout page | Pass |
+| **Checkout** | | | |
+| | Click Complete Order button without all required fields filled out | Message letting user know that required fields need to be filled out | Pass |
+| | Click Save delivery information to profile button | User's default information will be set to whatever is filled in at the checkout on order completion | Pass |
+| | Click Complete Order button with all details filled out | Loading spinner appears and order is processed | Pass |
+| | Order completed | Order confirmation email is sent to the user and redirection to checkout success page | Pass |
+| **Order Confirmation Page** | | | |
+| | Click Back to profile button button | Redirects user to their profile | Pass |
+| **Footer** | | | |
+| | Enter email on newsletter box | Subscription confirmation message displayed | Pass |
+| | Click on the Logo | Redirection to homepage | Pass |
+| | Click on Contact | Redirection to Contact Page | Pass |
+| | Click on Policis | Redirection to Policies Page | Pass |
+| | Click on Returns & Excahnges | Redirection to Returns & Exchanges Page | Pass |
+| | Click on Instagram | Redirection to Instagram Page | Pass |
+| | Click on Artstation | Redirection to Artstation Page | Pass |
 
 ## User Story Testing
 
