@@ -25,10 +25,24 @@ During the evolution of this project, I've conducted a multitude of tests to ver
 
 The Nu HTML Checker [HTML W3C Validator](https://validator.w3.org) was used to validate HTML documents. The files passed without any errors.
 
-| Page | W3C | Screenshot | Notes |
+| Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | W3C | ![screenshot](/documentation/testing/) | Pass: No Errors |
-| All Products | W3C | ![screenshot](/documentation/testing/) | Pass: No Errors |
+| Home | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
+| All Products | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Individual Product | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Contact | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Policies | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Returns & Exchange | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Sign Up | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Sign In | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Sign Out | n/a | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Password Reset | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Cart | n/a | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Checkout | n/a | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Order Confirmation Page | n/a | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Profile | n/a | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Add Product | n/a | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Edit Product | n/a | ![screenshot](/documentation/testing) | Pass: No Errors |
 
 ### CSS
 
