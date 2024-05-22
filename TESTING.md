@@ -27,22 +27,22 @@ The Nu HTML Checker [HTML W3C Validator](https://validator.w3.org) was used to v
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
-| All Products | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
-| Individual Product | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
-| Contact | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
-| Policies | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
-| Returns & Exchange | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
-| Sign Up | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
-| Sign In | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
-| Sign Out | n/a | ![screenshot](/documentation/testing) | Pass: No Errors |
-| Password Reset | W3C | ![screenshot](/documentation/testing) | Pass: No Errors |
-| Cart | n/a | ![screenshot](/documentation/testing) | Pass: No Errors |
-| Checkout | n/a | ![screenshot](/documentation/testing) | Pass: No Errors |
-| Order Confirmation Page | n/a | ![screenshot](/documentation/testing) | Pass: No Errors |
-| Profile | n/a | ![screenshot](/documentation/testing) | Pass: No Errors |
-| Add Product | n/a | ![screenshot](/documentation/testing) | Pass: No Errors |
-| Edit Product | n/a | ![screenshot](/documentation/testing) | Pass: No Errors |
+| Home | W3C | ![screenshot](/documentation/testing/homepage-html-validation.jpg) | Pass: No Errors |
+| All Products | W3C | ![screenshot](/documentation/testing/all-products-html-validation.jpg) | Pass: No Errors |
+| Individual Product | W3C | ![screenshot](/documentation/testing/individual-product-html-validation.jpg) | Pass: No Errors |
+| Contact | W3C | ![screenshot](/documentation/testing/contact-html-validation.jpg) | Pass: No Errors |
+| Policies | W3C | ![screenshot](/documentation/testing/policies-html-validation.jpg) | Pass: No Errors |
+| Returns & Exchange | W3C | ![screenshot](/documentation/testing/returns-html-validation.jpg) | Pass: No Errors |
+| Sign Up | W3C | ![screenshot](/documentation/testing/sign-up-html-validation.jpg) | 1 Error Caused by Django AllAuth |
+| Sign In | W3C | ![screenshot](/documentation/testing/sign-in-html-validation.jpg) | Pass: No Errors |
+| Sign Out | W3C | ![screenshot](/documentation/testing/sign-out-html-validation.jpg) | Pass: No Errors |
+| Password Reset | W3C | ![screenshot](/documentation/testing/password-reset-html-validation.jpg) | Pass: No Errors |
+| Cart | W3C | ![screenshot](/documentation/testing/cart-html-validation.jpg) | Pass: No Errors |
+| Checkout | W3C | ![screenshot](/documentation/testing/checkout-html-validation.jpg) | Pass: No Errors |
+| Order Confirmation Page | W3C | ![screenshot](/documentation/testing/order-confirmation-html-validation.jpg) | Pass: No Errors |
+| Profile | W3C | ![screenshot](/documentation/testing/profile-html-validation.jpg) | Pass: No Errors |
+| Add Product | W3C | ![screenshot](/documentation/testing/add-product-html-validation.jpg) | 2 Errors Rendered rom Djando Summernote |
+| Edit Product | W3C | ![screenshot](/documentation/testing/edit-product-html-validation.jpg) | 3 Errors Rendered rom Djando Summernote |
 
 ### CSS
 
