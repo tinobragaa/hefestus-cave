@@ -61,7 +61,7 @@ I guess I should close with a branded call. Welcome to HefestusCave: where imagi
     + [ElephantSQL Database](#elephantsql-database)
     + [Stripe API](#stripe-api)
     + [Deploy with Heroku](#deploy-with-heroku)
-    + [Custom Domain and SSL Certificate:](#custom-domain-and-ssl-certificate-)
+    + [Custom Domain and SSL Certificate](#custom-domain-and-ssl-certificate)
     + [Fork](#fork)
     + [Clone](#clone)
   * [Credits](#credits)
@@ -1172,7 +1172,7 @@ To deploy your website using Heroku, begin by signing up for a Heroku account. T
 
 NB: You will need to add your Heroku app link to the ALLOWED_HOSTS in the settings.py file. You also need to make sure that DEBUG is set to False, requirements.txt and Procfile are up to date and pushed to GitHub.
 
-### Custom Domain and SSL Certificate:
+### Custom Domain and SSL Certificate
 
 This project utilizes a custom domain purchased through [GoDaddy](https://www.godaddy.com/) and hosted on Heroku.
 
