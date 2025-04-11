@@ -11,7 +11,7 @@ I guess I should close with a branded call. Welcome to HefestusCave: where imagi
 
 ![Website Mockup Image](/documentation/hefestuscave-mockup.png)
 
-[Live Website](https:/[/www.hefestuscave.com/](https://hefestus-cave-bb2dd02aee20.herokuapp.com/))
+[Live Website](https://hefestus-cave-bb2dd02aee20.herokuapp.com/)
 
 ## Table of Contents
 
