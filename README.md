@@ -11,7 +11,7 @@ I guess I should close with a branded call. Welcome to HefestusCave: where imagi
 
 ![Website Mockup Image](/documentation/hefestuscave-mockup.png)
 
-[Live Website](https://www.hefestuscave.com/)
+[Live Website](https:/[/www.hefestuscave.com/](https://hefestus-cave-bb2dd02aee20.herokuapp.com/))
 
 ## Table of Contents
 
@@ -1103,7 +1103,7 @@ All Testing documentation can be found on the [TESTING.md](TESTING.md) file.
 
 ## Deployment
 
-[Click Here To See The Live Website](https://www.hefestuscave.com/)
+[Click Here To See The Live Website](https://hefestus-cave-bb2dd02aee20.herokuapp.com/)
 
 ### ElephantSQL Database
 
